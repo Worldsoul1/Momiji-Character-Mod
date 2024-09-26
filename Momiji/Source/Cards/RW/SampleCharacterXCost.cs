@@ -16,6 +16,7 @@ namespace Momiji.Source.Cards
         {
             CardConfig config = GetCardDefaultConfig();
             config.GunName = GunNameID.GetGunFromId(400);
+            config.IsPooled = false;
 
             config.Colors = new List<ManaColor>() { ManaColor.Blue, ManaColor.Red };
             //Mana to consume aside from X

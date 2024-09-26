@@ -18,6 +18,7 @@ namespace Momiji.Source.Cards
             config.Colors = new List<ManaColor>() { ManaColor.Black };
             config.Cost = new ManaGroup() { Any = 1, Black = 1 };
             config.Rarity = Rarity.Uncommon;
+            config.IsPooled = false;
 
             config.Type = CardType.Skill;
             config.TargetType = TargetType.SingleEnemy;

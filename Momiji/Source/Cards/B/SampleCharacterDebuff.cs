@@ -19,6 +19,7 @@ namespace Momiji.Source.Cards
             config.Cost = new ManaGroup() { Any = 2, Black = 1 };
             config.UpgradedCost = new ManaGroup() { Any = 1, Black = 1 };
             config.Rarity = Rarity.Uncommon;
+            config.IsPooled = false;
 
             config.Type = CardType.Skill;
             config.TargetType = TargetType.SingleEnemy;

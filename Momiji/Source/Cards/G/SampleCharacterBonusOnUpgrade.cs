@@ -20,6 +20,7 @@ namespace Momiji.Source.Cards
             config.Colors = new List<ManaColor>() { ManaColor.Green };
             config.Cost = new ManaGroup() { Any = 2, Green = 1 };
             config.Rarity = Rarity.Common;
+            config.IsPooled = false;
 
             config.Type = CardType.Attack;
             config.TargetType = TargetType.SingleEnemy;

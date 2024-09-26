@@ -19,6 +19,7 @@ namespace Momiji.Source.Cards
             config.Cost = new ManaGroup() { Any = 1, Green = 1 };
             config.UpgradedCost = new ManaGroup() { Any = 0 };
             config.Rarity = Rarity.Common;
+            config.IsPooled = false;
 
             config.Type = CardType.Skill;
             config.TargetType = TargetType.Self;
