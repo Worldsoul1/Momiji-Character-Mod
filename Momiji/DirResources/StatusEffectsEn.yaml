@@ -1,0 +1,65 @@
+RetaliationSe:
+  Name: Retaliation
+  Description: At the start of {PlayerName}'s turn, gain {Level} |Reflection|.
+
+CircularPacingSe:
+    Name: Circular Pacing
+    Description: Whenever an enemy gains a debuff, gain {Level} |Barrier|.
+
+CrispFallAirSe:
+    Name: Crisp Fall Air
+    Description: at the start of {PlayerName}'s next turn, add {Level} |Air Cutter|s to the hand.
+
+DestabilizeSe:
+    Name: Destabilize
+    Description: Whenever you deal attack damage to an enemy, gain {Level} |Block|.
+
+FakeOpeningSe:
+    Name: Fake Opening
+    Description: At the start of {PlayerName}'s turn, gain {Level} |Retaliation|.
+
+FeedOnTheWeakSe:
+    Name: Feed on the Weak
+    Description: Whenever an enemy dies, gain 10 <sprite=\"Point\" name=\"Power\"\> and 4 life.
+
+HowlingMountainWindSe:
+    Name: howling Mountain Wind
+    Description: Whenever an |Air Cutter| is played, gain {Level} |Reflection|.
+
+ImageTrainingSe:
+    Name: Image Training
+    Description: At the start of {PlayerName}'s turn, add an |Air Cutter| to the hand.
+
+InstantofContactSe:
+    name: Instant of Contact
+    Description: Whenever an enemy takes attack damage, gain 2 Retaliation.
+
+MapleLeafFestivalSe:
+    Name: Maple Leaf Festival
+    Description: At the start of {PlayerName}'s turn, add a |Maple Leaf| to the hand.
+
+StandWatchSe:
+    Name: Stand Watch
+    Description: At the start of {PlayerName's} turn, gain {Level} |Block|.
+
+TirelessGuardSe:
+    Name: Tireless Guard
+    Description: Whenever |Reflection| is triggered, gain |Reflection| equal to half the damage dealt.
+
+TwinFangSe:
+    Name: Twin Fang
+    Description: The next time |Reflection| is triggered, gain |Reflection| equal to the amount of damage dealt.
+
+OffensiveIntention:
+    Name: Offensive Intention
+    Description: |-
+        "An Offensive Intention is one of the following Intentions: |Attack|, |Debuff|, |Status|, |Detonate|, or |Spell Card|."
+
+DefensiveIntention:
+    Name: Defensive Intention
+    Description: "a Defensive Intention is one of the following: |Buff|, |Defense|, |Graze|, or |Escape|."
+
+SpecialIntention:
+    Name: Special Intention
+    Description: "A Special Intention is one of the following: |Summon|, |Stunned|, |Do Nothing|, |Charge|, |Heal|, |Repair|,  |Cleanse|, |Noh of Darkness|, or |Jinx|."
+
