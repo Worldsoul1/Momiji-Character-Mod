@@ -35,7 +35,7 @@ namespace Momiji.Source.Cards
                 config.Value1 = 10;
                 config.UpgradedValue1 = 15;
 
-                config.RelativeEffects = new List<string>() { nameof(Reflect) };
+                config.RelativeEffects = new List<string>() { nameof(Reflect), nameof(Vulnerable) };
 
             //The Accuracy keyword is enough to make an attack accurate.
 

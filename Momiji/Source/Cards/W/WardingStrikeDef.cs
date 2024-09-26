@@ -33,7 +33,7 @@ namespace Momiji.Source.Cards
             config.Damage = 10;
             config.UpgradedDamage = 10;
 
-
+            config.RelativeEffects = new List<string>() { nameof(Reflect) };
             //The Accuracy keyword is enough to make an attack accurate.
 
             config.Illustrator = "";

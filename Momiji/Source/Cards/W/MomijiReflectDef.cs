@@ -16,7 +16,7 @@ namespace Momiji.Source.Cards
         {
             CardConfig config = GetCardDefaultConfig();
             config.Colors = new List<ManaColor>() { ManaColor.White };
-            config.Cost = new ManaGroup() { White = 1 };
+            config.Cost = new ManaGroup() { Any=1, White = 1 };
             config.Rarity = Rarity.Uncommon;
 
             config.Type = CardType.Defense;
@@ -25,8 +25,8 @@ namespace Momiji.Source.Cards
             config.Shield = 10;
             config.UpgradedShield = 12;
 
-            config.Value2 = 4;
-            config.UpgradedValue2 = 6;
+            config.Value1 = 4;
+            config.UpgradedValue1 = 6;
 
             config.Keywords = Keyword.Exile;
             config.UpgradedKeywords = Keyword.Exile;

@@ -34,11 +34,11 @@ AirCutter:
 FeedOnTheWeak:
     Name: Feed on the Weak
     Description: |-
-        Whenever an enemy dies, {PlayerName} gains 10 <sprite=\"Point\" name=\"Power\"\> and 4 life.
+        Whenever an enemy dies, {PlayerName} gains 10 <sprite=\"Point\" name=\"Power\"> and 4 life.
 
 RabidBite:
     Name: Rabid Bite
-    Description: Deal {Damage} damage. Heal {Value1} life.
+    Description: Deal {Damage} damage. Gain {Value1} life.
 
 AyaTeammate:
   Name: Aya, Tengu Reporter
@@ -59,7 +59,7 @@ CleanKill:
     Name: Clean Kill
     Description: |-
         Deal {Damage} Damage.
-        |Expel|: Gain {Value1} <sprite=\"Point\" name=\"Power\"\>.
+        |Expel|: Gain {Value1} <sprite=\"Point\" name=\"Power\">.
     FlavorText: I thank you for your life, so that I may survive.
 
 CleavingSwipe:
@@ -110,7 +110,7 @@ RecklessStrike:
     Description: |-
         Deal {Damage} damage.
         Apply {Value1} |Vulnerable|.
-        Gain {Value2} |Frail|
+        Gain {Value2} |Frail|.
 
 RipApart:
   Name: Rip Apart
@@ -150,7 +150,7 @@ BloodScent:
 
 CircularPacing:
     Name: Circular Pacing
-    Description: Whenever an enemy gains a debuff, {PlayerName} gain {Value1} |Barrier|.
+    Description: Whenever an enemy gains a debuff, {PlayerName} gains {Value1} |Barrier|.
 
 CollectingMomiji:
   Name: Collecting Momiji 
@@ -271,21 +271,21 @@ FarSight:
 
 IronStance:
     Name: Iron Stance
-    Description: Gain {Block} |Block| and {Value1} |Static Discharge| until {PlayerName}'s next turn.
+    Description: Gain {Block} |Block| and {Value1} |Static Charge| until {PlayerName}'s next turn.
     Flavortext: Iron is sturdy, and, more importantly, conductive.
 
 MomijiReflect:
   Name: Reflect
   Description: |-
     Gain {Value1} life.
-    Gain {Shield} |Barrier|.
+    Gain {Sheild} |Barrier|.
   FlavorText: Reflect. Study. Practice.
 
 PreparedDefense:
     Name: Prepared Defense
     Description: |-
         Gain {Value1} |Reflection|.
-        Convert all Reflection {PlayerName} currently possesses into |Static Discharge| for this turn.
+        Convert all |Reflection| {PlayerName} currently possesses into |Static Charge| for this turn.
 
 SeizeTheMoment:
     Name: Seize the Moment
@@ -305,7 +305,7 @@ TacticalInsight:
 TengusForesight:
     Name: Tengu's Foresight
     Description: |- 
-        Draw {Value1} card{Value1:plural one='' other='s'}. |Block| is not lost at the start of {Playername}'s next turn.
+        Draw {Value1} card{Value1:plural one='' other='s'}. |Block| is not lost at the start of {PlayerName}'s next turn.
     FlavorText: Your next line is...
 
 TirelessGuard:

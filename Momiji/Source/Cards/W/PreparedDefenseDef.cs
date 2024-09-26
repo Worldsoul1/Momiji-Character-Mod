@@ -25,6 +25,8 @@ namespace Momiji.Source.Cards
             config.Type = CardType.Skill;
             config.TargetType = TargetType.Self;
 
+            config.Value1 = 4;
+
             config.RelativeEffects = new List<string>() { nameof(Reflect), nameof(TempElectric) };
 
             config.Illustrator = "";
