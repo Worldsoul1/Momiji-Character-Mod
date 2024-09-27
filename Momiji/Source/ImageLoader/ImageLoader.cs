@@ -26,6 +26,7 @@ namespace Momiji.Source.ImageLoader
         public static ExhibitSprites LoadExhibitSprite(ExhibitTemplate exhibit)
         {
             var exhibitSprites = new ExhibitSprites();
+            UnityEngine.Debug.Log($"Momiji Exhibits: {exhibit.GetId() + file_extension}");
             Func<string, Sprite> wrap = (s) => ResourceLoader.LoadSprite(exhibit.GetId() + s + file_extension, BepinexPlugin.embeddedSource);
             exhibitSprites.main = wrap("");
             return exhibitSprites;

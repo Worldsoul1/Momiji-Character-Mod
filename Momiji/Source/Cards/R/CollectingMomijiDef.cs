@@ -25,7 +25,7 @@ namespace Momiji.Source
             config.Value1 = 2;
             config.UpgradedValue1 = 2;
 
-            config.Illustrator = "";
+            config.Illustrator = "en (shihi no utage)";
 
             config.RelativeCards = new List<string>() { nameof(MapleLeaf) };
             config.UpgradedRelativeCards = new List<string>() { nameof(MapleLeaf) };

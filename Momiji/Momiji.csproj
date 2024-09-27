@@ -315,7 +315,7 @@
 
 
     <ItemGroup>
-      <EmbeddedResource Include="Resources\*" />
+      <EmbeddedResource Include="Resources\**" />
     </ItemGroup>
 
 
@@ -325,7 +325,12 @@
 
 
     <ItemGroup>
-      <Folder Include="Resources\" />
+      <None Update="Resources\Exhibits\BatteredShield.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="Resources\Exhibits\HeavyBlade.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
     </ItemGroup>
 
 

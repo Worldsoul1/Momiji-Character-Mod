@@ -51,7 +51,7 @@ namespace Momiji.Source.Cards
             config.RelativeEffects = new List<string>() { nameof(TempFirepowerNegative), nameof(Vulnerable), nameof(Fragil) };
             config.UpgradedRelativeEffects = new List<string>() { nameof(TempFirepowerNegative), nameof(Vulnerable), nameof(Fragil) };
 
-            config.Illustrator = "";
+            config.Illustrator = "かなめや";
 
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
             return config;

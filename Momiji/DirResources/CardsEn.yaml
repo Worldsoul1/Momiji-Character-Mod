@@ -278,7 +278,7 @@ MomijiReflect:
   Name: Reflect
   Description: |-
     Gain {Value1} life.
-    Gain {Sheild} |Barrier|.
+    Gain {Shield} |Barrier|.
   FlavorText: Reflect. Study. Practice.
 
 PreparedDefense:

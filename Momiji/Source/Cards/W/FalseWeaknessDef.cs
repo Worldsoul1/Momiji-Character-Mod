@@ -35,7 +35,7 @@ namespace Momiji.Source.Cards
             config.Keywords = Keyword.Exile;
             config.UpgradedKeywords = Keyword.Exile;
 
-            config.Illustrator = "";
+            config.Illustrator = "黒てー";
 
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
             return config;

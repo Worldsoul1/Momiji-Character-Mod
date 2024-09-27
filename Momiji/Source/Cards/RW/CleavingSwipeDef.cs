@@ -36,7 +36,7 @@ namespace Momiji.Source
             //Add Lock On descrption when hovering over the card.
 
 
-            config.Illustrator = "";
+            config.Illustrator = "hide448";
 
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
             return config;

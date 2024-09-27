@@ -27,7 +27,7 @@ namespace Momiji.Source.Cards
             config.UpgradedValue1 = 10;
 
 
-            config.Illustrator = "";
+            config.Illustrator = "ïΩçsà⁄ìÆ";
 
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
             return config;

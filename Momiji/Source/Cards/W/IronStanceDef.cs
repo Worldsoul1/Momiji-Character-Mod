@@ -32,7 +32,7 @@ namespace Momiji.Source.Cards
 
             config.RelativeEffects = new List<string>() { nameof(TempElectric) };
 
-            config.Illustrator = "";
+            config.Illustrator = "山口よしみ";
 
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
             return config;
