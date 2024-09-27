@@ -41,7 +41,7 @@ namespace Momiji.Source.Cards
 
             //The Accuracy keyword is enough to make an attack accurate.
 
-            config.Illustrator = "";
+            config.Illustrator = "cuon";
 
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
             return config;

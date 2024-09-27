@@ -29,7 +29,7 @@ namespace Momiji.Source.Cards
             config.Mana = new ManaGroup() { Red = 1 };
             config.UpgradedMana = new ManaGroup() { Red = 1 };
 
-            config.Illustrator = "";
+            config.Illustrator = "Cube85";
 
             config.RelativeCards = new List<string>() { nameof(AirCutter) };
             config.UpgradedRelativeCards = new List<string>() { nameof(AirCutter) };

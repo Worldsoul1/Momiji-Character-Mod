@@ -34,7 +34,7 @@ namespace Momiji.Source.Cards
             config.RelativeEffects = new List<string>() { nameof(TimeIsLimited), nameof(RetaliationSe) };
             config.UpgradedRelativeEffects = new List<string>() { nameof(TimeIsLimited), nameof(RetaliationSe) };
 
-            config.Illustrator = "";
+            config.Illustrator = "ƒcƒoƒT";
 
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
             return config;

@@ -37,7 +37,7 @@ namespace Momiji.Source.Cards
             config.RelativeEffects = new List<string>() { nameof(Vulnerable) };
             config.UpgradedRelativeEffects = new List<string>() { nameof(Vulnerable) };
 
-            config.Illustrator = "";
+            config.Illustrator = "ﾃｨｰｶﾉ";
 
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
             return config;

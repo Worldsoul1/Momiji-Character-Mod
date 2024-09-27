@@ -35,7 +35,7 @@ namespace Momiji.Source.Cards
             config.RelativeEffects = new List<string>() { nameof(TempFirepower) };
             config.UpgradedRelativeEffects = new List<string>() { nameof(TempFirepower) };
 
-            config.Illustrator = "Cool_illustrator";
+            config.Illustrator = "‚¢‚Ê‚ ‚©‚è‚³‚ñ";
 
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
             return config;
