@@ -27,12 +27,13 @@ namespace Momiji.Source.Cards
             config.TargetType = TargetType.SingleEnemy;
 
             config.Damage = 16;
-            config.UpgradedDamage = 19;
+            config.UpgradedDamage = 21;
 
             config.Value1 = 2;
             config.Value2 = 3;
 
             config.RelativeEffects = new List<string>() { nameof(RetaliationSe) };
+            config.UpgradedRelativeEffects = new List<string>() { nameof(RetaliationSe) };
 
             config.Keywords = Keyword.Accuracy | Keyword.Exile;
             config.UpgradedKeywords = Keyword.Accuracy | Keyword.Exile;

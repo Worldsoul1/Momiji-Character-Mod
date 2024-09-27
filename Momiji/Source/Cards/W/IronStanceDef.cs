@@ -25,12 +25,13 @@ namespace Momiji.Source.Cards
             config.TargetType = TargetType.Self;
 
             config.Block = 12;
-            config.UpgradedBlock = 14;
+            config.UpgradedBlock = 17;
 
             config.Value1 = 3;
             config.UpgradedValue1 = 4;
 
             config.RelativeEffects = new List<string>() { nameof(TempElectric) };
+            config.UpgradedRelativeEffects = new List<string>() { nameof(TempElectric) };
 
             config.Illustrator = "山口よしみ";
 

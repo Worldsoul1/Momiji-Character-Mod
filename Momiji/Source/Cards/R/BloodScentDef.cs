@@ -36,6 +36,7 @@ namespace Momiji.Source.Cards
                 config.UpgradedValue1 = 15;
 
                 config.RelativeEffects = new List<string>() { nameof(Reflect), nameof(Vulnerable) };
+                config.UpgradedRelativeEffects = new List<string>() { nameof(Reflect), nameof(Vulnerable) };
 
             //The Accuracy keyword is enough to make an attack accurate.
 
@@ -56,7 +57,6 @@ namespace Momiji.Source.Cards
 
             protected override IEnumerable<BattleAction> Actions(UnitSelector selector, ManaGroup consumingMana, Interaction precondition)
             {
-                yield return base.AttackAction(selector, base.GunName);
             if (base.PendingTarget.HasStatusEffect<Vulnerable>())
             {
                 yield return base.BuffAction<Reflect>(base.Value1, 0, 0, 0, 0.2f);
@@ -65,6 +65,7 @@ namespace Momiji.Source.Cards
                     base.Battle.Player.GetStatusEffect<Reflect>().Gun = (this.IsUpgraded ? "金刚体B" : "金刚体");
                 }
             }
+            yield return base.AttackAction(selector, base.GunName);
             }
         }
     }

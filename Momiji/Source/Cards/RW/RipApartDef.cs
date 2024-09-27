@@ -38,7 +38,7 @@ namespace Momiji.Source.Cards
             config.TargetType = TargetType.AllEnemies;
 
             config.Damage = 8;
-            config.UpgradedDamage = 8;
+            config.UpgradedDamage = 11;
 
             config.Value1 = 1;
             config.Value2 = 2;

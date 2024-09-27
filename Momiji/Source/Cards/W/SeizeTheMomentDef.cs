@@ -32,7 +32,7 @@ namespace Momiji.Source.Cards
             //As of 1.5.1: Colorless hybrid are not supported.    
             config.Cost = new ManaGroup() { Any = 1, White = 2 };
             config.UpgradedCost = new ManaGroup() { Any = 1, White = 1 };
-            config.Rarity = Rarity.Uncommon;
+            config.Rarity = Rarity.Rare;
 
             config.Type = CardType.Attack;
             config.TargetType = TargetType.SingleEnemy;

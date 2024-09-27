@@ -18,9 +18,7 @@ namespace Momiji.Source.StatusEffects
         public override StatusEffectConfig MakeConfig()
         {
             StatusEffectConfig config = GetDefaultStatusEffectConfig();
-            config.HasLevel = false;
-            config.HasDuration = true;
-            config.DurationDecreaseTiming = LBoL.Base.DurationDecreaseTiming.EndTurnForExtra;
+            config.HasLevel = true;
             return config;
         }
 

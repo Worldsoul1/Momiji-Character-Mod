@@ -23,7 +23,7 @@ namespace Momiji.Source.Cards
 
             config.Colors = new List<ManaColor>() { ManaColor.White };
             config.Cost = new ManaGroup() { Any = 1, White = 1 };
-            config.UpgradedCost = new ManaGroup() { Any = 1, White = 1 };
+            config.UpgradedCost = new ManaGroup() { White = 1 };
             config.Rarity = Rarity.Common;
 
             config.Type = CardType.Skill;
@@ -31,8 +31,11 @@ namespace Momiji.Source.Cards
 
             config.Value1 = 1;
             config.UpgradedValue1 = 1;
+            config.Value2 = 4;
+            config.UpgradedValue2 = 7;
 
             config.RelativeEffects = new List<string>() { nameof(Reflect) };
+            config.UpgradedRelativeEffects = new List<string>() { nameof(Reflect) };
 
             config.Illustrator = "";
 
@@ -46,6 +49,7 @@ namespace Momiji.Source.Cards
     {
         protected override IEnumerable<BattleAction> Actions(UnitSelector selector, ManaGroup consumingMana, Interaction precondition)
         {
+            yield return new ApplyStatusEffectAction<Reflect>(base.Battle.Player, base.Value2, 0, 0, 0, 0.2f);
             yield return new ApplyStatusEffectAction<TwinFangSe>(Battle.Player, base.Value1, 0, 0, 0, 0.2f);
             //This is equivalent to:
             //yield return new CastBlockShieldAction(Battle.Player, base.Block, base.Shield, BlockShieldType.Normal, true); 

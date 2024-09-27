@@ -34,6 +34,7 @@ namespace Momiji.Source.Cards
             config.UpgradedDamage = 10;
 
             config.RelativeEffects = new List<string>() { nameof(Reflect) };
+            config.UpgradedRelativeEffects = new List<string>() { nameof(Reflect) };
             //The Accuracy keyword is enough to make an attack accurate.
 
             config.Illustrator = "";

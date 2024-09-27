@@ -31,7 +31,7 @@ namespace Momiji.Source.Cards
             config.UpgradedDamage = 5;
 
             config.Value1 = 3;
-            config.UpgradedValue1 = 3;
+            config.UpgradedValue1 = 4;
 
             //The Accuracy keyword is enough to make an attack accurate.
             config.Keywords = Keyword.Accuracy;

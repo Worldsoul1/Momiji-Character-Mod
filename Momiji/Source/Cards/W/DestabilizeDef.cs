@@ -17,14 +17,14 @@ namespace Momiji.Source.Cards.W
             CardConfig config = GetCardDefaultConfig();
             config.Colors = new List<ManaColor>() { ManaColor.White };
             config.Cost = new ManaGroup() { Any = 1, White = 2 };
-            config.UpgradedCost = new ManaGroup() { Any = 2, White = 1};
+            config.UpgradedCost = new ManaGroup() { Any = 1, White = 1};
             config.Rarity = Rarity.Uncommon;
 
             config.Type = CardType.Ability;
             config.TargetType = TargetType.Nobody;
 
             config.Value1 = 2;
-            config.UpgradedValue1 = 2;
+            config.UpgradedValue1 = 3;
 
             config.Illustrator = "";
 

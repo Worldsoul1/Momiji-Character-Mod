@@ -7,6 +7,7 @@ using LBoL.Core.Battle;
 using LBoL.Core.Battle.BattleActions;
 using LBoL.Core;
 using Momiji.Source.StatusEffects;
+using LBoL.EntityLib.StatusEffects.Basic;
 
 namespace Momiji.Source.Cards.W
 {
@@ -25,6 +26,9 @@ namespace Momiji.Source.Cards.W
 
             config.Value1 = 1;
             config.UpgradedValue1 = 1;
+
+            config.RelativeEffects = new List<string>() { nameof(Reflect) };
+            config.UpgradedRelativeEffects = new List<string>() { nameof(Reflect) };
 
             config.Illustrator = "";
 

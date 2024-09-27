@@ -31,7 +31,7 @@ namespace Momiji.Source.Cards
             //9 = R/G
             //As of 1.5.1: Colorless hybrid are not supported.    
             config.Cost = new ManaGroup() { Red = 2};
-            config.UpgradedCost = new ManaGroup() { Red = 2};
+            config.UpgradedCost = new ManaGroup() { Any = 1, Red = 1};
             config.Rarity = Rarity.Common;
 
             config.Type = CardType.Attack;
@@ -40,8 +40,8 @@ namespace Momiji.Source.Cards
             config.Damage = 6;
             config.UpgradedDamage = 8;
 
-            config.Value1 = 1;
-            config.Value2 = 2;
+            config.Value1 = 2;
+            config.Value2 = 3;
 
             config.RelativeEffects = new List<string>() { nameof(Vulnerable) };
             config.UpgradedRelativeEffects = new List<string>() { nameof(Vulnerable) };

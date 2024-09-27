@@ -17,7 +17,7 @@ namespace Momiji.Source.Cards
         {
             CardConfig config = GetCardDefaultConfig();
             config.Colors = new List<ManaColor>() { ManaColor.Red };
-            config.Cost = new ManaGroup() { Any = 1, Red = 1 };
+            config.Cost = new ManaGroup() { Any = 2, Red = 1 };
             config.Rarity = Rarity.Uncommon;
 
             config.Type = CardType.Skill;

@@ -37,6 +37,7 @@ namespace Momiji.Source.Cards
             config.UpgradedMana = new ManaGroup() { Red = 2 };
 
             config.RelativeEffects = new List<string>() { nameof(Vulnerable) };
+            config.UpgradedRelativeEffects = new List<string>() { nameof(Vulnerable) };
 
             //The Accuracy keyword is enough to make an attack accurate.
 

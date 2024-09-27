@@ -28,7 +28,7 @@ namespace Momiji.Source
             config.TargetType = TargetType.AllEnemies;
 
             config.Damage = 10;
-            config.UpgradedDamage = 10;
+            config.UpgradedDamage = 15;
 
             config.Value1 = 2;
             config.UpgradedValue1 = 2;

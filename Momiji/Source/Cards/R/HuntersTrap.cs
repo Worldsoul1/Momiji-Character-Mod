@@ -29,15 +29,16 @@ namespace Momiji.Source.Cards
             config.Type = CardType.Defense;
             config.TargetType = TargetType.Self;
 
-            config.Block = 10;
-            config.UpgradedBlock = 12;
+            config.Block = 12;
+            config.UpgradedBlock = 16;
 
             config.Value1 = 1;
             config.UpgradedValue1 = 1;
 
             config.RelativeCards = new List<string>() { nameof(AirCutter), nameof(MapleLeaf) };
+            config.UpgradedRelativeCards = new List<string>() { nameof(AirCutter), nameof(MapleLeaf) };
 
-            config.Illustrator = "Cool_illustrator";
+            config.Illustrator = "田中 ぬぬ";
 
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
             return config;

@@ -21,7 +21,7 @@ namespace Momiji.Source.Cards
             config.Colors = new List<ManaColor>() { ManaColor.White };
             config.Cost = new ManaGroup() { Any = 1, White = 1 };
             config.UpgradedCost = new ManaGroup() { White = 1 };
-            config.Rarity = Rarity.Uncommon;
+            config.Rarity = Rarity.Common;
 
             config.Type = CardType.Attack;
             config.TargetType = TargetType.SingleEnemy;

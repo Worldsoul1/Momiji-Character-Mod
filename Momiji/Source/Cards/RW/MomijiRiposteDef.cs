@@ -28,6 +28,7 @@ namespace Momiji.Source.Cards
             config.UpgradedValue1 = 5;
 
             config.RelativeEffects = new List<string>() { nameof(RetaliationSe) };
+            config.UpgradedRelativeEffects = new List<string>() { nameof(RetaliationSe) };
 
             config.Illustrator = "";
 

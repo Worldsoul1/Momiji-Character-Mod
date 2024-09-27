@@ -21,10 +21,10 @@ namespace Momiji.Source.Cards
 
             config.GunName = GunNameID.GetGunFromId(400);
 
-            config.Colors = new List<ManaColor>() { ManaColor.White, ManaColor.Red };
+            config.Colors = new List<ManaColor>() { ManaColor.Red };
             config.Cost = new ManaGroup() { Any = 2, Red = 2 };
-            config.UpgradedCost = new ManaGroup() { Any = 1, Red = 2 };
-            config.Rarity = Rarity.Common;
+            config.UpgradedCost = new ManaGroup() { Any = 2, Red = 1 };
+            config.Rarity = Rarity.Rare;
 
             config.Type = CardType.Attack;
             config.TargetType = TargetType.AllEnemies;
@@ -32,9 +32,14 @@ namespace Momiji.Source.Cards
             config.Damage = 10;
             config.UpgradedDamage = 10;
 
+            config.Value1 = 10;
+
             //The Accuracy keyword is enough to make an attack accurate.
             config.Keywords = Keyword.Accuracy;
             config.UpgradedKeywords = Keyword.Accuracy;
+
+            config.RelativeCards = new List<string>() { nameof(AirCutter)};
+            config.UpgradedRelativeCards = new List<string>() { nameof(AirCutter) };
 
             config.Illustrator = "まだら鳩";
 
@@ -56,16 +61,15 @@ namespace Momiji.Source.Cards
                 {
                     return base.Value1 * base.Battle.ExileZone.OfType<AirCutter>().Count<AirCutter>();
                 }
-                return 0;
+                else
+                {
+                    return 0;
+                }
             }
         }
         protected override IEnumerable<BattleAction> Actions(UnitSelector selector, ManaGroup consumingMana, Interaction precondition)
         {
-            base.CardGuns = new Guns(base.GunName, base.Value1, true);
-            foreach (GunPair gunPair in base.CardGuns.GunPairs)
-            {
-                yield return base.AttackAction(selector, gunPair);
-            }
+                yield return base.AttackAction(selector, GunName);
         }
     }
 }

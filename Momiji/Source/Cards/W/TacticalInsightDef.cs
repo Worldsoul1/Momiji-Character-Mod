@@ -20,7 +20,7 @@ namespace Momiji.Source.Cards
         
             config.Colors = new List<ManaColor>() { ManaColor.White };
             config.Cost = new ManaGroup() { Any = 1, White = 1 };
-            config.Rarity = Rarity.Uncommon;
+            config.Rarity = Rarity.Rare;
 
             config.Type = CardType.Skill;
             config.TargetType = TargetType.Self;

@@ -1,7 +1,7 @@
 RetaliationSe:
   Name: Retaliation
   Description: At the start of {PlayerName}'s turn, gain {Level} |Reflection|.
-  Brief: gain {Level} |Reflection| at the start of the turn.
+  Brief: gain x |Reflection| at the start of the turn, where x is the level of Retaliation {PlayerName} has.
 
 CircularPacingSe:
     Name: Circular Pacing

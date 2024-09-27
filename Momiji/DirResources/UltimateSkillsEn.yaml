@@ -12,7 +12,7 @@ ExpelleesCanan:
   Content: Expellee's Canan
   Description: |-
     Deal {Damage} damage to all enemies.
-    Gain {Value2} Block
+    Gain {Value2} Block.
     Apply {Value1} |Firepower Down| to all enemies.
     |Accurate|
 

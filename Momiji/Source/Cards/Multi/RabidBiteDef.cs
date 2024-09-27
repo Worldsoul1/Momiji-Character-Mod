@@ -17,7 +17,7 @@ namespace Momiji.Source.Cards
         {
             CardConfig config = GetCardDefaultConfig();
 
-            config.Colors = new List<ManaColor>() { ManaColor.White, ManaColor.Red };
+            config.Colors = new List<ManaColor>() { ManaColor.Red, ManaColor.Black };
             //Hybrid colors:
             //0 = W/U
             //1 = W/B

@@ -23,7 +23,7 @@ namespace Momiji.Source
             config.TargetType = TargetType.Nobody;
 
             config.Value1 = 2;
-            config.UpgradedValue1 = 2;
+            config.UpgradedValue1 = 3;
 
             config.Illustrator = "en (shihi no utage)";
 
@@ -41,14 +41,7 @@ namespace Momiji.Source
         protected override IEnumerable<BattleAction> Actions(UnitSelector selector, ManaGroup consumingMana, Interaction precondition)
         {
             //Add a token card to the hand.
-            if (!this.IsUpgraded)
-            {
-                yield return new AddCardsToHandAction(Library.CreateCards<MapleLeaf>(Value1, false));
-            }
-            else
-            {
-                yield return new AddCardsToHandAction(Library.CreateCards<MapleLeaf>(Value1, true));
-            }
+            yield return new AddCardsToHandAction(Library.CreateCards<MapleLeaf>(Value1, false));
             yield break;
         }
     }

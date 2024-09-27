@@ -44,7 +44,7 @@ namespace Momiji.Source.Cards
         {
             EnemyUnit selectedEnemy = selector.SelectedEnemy;
             //The player loses life:
-            yield return HealAction(base.Value1);
+            yield return base.HealAction(base.Value1);
             yield return base.DefenseAction(true);
             //This is equvalent to:
             //yield return new HealAction(Battle.Player, selectedEnemy, base.Value1);

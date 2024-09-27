@@ -38,6 +38,7 @@ namespace Momiji.Source.Cards
             config.UpgradedValue1 = 2;
 
             config.RelativeEffects = new List<string>() { nameof(Vulnerable), nameof(Weak) };
+            config.UpgradedRelativeEffects = new List<string>() { nameof(Vulnerable), nameof(Weak) };
 
             //The Accuracy keyword is enough to make an attack accurate.
 
@@ -59,15 +60,26 @@ namespace Momiji.Source.Cards
         protected override IEnumerable<BattleAction> Actions(UnitSelector selector, ManaGroup consumingMana, Interaction precondition)
         {
             EnemyUnit selectedEnemy = selector.SelectedEnemy;
+            bool weakCheck = false;
+            bool vulnCheck = false;
             yield return base.AttackAction(selector, base.GunName);
             if (selectedEnemy.HasStatusEffect<Vulnerable>())
             {
-                yield return new ApplyStatusEffectAction<Weak>(selectedEnemy, 0, base.Value1, 0, 0, 0.2f);
+                vulnCheck = true;
             }
             if (selectedEnemy.HasStatusEffect<Weak>())
             {
+                weakCheck = true;
+            }
+            if (vulnCheck)
+            {
+                yield return new ApplyStatusEffectAction<Weak>(selectedEnemy, 0, base.Value1, 0, 0, 0.2f);
+            }
+            if (weakCheck)
+            {
                 yield return new ApplyStatusEffectAction<Vulnerable>(selectedEnemy, 0, base.Value1, 0, 0, 0.2f);
             }
+            yield break;
         }
     }
 }

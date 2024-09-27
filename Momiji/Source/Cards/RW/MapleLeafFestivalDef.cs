@@ -26,8 +26,8 @@ namespace Momiji.Source.Cards
 
             config.Value1 = 1;
 
-        config.RelativeCards = new List<string>() { "MapleLeaf" };
-        config.UpgradedRelativeCards = new List<string>() { "MapleLeaf" };
+        config.RelativeCards = new List<string>() { nameof(MapleLeaf) };
+        config.UpgradedRelativeCards = new List<string>() { nameof(MapleLeaf) };
 
             config.Illustrator = "";
 

@@ -17,7 +17,7 @@ namespace Momiji.Source.Cards
         {
             CardConfig config = GetCardDefaultConfig();
             config.Colors = new List<ManaColor>() { ManaColor.Red };
-            config.Cost = new ManaGroup() { Any = 3, Red = 2 };
+            config.Cost = new ManaGroup() { Any = 2, Red = 2 };
             config.UpgradedCost = new ManaGroup() { Any = 2, Red = 1 };
             config.Rarity = Rarity.Rare;
 
@@ -27,6 +27,7 @@ namespace Momiji.Source.Cards
             config.UpgradedValue1 = 3;
 
             config.RelativeEffects = new List<string>() { nameof(RetaliationSe) };
+            config.UpgradedRelativeEffects = new List<string>() { nameof(RetaliationSe) };
 
             config.Illustrator = "";
 
