@@ -47,13 +47,13 @@ namespace Momiji.Source.Cards
             //Add a token card to the hand.
             if (!this.IsUpgraded)
             {
-                yield return new AddCardsToHandAction(Library.CreateCards<AirCutter>(Value1, false));
+                yield return new AddCardsToHandAction(Library.CreateCards<AirCutter>(base.Value1, false));
                 yield return new GainTurnManaAction(base.Mana);
             }
             else
             {
-                yield return new AddCardsToHandAction(Library.CreateCards<AirCutter>(Value1, false));
-                yield return new GainManaAction(Mana);
+                yield return new AddCardsToHandAction(Library.CreateCards<AirCutter>(base.Value1, false));
+                yield return new GainManaAction(base.Mana);
                 yield return new GainTurnManaAction(base.Mana);
                 yield return new ApplyStatusEffectAction<CrispFallAirSe>(Battle.Player, base.Value1, 1, 0, 0, 0.2f);
             }

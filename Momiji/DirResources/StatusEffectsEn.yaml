@@ -23,6 +23,10 @@ FeedOnTheWeakSe:
     Name: Feed on the Weak
     Description: Whenever an enemy dies, gain 10 <sprite=\"Point\" name=\"Power\"\> and 4 life.
 
+FrigidSkySe:
+    Name: Frigid Sky    
+    Description: Whenever an |Air Cutter| deals unblocked attack damage to an enemy, apply |Cold| to that enemy.
+
 HowlingMountainWindSe:
     Name: howling Mountain Wind
     Description: Whenever an |Air Cutter| is played, gain {Level} |Reflection|.
@@ -38,6 +42,10 @@ InstantofContactSe:
 MapleLeafFestivalSe:
     Name: Maple Leaf Festival
     Description: At the start of {PlayerName}'s turn, add a |Maple Leaf| to the hand.
+
+SenseWeaknessSe:
+    Name: Sense Weakness
+    Description: Enemies with Vulnerable take {Level}% more damage.
 
 StandWatchSe:
     Name: Stand Watch

@@ -24,8 +24,8 @@ namespace Momiji.Source.Cards
             config.Type = CardType.Ability;
             config.TargetType = TargetType.Self;
 
-            config.Value1 = 5;
-            config.UpgradedValue1 = 5;
+            config.Value1 = 6;
+            config.UpgradedValue1 = 7;
 
             config.RelativeEffects = new List<string>() { nameof(RetaliationSe) };
             config.UpgradedRelativeEffects = new List<string>() { nameof(RetaliationSe) };

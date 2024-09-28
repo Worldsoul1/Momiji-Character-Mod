@@ -20,7 +20,6 @@ namespace Momiji.Source.StatusEffects
             StatusEffectConfig config = GetDefaultStatusEffectConfig();
             config.HasLevel = true;
             config.LevelStackType = LBoL.Base.StackType.Add;
-            config.RelativeEffects = new List<string>() { "Retaliation" };
             config.Order = 5;
             return config;
         }

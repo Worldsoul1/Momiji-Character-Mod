@@ -28,12 +28,11 @@ namespace Momiji.Source.Cards
             config.Block = 12;
             config.UpgradedBlock = 17;
 
-            config.Value1 = 2;
-            config.UpgradedValue1 = 3;
+            config.Value1 = 4;
+            config.UpgradedValue1 = 6;
 
             config.RelativeEffects = new List<string>() { nameof(RetaliationSe) };
-            config.Keywords = Keyword.Exile;
-            config.UpgradedKeywords = Keyword.Exile;
+            config.UpgradedRelativeEffects = new List<string>() { nameof(RetaliationSe) };
 
             config.Illustrator = "黒てー";
 

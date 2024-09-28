@@ -28,6 +28,8 @@ namespace Momiji.Source.Cards.R
 
             config.Value1 = 2;
             config.UpgradedValue1 = 2;
+            config.Value2 = 1;
+            config.UpgradedValue2 = 1;
 
             config.Illustrator = "";
 
@@ -36,7 +38,9 @@ namespace Momiji.Source.Cards.R
 
             config.RelativeEffects = new List<string>() { nameof(Weak), nameof(RetaliationSe) };
             config.UpgradedRelativeEffects = new List<string>() { nameof(Weak), nameof(RetaliationSe) };
-            
+
+            config.RelativeCards = new List<string>() { nameof(AirCutter) };
+            config.UpgradedRelativeCards = new List<string>() { nameof(AirCutter) };
 
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
             return config;
@@ -55,6 +59,7 @@ namespace Momiji.Source.Cards.R
             //DebuffAction's 2nd field is the level, the 3rd one is the duration.
             yield return base.DebuffAction<Weak>(selectedEnemy, 0, base.Value1, 0, 0, true, 0.2f);
             yield return new ApplyStatusEffectAction<RetaliationSe>(Battle.Player, base.Value1, 0, 0, 0, 0.2f);
+            yield return new AddCardsToHandAction(Library.CreateCards<AirCutter>(base.Value2, false));
             yield break;
         }
     }

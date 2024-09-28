@@ -24,7 +24,6 @@ namespace Momiji.Source.Exhibits
             exhibitConfig.Value1 = 2;
             exhibitConfig.Mana = new ManaGroup() { Red = 1 };
             exhibitConfig.BaseManaColor = ManaColor.Red;
-            exhibitConfig.RelativeCards = new List<string>() { nameof(PManaCard) };
 
             return exhibitConfig;
         }

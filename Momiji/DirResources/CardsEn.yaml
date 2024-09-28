@@ -34,7 +34,7 @@ AirCutter:
 FeedOnTheWeak:
     Name: Feed on the Weak
     Description: |-
-        Whenever an enemy dies, {PlayerName} gains 10 <sprite=\"Point\" name=\"Power\"> and 4 life.
+        "Whenever an enemy dies, {PlayerName} gains 10 <sprite=\"Point\" name=\"Power\"> and 4 life."
 
 RabidBite:
     Name: Rabid Bite
@@ -51,15 +51,15 @@ AyaTeammate:
 
 AutumnView:
     Name: Autumn View
-    Description: "|When {SelfName} enters the hand: Gain {Value1} |Barrier| and exile {SelfName}."
-    UpgradedDescription: "|When {SelfName} enters the hand: gain {Value1} |Barrier|, apply {Value2} |Firepower Down| to each enemy, and exile {SelfName}."
+    Description: "When {SelfName} enters the hand: Gain {Value1} |Barrier| and exile {SelfName}."
+    UpgradedDescription: "When {SelfName} enters the hand: gain {Value1} |Barrier|, apply {Value2} |Firepower Down| to each enemy, and exile {SelfName}."
     FlavorText: is there anything more vibrant?
 
 CleanKill:
     Name: Clean Kill
     Description: |-
         Deal {Damage} Damage.
-        |Expel|: Gain {Value1} <sprite=\"Point\" name=\"Power\">.
+        "|Expel|: Gain {Value1} <sprite=\"Point\" name=\"Power\">."
     FlavorText: I thank you for your life, so that I may survive.
 
 CleavingSwipe:
@@ -87,6 +87,7 @@ InstantofContact:
         Gain {Value1} |Retaliation|.
         End {PlayerName}'s turn. Then, take an extra turn.
         During this extra turn, whenever an enemy takes attack damage, {PlayerName} gains {Value2} |Retaliation|.
+        |d:Time Limit {Mana}.|
     FlavorText: When Blades lock, and glares meet over crossed swords.
 
 MapleLeafFestival:
@@ -139,6 +140,7 @@ BladeWarding:
     Description: |-
         Apply {Value1} |Weak|.
         Gain {Value1} |Retaliation|.
+        Add an |Air Cutter| to the hand.
     Flavortext: "Get away from me!"
 
 BloodScent:
@@ -155,9 +157,7 @@ CircularPacing:
 CollectingMomiji:
   Name: Collecting Momiji 
   Description: |-
-    Add {Value1} |Maple Leaf| to the hand.
-  UpgradedDescription:
-    Add {Value1} Upgraded |Maple Leaf| to the hand.
+    Add {Value1} |Maple Leaves| to the hand.
   Flavortext: The leaves, not the Tengu.
 
 CrispFallAir:
@@ -214,6 +214,10 @@ LookoutsIntuition:
         Gain {Value2} |Reflection|.
     FlavorText: Just a small hop to the left.
 
+MountainsideTrailTracking:
+    Name: Mountainside Trail Tracking
+    Description: the first time {PlayerName} deals attack damage to an enemy with Vulnerable each turn, draw {Value1} card{Value1:plural one='' other='s'}.
+
 OverhandBlade:
     Name: Overhand Blade
     Description: |-
@@ -225,6 +229,19 @@ ScatteringLeaves:
   Name: Scattering Leaves
   Description: Deal {Damage} damage to a random enemy {Value1} times.
   Flavortext: A flurry of blinding red.
+
+SenseWeakness:
+    Name: Sense Weakness
+    Description: Apply {Value1} |Vulnerable| to all enemies. Enemies with |Vulnerable| take {Value2}% more damage.
+
+FrigidSky:
+    Name: Frigid Sky
+    Description: |-
+        Whenever an |Air Cutter| deals unblocked damage to an enemy, apply |Cold| to that enemy.
+        Add an |Air Cutter| to the hand.
+    UpgradedDescription:
+        Whenever an |Air Cutter| deals unblocked damage to an enemy, apply |Cold| to that enemy.
+        Add two |Air Cutters| to the hand.
 
 PlungePool:
     Name: Plunge Pool
@@ -245,7 +262,7 @@ DefensiveStrike:
     Name: Defensive Strike
     Description: |-
         Deal {Damage} damage.
-        Gain |Block| equal to the amount of damage dealt this way.
+        Gain |Block| equal to the amount of unblocked damage dealt this way.
     FlavorText: "Back!"
 
 Destabilize:

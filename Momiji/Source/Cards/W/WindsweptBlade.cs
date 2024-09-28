@@ -19,7 +19,7 @@ namespace Momiji.Source.Cards
             config.GunName = GunNameID.GetGunFromId(400);
 
             config.Colors = new List<ManaColor>() { ManaColor.White };
-            config.Cost = new ManaGroup() { Any = 1, White = 2 };
+            config.Cost = new ManaGroup() { Any = 2, White = 1 };
             config.UpgradedCost = new ManaGroup() { Any = 2, White = 1 };
             config.Rarity = Rarity.Common;
 
@@ -29,14 +29,14 @@ namespace Momiji.Source.Cards
             config.Damage = 16;
             config.UpgradedDamage = 21;
 
-            config.Value1 = 2;
-            config.Value2 = 3;
+            config.Value1 = 5;
+            config.Value2 = 8;
 
             config.RelativeEffects = new List<string>() { nameof(RetaliationSe) };
             config.UpgradedRelativeEffects = new List<string>() { nameof(RetaliationSe) };
 
-            config.Keywords = Keyword.Accuracy | Keyword.Exile;
-            config.UpgradedKeywords = Keyword.Accuracy | Keyword.Exile;
+            config.Keywords = Keyword.Accuracy;
+            config.UpgradedKeywords = Keyword.Accuracy;
 
             config.Illustrator = "Wholesome_illustrator";
 
@@ -56,7 +56,7 @@ namespace Momiji.Source.Cards
         protected override IEnumerable<BattleAction> Actions(UnitSelector selector, ManaGroup consumingMana, Interaction precondition)
         {
             yield return base.AttackAction(selector, base.GunName);
-            yield return new ApplyStatusEffectAction<RetaliationSe>(Battle.Player, base.Value1, 0, 0, 0, 0.2f);
+            yield return new ApplyStatusEffectAction<RetaliationSe>(base.Battle.Player, base.Value1, 0, 0, 0, 0.2f);
             yield break;
         }
     }

@@ -23,7 +23,7 @@ namespace Momiji.Source.Cards
             config.GunName = GunNameID.GetGunFromId(400);
 
             config.Colors = new List<ManaColor>() { ManaColor.White };
-            config.Cost = new ManaGroup() { Any = 1, White = 1 };
+            config.Cost = new ManaGroup() { Any = 2, White = 1 };
             config.UpgradedCost = new ManaGroup() { Any = 1, White = 1 };
             config.Rarity = Rarity.Common;
 
@@ -31,7 +31,7 @@ namespace Momiji.Source.Cards
             config.TargetType = TargetType.SingleEnemy;
 
             config.Damage = 12;
-            config.UpgradedDamage = 16;
+            config.UpgradedDamage = 12;
 
 
             //The Accuracy keyword is enough to make an attack accurate.
