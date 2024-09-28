@@ -36,7 +36,7 @@ namespace Momiji.Source.Cards
 
             //The Accuracy keyword is enough to make an attack accurate.
 
-            config.Illustrator = "";
+            config.Illustrator = "saya";
 
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
             return config;
@@ -49,7 +49,10 @@ namespace Momiji.Source.Cards
         //By default, if config.Damage / config.Block / config.Shield are set:
         //The card will deal damage or gain Block/Barrier without having to set anything.
         //Here, this is is equivalent to the following code.
-
+        protected override void OnEnterBattle(BattleController battle)
+        {
+            base.ReactBattleEvent<DamageEventArgs>(base.Battle.Player.DamageDealt, new EventSequencedReactor<DamageEventArgs>(this.OnPlayerDamageDealt));
+        }
 
         protected override IEnumerable<BattleAction> Actions(UnitSelector selector, ManaGroup consumingMana, Interaction precondition)
         {
@@ -66,7 +69,7 @@ namespace Momiji.Source.Cards
                     DamageInfo damageInfo = args.DamageInfo;
                     if (damageInfo.Damage > 0f)
                     {
-                        yield return new CastBlockShieldAction(base.Battle.Player, 0, (int)damageInfo.Damage, BlockShieldType.Normal, false);
+                        yield return new CastBlockShieldAction(base.Battle.Player, (int)damageInfo.Damage, 0, BlockShieldType.Normal, false);
                     }
                 }
             yield break;
