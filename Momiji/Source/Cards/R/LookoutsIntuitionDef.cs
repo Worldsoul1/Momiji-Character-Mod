@@ -35,6 +35,7 @@ namespace Momiji.Source.Cards
             config.UpgradedValue2 = 10;
 
             config.RelativeEffects = new List<string>() { nameof(Reflect), nameof(Graze) };
+            config.UpgradedRelativeEffects = new List<string>() { nameof(Reflect), nameof(Graze) };
 
             config.Illustrator = "";
 

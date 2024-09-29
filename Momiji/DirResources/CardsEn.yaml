@@ -76,6 +76,10 @@ CleavingSwipe:
     Draw {Value1} card{Value1:plural one='' other='s'}.
   FlavorText: A wide, arcing slash to clear space.
 
+GentlyCirclingLeaves:
+    Name: Gently Circling Leaves
+    Description: Draw {Value1} cards. Gain {Value2} |Retaliation| for each Attack or Skill drawn this way.
+
 HowlingMountainWind:
     Name: Howling Mountain Wind
     Description: Whenever {PlayerName} plays an |Air Cutter|, she gains {Value1} |Reflection|. Add {Value2} |Air Cutter{Value2:plural one='' other='s'}| to the hand.
@@ -232,6 +236,15 @@ OverhandBlade:
         If the target has |Vulnerable|, apply {Value1} |Weak|.
         If the target has |Weak|, apply {Value1} |Vulnerable|.
 
+Patrol:
+    Name: Patrol
+    Description: |-
+        Draw {Value1} Cards. 
+        Gain {Value2} |Graze| for each red card drawn this way.
+    UpgradedDescription: |-
+        Draw {Value1} Cards.
+        Gain {Value2} |Graze| for each red, Status, or |Misfortune| card drawn this way.
+
 ScatteringLeaves:
   Name: Scattering Leaves
   Description: Deal {Damage} damage to a random enemy {Value1} times.
@@ -264,6 +277,12 @@ PlungePool:
     UpgradedNonBattleDescription:
         Gain {Shield} |Barrier|.
         Gain additional |Barrier| Equal to {PlayerName}'s |Reflection|.
+
+CallToArms:
+    Name: Call to Arms
+    Description: |-
+        Choose up to {Value1} card{Value1:plural one='' other='s'} in the draw pile and put {Value1:plural one='it' other='them'} into the hand. 
+        Upgrade {Value1:plural one='it' other='them'}. 
 
 DefensiveStrike:
     Name: Defensive Strike

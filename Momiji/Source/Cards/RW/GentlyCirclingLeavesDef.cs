@@ -46,7 +46,7 @@ namespace Momiji.Source.Cards
     }
 
     [EntityLogic(typeof(GentlyCirclingLeavesDef))]
-    public sealed class gentlyCirclingLeaves : SampleCharacterCard
+    public sealed class GentlyCirclingLeaves : SampleCharacterCard
     {
         protected override IEnumerable<BattleAction> Actions(UnitSelector selector, ManaGroup consumingMana, Interaction precondition)
         {
