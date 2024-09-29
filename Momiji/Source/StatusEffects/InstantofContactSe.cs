@@ -27,7 +27,7 @@ namespace Momiji.Source.StatusEffects
     {
         protected override void OnAdded(Unit unit) 
         {
-            base.ReactOwnerEvent<DamageEventArgs>(base.Owner.DamageReceived, new EventSequencedReactor<DamageEventArgs>(this.OnPlayerDamageDealt));
+            base.ReactOwnerEvent<BlockShieldEventArgs>(base.Owner.BlockShieldGained, this.OnBlockShieldGained);
             base.ThisTurnActivating = false;
             base.HandleOwnerEvent<UnitEventArgs>(base.Battle.Player.TurnStarting, (UnitEventArgs args) =>
             {
@@ -48,15 +48,18 @@ namespace Momiji.Source.StatusEffects
             yield break;
         }
         // Token: 0x06000045 RID: 69 RVA: 0x0000273A File Offset: 0x0000093A
-        private IEnumerable<BattleAction> OnPlayerDamageDealt(DamageEventArgs args)
+        private IEnumerable<BattleAction> OnBlockShieldGained(BlockShieldEventArgs args)
         {
             if (base.Battle.BattleShouldEnd)
             {
                 yield break;
             }
-            base.NotifyActivating();
-            yield return new ApplyStatusEffectAction<RetaliationSe>(Battle.Player, base.Level, 0, 0, 0, 0.2f);
-            yield break;
+            if (args.Block > 0f || args.Shield > 0f)
+            {
+                base.NotifyActivating();
+                yield return new ApplyStatusEffectAction<RetaliationSe>(Battle.Player, base.Level, 0, 0, 0, 0.2f);
+                yield break;
+            }
         }
     }
 }

@@ -26,8 +26,8 @@ namespace Momiji.Source.Cards
             config.Type = CardType.Attack;
             config.TargetType = TargetType.SingleEnemy;
 
-            config.Damage = 16;
-            config.UpgradedDamage = 21;
+            config.Damage = 9;
+            config.UpgradedDamage = 13;
 
             config.Value1 = 5;
             config.Value2 = 8;
@@ -38,7 +38,7 @@ namespace Momiji.Source.Cards
             config.Keywords = Keyword.Accuracy;
             config.UpgradedKeywords = Keyword.Accuracy;
 
-            config.Illustrator = "Wholesome_illustrator";
+            config.Illustrator = "Kamo";
 
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
             return config;
@@ -55,6 +55,7 @@ namespace Momiji.Source.Cards
         
         protected override IEnumerable<BattleAction> Actions(UnitSelector selector, ManaGroup consumingMana, Interaction precondition)
         {
+            yield return base.AttackAction(selector, base.GunName);
             yield return base.AttackAction(selector, base.GunName);
             yield return new ApplyStatusEffectAction<RetaliationSe>(base.Battle.Player, base.Value1, 0, 0, 0, 0.2f);
             yield break;

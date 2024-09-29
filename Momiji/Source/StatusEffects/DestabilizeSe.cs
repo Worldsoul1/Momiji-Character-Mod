@@ -25,6 +25,10 @@ namespace Momiji.Source.StatusEffects
     [EntityLogic(typeof(DestabilizeSeDef))]
     public sealed class DestabilizeSe : StatusEffect
     {
+        protected override void OnAdded(Unit unit)
+        {
+            base.ReactOwnerEvent<DamageEventArgs>(base.Battle.Player.DamageDealt, new EventSequencedReactor<DamageEventArgs>(this.OnPlayerDamageDealt));
+        }
 
         // Token: 0x06000045 RID: 69 RVA: 0x0000273A File Offset: 0x0000093A
         private IEnumerable<BattleAction> OnPlayerDamageDealt(DamageEventArgs args)

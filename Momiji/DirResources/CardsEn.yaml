@@ -42,8 +42,12 @@ RabidBite:
 
 AyaTeammate:
   Name: Aya, Tengu Reporter
-  Description: "{PassiveCostIcon}Gain 1 |Graze|."
-  UpgradedDescription: "{PassiveCostIcon}Gain 1 |Graze|."
+  Description: |-
+    "{FriendS}Gain {Graze} |Graze|.
+    {PassiveCostIcon}|Graze| does not decay at the start of {PlayerName}'s turn."
+  UpgradedDescription: |-
+    "{FriendS}Gain {Graze} |Graze|
+    {PassiveCostIcon}|Graze| does not decay at the start of {PlayerName}'s turn."
   ExtraDescription1: "{ActiveCostIcon}Apply {Value2} |Lock On| to each enemy. Add {Value1} |Air Cutter{Value1:plural one='' other='s'}| to the hand."
   UpgradedExtraDescription1: "{ActiveCostIcon}Apply {Value2} |Lock On| to each enemy. Add {Value1} |Air Cutter{Value1:plural one='' other='s'}| to the hand."
   ExtraDescription2: "{UltimateCostIcon}Gain 1 |Wind God Girl|. {PlayerName}'s attacks are |Accurate| for the rest of combat."
@@ -51,8 +55,8 @@ AyaTeammate:
 
 AutumnView:
     Name: Autumn View
-    Description: "When {SelfName} enters the hand: Gain {Value1} |Barrier| and exile {SelfName}."
-    UpgradedDescription: "When {SelfName} enters the hand: gain {Value1} |Barrier|, apply {Value2} |Firepower Down| to each enemy, and exile {SelfName}."
+    Description: "|When {SelfName} enters the hand|: Gain {Value1} |Barrier| and exile {SelfName}."
+    UpgradedDescription: "|When {SelfName} enters the hand|: Gain {Value1} |Barrier|, apply {Value2} |Firepower Down| to each enemy, and exile {SelfName}."
     FlavorText: is there anything more vibrant?
 
 CleanKill:
@@ -66,6 +70,9 @@ CleavingSwipe:
   Name: Cleaving Swipe
   Description: |-
     Deal {Damage} damage to each enemy.
+    Draw {Value1} card{Value1:plural one='' other='s'}.
+  UpgradedDescription:
+    Deal {Damage} damage to each enemy 2 times.
     Draw {Value1} card{Value1:plural one='' other='s'}.
   FlavorText: A wide, arcing slash to clear space.
 
@@ -86,7 +93,7 @@ InstantofContact:
     Description: |-
         Gain {Value1} |Retaliation|.
         End {PlayerName}'s turn. Then, take an extra turn.
-        During this extra turn, whenever an enemy takes attack damage, {PlayerName} gains {Value2} |Retaliation|.
+        During this extra turn, whenever {PlayerName} gains |Block| or |Barrier|, {PlayerName} gains {Value2} |Retaliation|.
         |d:Time Limit {Mana}.|
     FlavorText: When Blades lock, and glares meet over crossed swords.
 
@@ -329,6 +336,12 @@ TirelessGuard:
     Name: Tireless Guard
     Description: Whenever |Reflection| is triggered, gain |Reflection| equal to half the damage dealt by {PlayerName}'s |Reflection|.
 
+TrapStance:
+    Name: Trap Stance
+    Description: |-
+        Gain {Value1} |Retaliation|.
+        The first time that {PlayerName} is attacked each turn, gain |Reflection| equal to {PlayerName}'s |Retaliation|.
+
 TwinFang:
     Name: Twin Fang    
     Description: The next time |Reflection| is triggered, gain |Reflection| equal to the amount of damage dealt by {PlayerName}'s |Reflection|.
@@ -351,7 +364,7 @@ WardingStrike:
 WindsweptBlade:
     Name: Windswept Blade
     Description: |-
-        Deal {Damage} damage.
+        Deal {Damage} damage 2 times.
         Gain {Value1} |Retaliation|.
     FlavorText: "Hiyah!"
 

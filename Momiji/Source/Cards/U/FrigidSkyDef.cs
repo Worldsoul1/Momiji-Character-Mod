@@ -34,7 +34,7 @@ namespace Momiji.Source.Cards
             config.Value2 = 1;
             config.UpgradedValue2 = 2;
 
-            config.Illustrator = "";
+            config.Illustrator = "ètè∫";
 
             config.RelativeEffects = new List<string>() { nameof(Cold) };
             config.UpgradedRelativeEffects = new List<string>() { nameof(Cold) };

@@ -29,7 +29,7 @@ namespace Momiji.Source
                     defend = true;
                     value += 2;
                 }
-                else if ((intention is ChargeIntention || intention is DoNothingIntention || intention is HexIntention || intention is KokoroDarkIntention || intention is SpawnIntention || intention is StunIntention || intention is UnknownIntention) && special == false)
+                else if ((intention is ChargeIntention || intention is DoNothingIntention || intention is HexIntention || intention is SleepIntention || intention is KokoroDarkIntention || intention is SpawnIntention || intention is StunIntention || intention is UnknownIntention) && special == false)
                 {
                     special = true;
                     value += 4;

@@ -26,8 +26,8 @@ namespace Momiji.Source.Cards
             config.Type = CardType.Attack;
             config.TargetType = TargetType.SingleEnemy;
 
-            config.Damage = 10;
-            config.UpgradedDamage = 10;
+            config.Damage = 12;
+            config.UpgradedDamage = 12;
 
             config.Value1 = 1;
             config.UpgradedValue1 = 1;

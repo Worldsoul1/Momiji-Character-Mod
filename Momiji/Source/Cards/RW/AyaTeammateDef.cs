@@ -19,7 +19,7 @@ namespace Momiji.Source.Cards
         {
             CardConfig config = GetCardDefaultConfig();
             config.Colors = new List<ManaColor>() { ManaColor.Red, ManaColor.Green };
-            config.Cost = new ManaGroup() { Red = 1, Green = 1 };
+            config.Cost = new ManaGroup() { Any = 1, Red = 1, Green = 1 };
             config.Rarity = Rarity.Uncommon;
 
             config.Type = CardType.Friend;
@@ -54,6 +54,17 @@ namespace Momiji.Source.Cards
     [EntityLogic(typeof(AyaTeammateDef))]
     public sealed class AyaTeammate : SampleCharacterCard
     {
+        public int Graze
+        {
+            get
+            {
+                if (!this.IsUpgraded)
+                {
+                    return 2;
+                }
+                return 3;
+            }
+        }
         public string Indent {get;} = "<indent=80>";
         public string PassiveCostIcon
         {
@@ -88,7 +99,7 @@ namespace Momiji.Source.Cards
             //Triigger the effect only if the card has been summoned. 
 			if (!base.Summoned || base.Battle.BattleShouldEnd)
 			{
-				yield break;
+                yield break;
 			}
 			base.NotifyActivating();
             //Increase base loyalty.
@@ -101,11 +112,25 @@ namespace Momiji.Source.Cards
 				{
 					yield break;
 				}
-                yield return base.BuffAction<Graze>(1, 0, 0, 0, 0.2f);
+                if (base.Battle.Player.HasStatusEffect<Graze>())
+                {
+                    yield return base.BuffAction<Graze>(1, 0, 0, 0, 0.2f);
+                }
 				num = i;
 			}
 			yield break;
 		}
+
+        public override IEnumerable<BattleAction> SummonActions(UnitSelector selector, ManaGroup consumingMana, Interaction precondition)
+        {
+            yield return base.BuffAction<Graze>(this.Graze, 0, 0, 0, 0.2f);
+            foreach (BattleAction battleAction in base.SummonActions(selector, consumingMana, precondition))
+            {
+                yield return battleAction;
+            }
+            IEnumerator<BattleAction> enumerator = null;
+            yield break;
+        }
 
         //When the summoned card is played, choose and resolve either the active or ultimate effect.
         protected override IEnumerable<BattleAction> Actions(UnitSelector selector, ManaGroup consumingMana, Interaction precondition)

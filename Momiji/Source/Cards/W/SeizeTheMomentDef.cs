@@ -72,8 +72,8 @@ namespace Momiji.Source.Cards
             if (intention == 1 || intention == 3 || intention == 5)
                 yield return new ApplyStatusEffectAction<TempFirepowerNegative>(selectedEnemy, base.Value1, 0, 0, 0, 0.2f);
             if (intention == 2 || intention == 3 || intention == 6)
-                yield return new ApplyStatusEffectAction<Vulnerable>(selectedEnemy, base.Value1, 0, 0, 0, 0.2f);
-                yield return new ApplyStatusEffectAction<Fragil>(selectedEnemy, base.Value1, 0, 0, 0, 0.2f);
+                yield return new ApplyStatusEffectAction<Vulnerable>(selectedEnemy, 0, base.Value2, 0, 0, 0.2f);
+                yield return new ApplyStatusEffectAction<Fragil>(selectedEnemy, 0, base.Value2, 0, 0, 0.2f);
             if (intention >= 4)
                 yield return base.AttackAction(selector, base.GunName);
 

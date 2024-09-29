@@ -35,7 +35,7 @@ namespace Momiji.Source.Cards
             config.Value2 = 25;
             config.UpgradedValue2 = 25;
 
-            config.Illustrator = "";
+            config.Illustrator = "のぎぐち";
 
             config.RelativeEffects = new List<string>() { nameof(Vulnerable) };
             config.UpgradedRelativeEffects = new List<string>() { nameof(Vulnerable) };

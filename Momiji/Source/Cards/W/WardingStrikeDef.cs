@@ -37,7 +37,7 @@ namespace Momiji.Source.Cards
             config.UpgradedRelativeEffects = new List<string>() { nameof(Reflect) };
             //The Accuracy keyword is enough to make an attack accurate.
 
-            config.Illustrator = "";
+            config.Illustrator = "涼貓";
 
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
             return config;

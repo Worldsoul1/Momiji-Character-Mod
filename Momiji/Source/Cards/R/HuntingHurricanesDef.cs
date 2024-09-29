@@ -53,7 +53,7 @@ namespace Momiji.Source.Cards
         //By default, if config.Damage / config.Block / config.Shield are set:
         //The card will deal damage or gain Block/Barrier without having to set anything.
         //Here, this is is equivalent to the following code.
-        public override int AdditionalDamage
+        int AirCutterCount
         {
             get
             {
@@ -70,6 +70,11 @@ namespace Momiji.Source.Cards
         protected override IEnumerable<BattleAction> Actions(UnitSelector selector, ManaGroup consumingMana, Interaction precondition)
         {
                 yield return base.AttackAction(selector, GunName);
+            for (int i = 0; i < AirCutterCount; i++) 
+            {
+                yield return base.AttackAction(selector, GunName);
+            }
+
         }
     }
 }

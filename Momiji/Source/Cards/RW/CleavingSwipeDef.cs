@@ -19,16 +19,16 @@ namespace Momiji.Source
             config.GunName = GunNameID.GetGunFromId(400);
 
             config.Colors = new List<ManaColor>() { ManaColor.White, ManaColor.Red};
-            config.Cost = new ManaGroup() { Any = 1, White = 1, Red = 1 };
-            config.UpgradedCost = new ManaGroup() {  White = 1, Red = 1 };
+            config.Cost = new ManaGroup() { White = 1, Red = 1 };
+            config.UpgradedCost = new ManaGroup() {  Any = 2 };
             config.Rarity = Rarity.Uncommon;
 
             config.Type = CardType.Attack;
             //TargetType.AllEnemies will change the selector to all enemies for attacks/status effects.
             config.TargetType = TargetType.AllEnemies;
 
-            config.Damage = 10;
-            config.UpgradedDamage = 15;
+            config.Damage = 12;
+            config.UpgradedDamage = 9;
 
             config.Value1 = 2;
             config.UpgradedValue1 = 2;
@@ -49,7 +49,12 @@ namespace Momiji.Source
         protected override IEnumerable<BattleAction> Actions(UnitSelector selector, ManaGroup consumingMana, Interaction precondition)
         {
             //Attack all enemies, selector is set to Battle.AllAliveEnemies.
-            yield return AttackAction(selector, GunName);
+            yield return base.AttackAction(selector, GunName);
+
+            if(this.IsUpgraded)
+            {
+                yield return base.AttackAction(selector, GunName);
+            }
             //If the battle were to end, skip the rest of the method.
             if (Battle.BattleShouldEnd)
             {

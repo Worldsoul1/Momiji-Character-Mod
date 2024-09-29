@@ -37,8 +37,8 @@ namespace Momiji.Source.Cards
             config.Type = CardType.Attack;
             config.TargetType = TargetType.AllEnemies;
 
-            config.Damage = 8;
-            config.UpgradedDamage = 11;
+            config.Damage = 11;
+            config.UpgradedDamage = 8;
 
             config.Value1 = 1;
             config.Value2 = 2;
@@ -59,6 +59,10 @@ namespace Momiji.Source.Cards
         protected override IEnumerable<BattleAction> Actions(UnitSelector selector, ManaGroup consumingMana, Interaction precondition)
         {
             yield return base.AttackAction(selector, base.GunName);
+            if(this.IsUpgraded)
+            {
+                yield return base.AttackAction(selector, base.GunName);
+            }
             if (base.Battle.BattleShouldEnd)
             {
                 yield break;

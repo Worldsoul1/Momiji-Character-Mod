@@ -47,7 +47,7 @@ namespace Momiji.Source.Cards
     {
         protected override IEnumerable<BattleAction> Actions(UnitSelector selector, ManaGroup consumingMana, Interaction precondition)
         {
-            yield return new AddCardsToHandAction((Library.CreateCards<AirCutter>(Value1, false)));
+            yield return new AddCardsToHandAction((Library.CreateCards<AirCutter>(Value2, false)));
             yield return new ApplyStatusEffectAction<HowlingMountainWindSe>(Battle.Player, base.Value1, 0, 0, 0, 0.2f);
             //This is equivalent to:
             //yield return new ApplyStatusEffectAction<Firepower>(Battle.Player, base.Value1, 0, 0, 0, 0.2f);

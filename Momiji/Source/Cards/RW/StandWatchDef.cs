@@ -48,6 +48,7 @@ namespace Momiji.Source.Cards
         {
             yield return new CastBlockShieldAction(base.Battle.Player, base.Block.Block, base.Shield.Shield, BlockShieldType.Normal, true);
             yield return new ApplyStatusEffectAction<StandWatchSe>(Battle.Player, base.Value1, 0, 0, 0, 0.2f);
+            yield return new ApplyStatusEffectAction<TurnStartDontLoseBlock>(Battle.Player, base.Value2, 0, 0, 0, 0.2f);
             //This is equivalent to:
             //yield return new ApplyStatusEffectAction<Firepower>(Battle.Player, base.Value1, 0, 0, 0, 0.2f);
             //yield return new ApplyStatusEffectAction<Spirit>(Battle.Player, base.Value2, 0, 0, 0, 0.2f);

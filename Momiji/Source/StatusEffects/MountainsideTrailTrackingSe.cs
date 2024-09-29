@@ -28,6 +28,7 @@ namespace Momiji.Source.StatusEffects
         bool hasActivated = false;
         protected override void OnAdded(Unit unit)
         {
+            base.ReactOwnerEvent<DamageEventArgs>(base.Battle.Player.DamageDealt, new EventSequencedReactor<DamageEventArgs>(this.OnPlayerDamageDealt));
             base.ReactOwnerEvent<UnitEventArgs>(base.Owner.TurnStarted, new EventSequencedReactor<UnitEventArgs>(this.OnOwnerTurnStarted));
         }
         // Token: 0x06000045 RID: 69 RVA: 0x0000273A File Offset: 0x0000093A

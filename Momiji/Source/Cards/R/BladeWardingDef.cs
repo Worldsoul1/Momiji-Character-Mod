@@ -27,11 +27,11 @@ namespace Momiji.Source.Cards.R
             config.TargetType = TargetType.SingleEnemy;
 
             config.Value1 = 2;
-            config.UpgradedValue1 = 2;
+            config.UpgradedValue1 = 3;
             config.Value2 = 1;
             config.UpgradedValue2 = 1;
 
-            config.Illustrator = "";
+            config.Illustrator = "ツバサ";
 
             config.Keywords = Keyword.Exile;
             config.UpgradedKeywords = Keyword.Exile;

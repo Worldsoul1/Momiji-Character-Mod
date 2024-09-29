@@ -27,7 +27,7 @@ namespace Momiji.Source.Cards
             config.TargetType = TargetType.Nobody;
 
             config.Value1 = 4;
-            config.Value2 = 2;
+            config.Value2 = 3;
             //Mana config for the Time Limit
             config.Mana = new ManaGroup() { Any = 1 };
 
