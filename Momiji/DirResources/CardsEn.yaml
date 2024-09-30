@@ -263,6 +263,10 @@ SenseWeakness:
     Name: Sense Weakness
     Description: Apply {Value1} |Vulnerable| to all enemies. Enemies with |Vulnerable| take {Value2}% more damage.
 
+CrashingWaterBlade:
+    Name: Crashing Water Blade
+    Description: Deal {Damage} damage. Deals damage an additional time for every {Value1} |Reflection| {PlayerName} has.
+
 FrigidSky:
     Name: Frigid Sky
     Description: |-
