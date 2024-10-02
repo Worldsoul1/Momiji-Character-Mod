@@ -43,7 +43,7 @@ namespace Momiji.Source.StatusEffects
                 if (retalLevel > 0f)
                 {
                     yield return new ApplyStatusEffectAction<Reflect>(base.Battle.Player, retalLevel, 0, 0, 0, 0.2f);
-                    yield return new RemoveStatusEffectAction(this, true, 0.1f);
+                    hasActivated = true;
                 }
             }
             yield break;

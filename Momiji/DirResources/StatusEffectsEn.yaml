@@ -23,6 +23,10 @@ FeedOnTheWeakSe:
     Name: Feed on the Weak
     Description: Whenever an enemy dies, gain 10 <sprite=\"Point\" name=\"Power\"\> and 4 life.
 
+ForestAmbushSe:
+    Name: Forest Ambush
+    Description: Whenever {PlayerName} deals attack damage, deal additional damage to all damaged enemies equal to {PlayerName}'s |Retaliation|.
+
 FrigidSkySe:
     Name: Frigid Sky    
     Description: Whenever an |Air Cutter| deals unblocked attack damage to an enemy, apply |Cold| to that enemy.
@@ -43,17 +47,33 @@ MapleLeafFestivalSe:
     Name: Maple Leaf Festival
     Description: At the start of {PlayerName}'s turn, add a |Maple Leaf| to the hand.
 
+MountainsideTrailTrackingSe:
+    Name: Mountainside Trail Tracking
+    Description: Whenever {PlayerName} deals damage to an enemy with |Vulnerable| for the first time each turn, draw {Level} cards.
+
 SenseWeaknessSe:
     Name: Sense Weakness
     Description: Enemies with Vulnerable take {Level}% more damage.
+
+SmellofDeathSe:
+    Name: Smell of Death
+    Description: When this enemies dies, they will deal damage to all other enemies equal to half their maximum HP.
 
 StandWatchSe:
     Name: Stand Watch
     Description: At the start of {PlayerName's} turn, gain {Level} |Block|.
 
+SurgeofPower:
+    Name: Surge of Power
+    Description: the next {Level} cards {PlayerName} plays will cost {Mana}.
+
 TirelessGuardSe:
     Name: Tireless Guard
     Description: Whenever |Reflection| is triggered, gain |Reflection| equal to half the damage dealt.
+
+TrapStanceSe:
+    Name: Trap Stance    
+    Description: The first time that {PlayerName} is attacked each turn, {PlayerName} gains |Reflection| equal to their |Retaliation|.
 
 TwinFangSe:
     Name: Twin Fang

@@ -35,10 +35,23 @@ FeedOnTheWeak:
     Name: Feed on the Weak
     Description: |-
         "Whenever an enemy dies, {PlayerName} gains 10 <sprite=\"Point\" name=\"Power\"> and 4 life."
+    FlavorText: Only the strong and the lucky survive.
+
+SmellofDeath:
+    Name: Smell of Death
+    Description: |-
+        When target enemy dies, it deals damage to all other enemies equal to half its max HP.
+    FlavorText: It's foul.
+
+ForestAmbush:
+    Name: Forest Ambush
+    Description: Gain {Value1} |Retaliation|. Whenever {PlayerName} deals attack damage this turn, deal additional damage equal to {PlayerName}'s |Retaliation|.
+    FlavorText: Perfect.
 
 RabidBite:
     Name: Rabid Bite
     Description: Deal {Damage} damage. Gain {Value1} life.
+    Flavortext: A savage blow to defeat a savage enemy
 
 AyaTeammate:
   Name: Aya, Tengu Reporter
@@ -52,6 +65,7 @@ AyaTeammate:
   UpgradedExtraDescription1: "{ActiveCostIcon}Apply {Value2} |Lock On| to each enemy. Add {Value1} |Air Cutter{Value1:plural one='' other='s'}| to the hand."
   ExtraDescription2: "{UltimateCostIcon}Gain 1 |Wind God Girl|. {PlayerName}'s attacks are |Accurate| for the rest of combat."
   UpgradedExtraDescription2: "{UltimateCostIcon}Gain 1 |Wind God Girl|. {PlayerName}'s attacks are |Accurate| for the rest of combat."
+  FlavorText: Many decades of mutual animosity have led to a grudging antipathy.
 
 AutumnView:
     Name: Autumn View
@@ -79,6 +93,7 @@ CleavingSwipe:
 GentlyCirclingLeaves:
     Name: Gently Circling Leaves
     Description: Draw {Value1} cards. Gain {Value2} |Retaliation| for each Attack or Skill drawn this way.
+    FlavorText: Fall slowly, little ones.
 
 HowlingMountainWind:
     Name: Howling Mountain Wind
@@ -123,6 +138,7 @@ RecklessStrike:
         Deal {Damage} damage.
         Apply {Value1} |Vulnerable|.
         Gain {Value2} |Frail|.
+    FlavorText: Seize victory at any cost.
 
 RipApart:
   Name: Rip Apart
@@ -164,6 +180,7 @@ BloodScent:
 CircularPacing:
     Name: Circular Pacing
     Description: Whenever an enemy gains a debuff, {PlayerName} gains {Value1} |Barrier|.
+    FlavorText: by constantly circling her opponent, Momiji is able to keep them off balance.
 
 CollectingMomiji:
   Name: Collecting Momiji 
@@ -228,6 +245,7 @@ LookoutsIntuition:
 MountainsideTrailTracking:
     Name: Mountainside Trail Tracking
     Description: the first time {PlayerName} deals attack damage to an enemy with Vulnerable each turn, draw {Value1} card{Value1:plural one='' other='s'}.
+    FlavorText: No one can hide from her
 
 OverhandBlade:
     Name: Overhand Blade
@@ -235,6 +253,7 @@ OverhandBlade:
         Deal {Damage} damage.
         If the target has |Vulnerable|, apply {Value1} |Weak|.
         If the target has |Weak|, apply {Value1} |Vulnerable|.
+    Flavortext: Strike when they're off balance.
 
 PartingSlice:
     Name: Parting Slice
@@ -244,6 +263,7 @@ PartingSlice:
     UpgradedDescription: |-
         Deal {Damage} damage to each enemy two times.
         For each enemy with an |Offensive Intention|, gain {Value1} |Graze|.
+    Flavortext: Marginally less effective than a Parting Shot.
 
 Patrol:
     Name: Patrol
@@ -253,6 +273,7 @@ Patrol:
     UpgradedDescription: |-
         Draw {Value1} Cards.
         Gain {Value2} |Graze| for each red, Status, or |Misfortune| card drawn this way.
+    FlavorText: Momiji's constant task.
 
 ScatteringLeaves:
   Name: Scattering Leaves
@@ -262,10 +283,12 @@ ScatteringLeaves:
 SenseWeakness:
     Name: Sense Weakness
     Description: Apply {Value1} |Vulnerable| to all enemies. Enemies with |Vulnerable| take {Value2}% more damage.
+    FlavorText: Keen eyes detect even the slightest gaps in the opponent's guard.
 
 CrashingWaterBlade:
     Name: Crashing Water Blade
     Description: Deal {Damage} damage. Deals damage an additional time for every {Value1} |Reflection| {PlayerName} has.
+    FlavorText: The force of Momiji's favorite waterfall, channeled into a single strike.
 
 FrigidSky:
     Name: Frigid Sky
@@ -275,6 +298,7 @@ FrigidSky:
     UpgradedDescription:
         Whenever an |Air Cutter| deals unblocked damage to an enemy, apply |Cold| to that enemy.
         Add two |Air Cutters| to the hand.
+    FlavorText: Cold enough to cut.
 
 PlungePool:
     Name: Plunge Pool
@@ -290,12 +314,14 @@ PlungePool:
     UpgradedNonBattleDescription:
         Gain {Shield} |Barrier|.
         Gain additional |Barrier| Equal to {PlayerName}'s |Reflection|.
+    FlavorText: Don't let it trap you.
 
 CallToArms:
     Name: Call to Arms
     Description: |-
         Choose up to {Value1} card{Value1:plural one='' other='s'} in the draw pile and put {Value1:plural one='it' other='them'} into the hand. 
         Upgrade {Value1:plural one='it' other='them'}. 
+    FlavorText: A clarion call to tell other Whit Wolves that an intruder has been discovered.
 
 DefensiveStrike:
     Name: Defensive Strike
@@ -319,11 +345,17 @@ FalseWeakness:
     Description: |-
         Gain {Block} |Block|.
         Gain {Value1} |Retaliation|.
+    FlavorText: Why does this always work?
 
 FarSight:
     Name: Far Sight
     Description: gain {Value1} |Reflection|. If any enemy intends to attack, gain {Block} |Block|.
     FlavorText: She can see Danmaku a thousand Ri away.
+
+Howl:
+    Name: Howl
+    Description: If the enemy has an |Offensive Intention|, Apply {Value1} |Firepower Down|.
+    FlavorText: Awooooooo!
 
 IronStance:
     Name: Iron Stance
@@ -342,6 +374,7 @@ PreparedDefense:
     Description: |-
         Gain {Value1} |Reflection|.
         Convert all |Reflection| {PlayerName} currently possesses into |Static Charge| for this turn.
+    FlavorText: Let them Come.
 
 SeizeTheMoment:
     Name: Seize the Moment
@@ -352,6 +385,7 @@ SeizeTheMoment:
         If the enemy has an |Offensive Intention|, apply {Value1} |Temporary Firepower Down| to the enemy. 
         If the enemy has a |Defensive Intention|, apply {Value2} |Vulnerable| and |Frail|.
         If the enemy has a |Special Intention|, deal damage an additional time.
+    FlavorText: Always be prepared to act at a moment's notice.
 
 TacticalInsight:
     Name: Tactical Insight
@@ -367,16 +401,19 @@ TengusForesight:
 TirelessGuard:
     Name: Tireless Guard
     Description: Whenever |Reflection| is triggered, gain |Reflection| equal to half the damage dealt by {PlayerName}'s |Reflection|.
+    FlavorText: Always be ready for their second strike.
 
 TrapStance:
     Name: Trap Stance
     Description: |-
         Gain {Value1} |Retaliation|.
         The first time that {PlayerName} is attacked each turn, gain |Reflection| equal to {PlayerName}'s |Retaliation|.
+    FlavorText: Always have a plan. And a plan for if the first plan fails.
 
 TwinFang:
     Name: Twin Fang    
     Description: The next time |Reflection| is triggered, gain |Reflection| equal to the amount of damage dealt by {PlayerName}'s |Reflection|.
+    Flavortext: Always strike twice.
 
 VacuumCutter:
     Name: Vacuum Cutter
@@ -400,64 +437,6 @@ WindsweptBlade:
         Gain {Value1} |Retaliation|.
     FlavorText: "Hiyah!"
 
-SampleCharacterLoseHp:
-  Name: Lose Hp. 
-  Description: |-
-    Lose {Value1} life.
-    Target enemy loses {Value2} life.
-    
-SampleCharacterDebuff:
-  Name: Debuff 
-  Description: |-
-    Apply {Value1} |Weak|.
-    Apply {Value1} |Vulnerable|.
-    Apply {Value2} |Firepower Down|.
-
-SampleCharacterDraw:
-  Name: Draw card 
-  Description: |-
-    Draw {Value1} card{Value1:plural one='' other='s'}.
-    At the start of the next turn, Draw {Value2} card{Value2:plural one='' other='s'}.
-    At the start of each turn, Draw {Value3} card{Value3:plural one='' other='s'}.
-
-SampleCharacterConditional:
-  Name: Conditional effect 
-  Description: |-
-    Gain {Value1} |Reflection|.
-    If an enemy intends to attack, gain {Value2} |Static Charge| until the Player's next turn. 
-
-SampleCharacterDynamicCost:
-  Name: Dynamic Cost 
-  Description: |-
-    Deal {Damage} damage.
-    Cost {Mana} less for each card in hand.
-
-SampleCharacterUnplayable:
-  Name: Unplayable card 
-  Description: |-
-    |While in hand|: At the end of each {PlayerName}'s turn, gain {Value1} |Barrier|.
-
-SampleCharacterMultipleKeywords:
-  Name: Multiple Keywords
-  Description: |-
-    Gain {Value1} |Temporary Firepower|.
-    Apply {Value1} |Temporary Firepower Down|.
-
-SampleCharacterGainMana:
-  Name: Gain Mana Card
-  Description: Gain {Mana}.
-
-SampleCharacterBasicAbility:
-  Name: Basic Ability
-  Description: |-
-    Gain {Value1} |Firepower|.
-    Gain {Value2} |Spirit|.
-
-SampleCharacterGraze:
-  Name: Graze Card
-  Description: Gain {Value1} |Graze|.
-
-
 SampleCharacterXCost:
   Name: X-Cost card
   Description: |-
@@ -465,8 +444,3 @@ SampleCharacterXCost:
     |For each {Mana} spent|: Deal {Value1} additional damage.
     |For each {BlueMana} spent|: Gain {Value2} life.
 
-SampleCharacterExtraTurn:
-  Name: Extra Turn
-  Description: |-
-    End {PlayerName}'s turn. Then, take an extra turn. 
-    |Time Limit| {Mana}
