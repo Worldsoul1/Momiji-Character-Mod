@@ -31,6 +31,9 @@ namespace Momiji.Source.Cards
             //Mana config for the Time Limit
             config.Mana = new ManaGroup() { Any = 1 };
 
+            config.Keywords = Keyword.Exile;
+            config.UpgradedKeywords = Keyword.Exile;
+
             config.RelativeEffects = new List<string>() { nameof(TimeIsLimited), nameof(RetaliationSe) };
             config.UpgradedRelativeEffects = new List<string>() { nameof(TimeIsLimited), nameof(RetaliationSe) };
 
