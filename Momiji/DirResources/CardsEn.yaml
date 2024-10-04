@@ -385,7 +385,7 @@ EyeforanEye:
     Name: Eye for an Eye
     Description: |-
         Deal {Damage} damage.
-        The targeted enemy deals {Value1} damage to {Playername}.
+        The targeted enemy deals {Value1} damage to {PlayerName}.
 
 FalseWeakness:
     Name: False Weakness

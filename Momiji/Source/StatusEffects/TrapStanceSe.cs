@@ -40,7 +40,7 @@ namespace Momiji.Source.StatusEffects
             if (args.ActionSource is Reflect)
             {
                 int retalLevel = base.Battle.Player.GetStatusEffect<RetaliationSe>().Level;
-                if (retalLevel > 0f)
+                if (retalLevel > 0f && hasActivated == false)
                 {
                     yield return new ApplyStatusEffectAction<Reflect>(base.Battle.Player, retalLevel, 0, 0, 0, 0.2f);
                     hasActivated = true;
