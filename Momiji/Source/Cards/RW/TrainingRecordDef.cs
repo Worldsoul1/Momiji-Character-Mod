@@ -23,16 +23,16 @@ namespace Momiji.Source
             config.GunName = GunNameID.GetGunFromId(400);
 
             config.Colors = new List<ManaColor>() { ManaColor.White, ManaColor.Red };
-            config.Cost = new ManaGroup() { Any = 2, White = 1, Red = 1 };
+            config.Cost = new ManaGroup() { Any = 1, White = 1, Red = 1 };
             config.UpgradedCost = new ManaGroup() { Any = 2, Hybrid = 1, HybridColor = 2 };
-            config.Rarity = Rarity.Uncommon;
+            config.Rarity = Rarity.Rare;
 
             config.Type = CardType.Attack;
             //TargetType.AllEnemies will change the selector to all enemies for attacks/status effects.
             config.TargetType = TargetType.SingleEnemy;
 
             config.Damage = 10;
-            config.UpgradedDamage = 10;
+            config.UpgradedDamage = 15;
 
             config.Value1 = 2;
             config.UpgradedValue1 = 3;

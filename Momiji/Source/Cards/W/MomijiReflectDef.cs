@@ -42,7 +42,6 @@ namespace Momiji.Source.Cards
     {
         protected override IEnumerable<BattleAction> Actions(UnitSelector selector, ManaGroup consumingMana, Interaction precondition)
         {
-            EnemyUnit selectedEnemy = selector.SelectedEnemy;
             //The player loses life:
             yield return base.HealAction(base.Value1);
             yield return base.DefenseAction(true);

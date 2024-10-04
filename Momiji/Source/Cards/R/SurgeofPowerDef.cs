@@ -43,7 +43,11 @@ namespace Momiji.Source
         protected override IEnumerable<BattleAction> Actions(UnitSelector selector, ManaGroup consumingMana, Interaction precondition)
         {
             //Add a token card to the hand.
-            yield return new ApplyStatusEffectAction<SurgeofPowerSe>(base.Battle.Player, base.Value1 + 1, 0, 0, 0, 0.2f);
+            if(!base.Battle.Player.HasStatusEffect<SurgeofPowerSe>())
+            {
+                yield return new ApplyStatusEffectAction<SurgeofPowerSe>(base.Battle.Player, 1, 0, 0, 0, 0.2f);
+            }
+            yield return new ApplyStatusEffectAction<SurgeofPowerSe>(base.Battle.Player, base.Value1, 0, 0, 0, 0.2f);
             yield break;
         }
     }
