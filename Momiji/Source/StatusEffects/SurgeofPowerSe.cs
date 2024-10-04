@@ -53,7 +53,7 @@ namespace Momiji.Source.StatusEffects
         {
             foreach (Card card in cards)
             {
-                if (card.CardType == CardType.Attack || card.CardType == CardType.Skill || card.CardType == CardType.Defense || card.CardType == CardType.Ability)
+                if (card.CardType == CardType.Attack || card.CardType == CardType.Skill || card.CardType == CardType.Defense || card.CardType == CardType.Ability || card.CardType == CardType.Status || card.CardType == CardType.Misfortune)
                 {
                     card.FreeCost = true;
                 }
@@ -65,7 +65,7 @@ namespace Momiji.Source.StatusEffects
         {
             foreach (Card card in base.Battle.EnumerateAllCards())
             {
-                if (card.CardType == CardType.Attack || card.CardType == CardType.Skill || card.CardType == CardType.Defense || card.CardType == CardType.Ability)
+                if (card.CardType == CardType.Attack || card.CardType == CardType.Skill || card.CardType == CardType.Defense || card.CardType == CardType.Ability || card.CardType == CardType.Status || card.CardType == CardType.Misfortune)
                 {
                     card.FreeCost = false;
                 }
@@ -75,7 +75,7 @@ namespace Momiji.Source.StatusEffects
         // Token: 0x0600007F RID: 127 RVA: 0x00002EB0 File Offset: 0x000010B0
         private IEnumerable<BattleAction> OnCardUsed(CardUsingEventArgs args)
         {
-            if (args.Card.CardType == CardType.Attack || args.Card.CardType == CardType.Skill || args.Card.CardType == CardType.Defense || args.Card.CardType == CardType.Ability)
+            if (args.Card.CardType == CardType.Attack || args.Card.CardType == CardType.Skill || args.Card.CardType == CardType.Defense || args.Card.CardType == CardType.Ability || args.Card.CardType == CardType.Status || args.Card.CardType == CardType.Misfortune)
             {
                 int level = base.Level - 1;
                 base.Level = level;

@@ -165,7 +165,7 @@ TrainingRecord:
     Name: Training Record
     Description: |-
         Deal {Damage} damage.
-        Upgrade a card in {PlayerName}'s deck based on the targeted enemy's intention.
+        If this is the first time a {SelfName} has been played this combat, upgrade a card in {PlayerName}'s deck based on the targeted enemy's intention.
     DetailText: |-
         If the enemy has an |Offensive Intention|, an Attack card may be upgraded. 
         If the enemy has a |Defensive Intention|, a Defense card may be upgraded.
@@ -339,16 +339,16 @@ PlungePool:
     Name: Plunge Pool
     Description: |-
         Gain {Block} |Block|.
-        Gain additional |Block| Equal to {PlayerName}'s |Reflection|. ({ReflectShield})
+        Gain additional |Block| Equal to {PlayerName}'s |Retaliation|. ({ReflectShield})
     NonBattleDescription: |-
         Gain {Block} |Block|.
-        Gain additional |Block| Equal to {PlayerName}'s |Reflection|.
+        Gain additional |Block| Equal to {PlayerName}'s |Retaliation|.
     UpgradedDescription: |-
         Gain {Shield} |Barrier|.
-        Gain additional |Barrier| Equal to {PlayerName}'s |Reflection|. ({ReflectShield})
+        Gain additional |Barrier| Equal to {PlayerName}'s |Retaliation|. ({ReflectShield})
     UpgradedNonBattleDescription:
         Gain {Shield} |Barrier|.
-        Gain additional |Barrier| Equal to {PlayerName}'s |Reflection|.
+        Gain additional |Barrier| Equal to {PlayerName}'s |Retaliation|.
     FlavorText: Don't let it trap you.
 
 AlwaysWatching:

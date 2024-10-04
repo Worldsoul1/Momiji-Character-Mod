@@ -31,16 +31,16 @@ namespace Momiji.Source.Cards
             config.TargetType = TargetType.SingleEnemy;
 
             config.Damage = 15;
-            config.UpgradedDamage = 20;
+            config.UpgradedDamage = 15;
 
-            config.Value1 = 5;
-            config.UpgradedValue1 = 4;
+            config.Value1 = 10;
+            config.UpgradedValue1 = 8;
 
             config.RelativeEffects = new List<string>() { nameof(Reflect) };
             config.UpgradedRelativeEffects = new List<string>() { nameof(Reflect) };
             //The Accuracy keyword is enough to make an attack accurate.
 
-            config.Illustrator = "";
+            config.Illustrator = "ASMODEUS";
 
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
             return config;

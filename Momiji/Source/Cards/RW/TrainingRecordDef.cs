@@ -12,6 +12,7 @@ using LBoL.Core.Battle.BattleActions;
 using LBoL.Core.Cards;
 using System.Linq;
 using LBoL.Core.Units;
+using LBoL.EntityLib.Cards.Character.Sakuya;
 
 namespace Momiji.Source
 {
@@ -21,6 +22,8 @@ namespace Momiji.Source
         {
             CardConfig config = GetCardDefaultConfig();
             config.GunName = GunNameID.GetGunFromId(400);
+            config.FindInBattle = false;
+            config.ToolPlayableTimes = 4;
 
             config.Colors = new List<ManaColor>() { ManaColor.White, ManaColor.Red };
             config.Cost = new ManaGroup() { Any = 1, White = 1, Red = 1 };
@@ -55,9 +58,18 @@ namespace Momiji.Source
     [EntityLogic(typeof(TrainingRecordDef))]
     public sealed class TrainingRecord : SampleCharacterCard
     {
-
+        private bool Active
+        {
+            get
+            {
+                if (base.Battle != null)
+                {
+                    return !base.Battle.BattleCardUsageHistory.Any((Card card) => card is TimeWalk);
+                }
+                return true;
+            }
+        }
         int intention = 0;
-        int count = 0;
         private static bool CheckForCardTypeAndIntention(Card card, int intention)
         {
             if(card.CardType == CardType.Attack && (intention == 1 || intention == 3 || intention == 5 || intention == 7))
@@ -73,24 +85,30 @@ namespace Momiji.Source
         // Token: 0x060009CD RID: 2509 RVA: 0x000145D3 File Offset: 0x000127D3
         protected override IEnumerable<BattleAction> Actions(UnitSelector selector, ManaGroup consumingMana, Interaction precondition)
         {
-            Card cardToUpgrade = null;
-            EnemyUnit selectedEnemy = selector.SelectedEnemy;
-            intention = base.IntentionCheck(selectedEnemy);
-            IEnumerable<Card> eligibleCards = base.GameRun.BaseDeck.Where(c => c.CanUpgradeAndPositive).Where(c => CheckForCardTypeAndIntention(c, intention));
-
-            if (eligibleCards.Count() > 0)
+            if (this.Active)
             {
-                cardToUpgrade = eligibleCards.Sample(base.GameRun.GameRunEventRng);
-                // the rest of the fucking owl
-                
-            }
-            Card cardInDeckToUpgrade = cardToUpgrade;
-            base.GameRun.UpgradeDeckCard(cardInDeckToUpgrade, false);
+                Card cardToUpgrade = null;
+                EnemyUnit selectedEnemy = selector.SelectedEnemy;
+                intention = base.IntentionCheck(selectedEnemy);
+                IEnumerable<Card> eligibleCards = base.GameRun.BaseDeck.Where(c => c.CanUpgradeAndPositive).Where(c => CheckForCardTypeAndIntention(c, intention));
 
-            Card cardInBattleToUpgrade = base.Battle.EnumerateAllCards().Where(c => c.CanUpgrade && c.InstanceId == cardInDeckToUpgrade.InstanceId).FirstOrDefault();
-            if (null != cardInBattleToUpgrade)
-            {
-                yield return new UpgradeCardAction(cardInBattleToUpgrade);
+                if (eligibleCards.Count() > 0)
+                {
+                    cardToUpgrade = eligibleCards.Sample(base.GameRun.GameRunEventRng);
+                    // the rest of the fucking owl
+
+                }
+                Card cardInDeckToUpgrade = cardToUpgrade;
+                if (cardInDeckToUpgrade != null)
+                {
+                    base.GameRun.UpgradeDeckCard(cardInDeckToUpgrade, false);
+                }
+
+                Card cardInBattleToUpgrade = base.Battle.EnumerateAllCards().Where(c => c.CanUpgrade && c.InstanceId == cardInDeckToUpgrade.InstanceId).FirstOrDefault();
+                if (null != cardInBattleToUpgrade)
+                {
+                    yield return new UpgradeCardAction(cardInBattleToUpgrade);
+                }
             }
             yield return base.AttackAction(selector, GunName);
         }

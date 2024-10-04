@@ -40,7 +40,7 @@ namespace Momiji.Source.Cards
 
             //The Accuracy keyword is enough to make an attack accurate.
 
-            config.Illustrator = "saya";
+            config.Illustrator = "銀朱";
 
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
             return config;
@@ -57,7 +57,8 @@ namespace Momiji.Source.Cards
         {
             EnemyUnit selectedEnemy = selector.SelectedEnemy;
             yield return base.AttackAction(selector, base.GunName);
-            yield return new DamageAction(selectedEnemy, Battle.Player, DamageInfo.HpLose(base.Value1));
+            if(!selectedEnemy.IsAlive) { yield break; }
+            yield return new DamageAction(selectedEnemy, Battle.Player, DamageInfo.Attack(base.Value1));
         }
     }
 }

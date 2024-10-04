@@ -1,4 +1,4 @@
-using LBoL.Base;
+﻿using LBoL.Base;
 using LBoL.ConfigData;
 using LBoL.Core.Battle;
 using LBoL.Core;
@@ -38,7 +38,7 @@ namespace Momiji.Source.Cards
             config.RelativeEffects = new List<string>() { nameof(Graze) };
             config.UpgradedRelativeEffects = new List<string>() { nameof(Graze) };
 
-            config.Illustrator = "";
+            config.Illustrator = "耳总明岚";
 
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
             return config;

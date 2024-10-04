@@ -7,6 +7,7 @@ using LBoL.Core.Battle;
 using LBoL.Core;
 using LBoL.Core.Battle.BattleActions;
 using LBoL.EntityLib.StatusEffects.Basic;
+using Momiji.Source.StatusEffects;
 
 namespace Momiji.Source.Cards
 {
@@ -32,7 +33,7 @@ namespace Momiji.Source.Cards
             config.Shield = 0;
             config.UpgradedShield = 13;
 
-            config.RelativeEffects = new List<string>() { nameof(Reflect) };
+            config.RelativeEffects = new List<string>() { nameof(RetaliationSe) };
 
             config.Illustrator = "";
 
@@ -48,9 +49,9 @@ namespace Momiji.Source.Cards
         {
             get
             {
-                if (base.Battle != null && base.Battle.Player.HasStatusEffect<Reflect>())
+                if (base.Battle != null && base.Battle.Player.HasStatusEffect<RetaliationSe>())
                 {
-                    return base.Battle.Player.GetStatusEffect<Reflect>().Level;
+                    return base.Battle.Player.GetStatusEffect<RetaliationSe>().Level;
                 }
                 return 0;
             }
