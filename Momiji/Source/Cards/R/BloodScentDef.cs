@@ -29,11 +29,11 @@ namespace Momiji.Source.Cards
                 config.Type = CardType.Attack;
                 config.TargetType = TargetType.SingleEnemy;
 
-                config.Damage = 10;
-                config.UpgradedDamage = 15;
+                config.Damage = 12;
+                config.UpgradedDamage = 16;
 
-                config.Value1 = 10;
-                config.UpgradedValue1 = 15;
+                config.Value1 = 12;
+                config.UpgradedValue1 = 16;
 
                 config.RelativeEffects = new List<string>() { nameof(Reflect), nameof(Vulnerable) };
                 config.UpgradedRelativeEffects = new List<string>() { nameof(Reflect), nameof(Vulnerable) };

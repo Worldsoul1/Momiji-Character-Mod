@@ -155,6 +155,17 @@ StandWatch:
         Block is not lost at the start of {PlayerName}'s turn for the next {Value2} turns.
     FlavorText: The duty of a sentry is tireless. There is no excuse for faltering.
 
+TrainingRecord:
+    Name: Training Record
+    Description: |-
+        Deal {Damage} damage.
+        Upgrade a card in {PlayerName}'s deck based on the targeted enemy's intention.
+    DetailText: |-
+        If the enemy has an |Offensive Intention|, an Attack card may be upgraded. 
+        If the enemy has a |Defensive Intention|, a Defense card may be upgraded.
+        If the enemy has a |Special Intention|, an Ability or Skill card may be upgraded.
+
+
 AdvantageousPosition:
     Name: Advantageous Position
     Description: |-
@@ -197,6 +208,10 @@ CrispFallAir:
         Now and at the start of {PlayerName}'s next turn, add {Value1} |Air Cutter|s to the hand and gain {Mana}.
     FlavorText: Sharp enough to chill
 
+Distract:
+    Name: Distract
+    Description: Whenever {PlayerName} deals attack damage to an enemy, if that enemy has |Vulnerable|, {Playername} applies 1 |Weak| to that enemy.
+
 ExtrasensoryPerception:
     Name: Extrasensory Perception
     Description: Gain {Block} |Block|. Apply {Value1} |Vulnerable| to each enemy.
@@ -227,6 +242,10 @@ HuntersTrap:
         Gain {Block} |Block|.
         Add an |Air Cutter| or a |Maple Leaf| to the hand.
     FlavorText: Pitfalls, snares, deadfalls... they get the job done.
+
+HuntingCall:
+    Name: Hunting Call
+    Description: Apply 2 vulnerable to each enemy. If any enemy has an |Offensive Intention|, draw {Value2} cards. 
 
 ImageTraining:
     Name: Image Training
@@ -284,6 +303,12 @@ SenseWeakness:
     Name: Sense Weakness
     Description: Apply {Value1} |Vulnerable| to all enemies. Enemies with |Vulnerable| take {Value2}% more damage.
     FlavorText: Keen eyes detect even the slightest gaps in the opponent's guard.
+
+ShieldCounter:
+    Name: Shield Counter
+    Description: |-
+        Gain {Value2} |Reflection|.
+        Whenever |Reflection| or |Static Charge| is triggered, apply {Value1} |Vulnerable| to the enemy that triggered it.
 
 CrashingWaterBlade:
     Name: Crashing Water Blade
@@ -375,6 +400,12 @@ PreparedDefense:
         Gain {Value1} |Reflection|.
         Convert all |Reflection| {PlayerName} currently possesses into |Static Charge| for this turn.
     FlavorText: Let them Come.
+
+RagingWaterfall:
+    Name: Raging Waterfall
+    Description: |-
+        Gain {Block} Block.
+        Draw {Value1} extra cards at the stard of {PlayerName}'s next turn.
 
 SeizeTheMoment:
     Name: Seize the Moment

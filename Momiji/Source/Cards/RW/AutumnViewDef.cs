@@ -1,4 +1,4 @@
-using LBoL.Base;
+﻿using LBoL.Base;
 using LBoL.ConfigData;
 using LBoLEntitySideloader.Attributes;
 using System.Collections.Generic;
@@ -35,7 +35,7 @@ namespace Momiji.Source.Cards
             config.Keywords = Keyword.Replenish | Keyword.AutoExile | Keyword.Forbidden | Keyword.Block;
             config.UpgradedKeywords = Keyword.Replenish | Keyword.AutoExile | Keyword.Forbidden | Keyword.Shield;
             
-            config.Illustrator = "";
+            config.Illustrator = "半节";
 
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
             return config;

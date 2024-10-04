@@ -33,6 +33,7 @@ namespace Momiji.Source.StatusEffects
         public static StatusEffectConfig GetDefaultStatusEffectConfig()
         {
             return SampleCharacterDefaultConfig.GetDefaultStatusEffectConfig();
-        }        
+        }   
+        
     }
 }

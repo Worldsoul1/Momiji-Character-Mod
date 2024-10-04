@@ -29,12 +29,12 @@ namespace Momiji.Source.Cards
             config.Rarity = Rarity.Common;
 
             config.Type = CardType.Skill;
-            config.TargetType = TargetType.AllEnemies;
+            config.TargetType = TargetType.SingleEnemy;
 
             config.Value1 = 2;
 
-            config.Value2 = 10;
-            config.UpgradedValue2 = 10;
+            config.Value2 = 2;
+            config.UpgradedValue2 = 3;
 
             config.RelativeEffects = new List<string>() { nameof(Vulnerable), nameof(Graze) };
             config.UpgradedRelativeEffects = new List<string>() { nameof(Vulnerable), nameof(Graze) };
@@ -53,17 +53,10 @@ namespace Momiji.Source.Cards
         protected override IEnumerable<BattleAction> Actions(UnitSelector selector, ManaGroup consumingMana, Interaction precondition)
         {
             int intention = 0;
-            int count = 0;
             EnemyUnit selectedEnemy = selector.SelectedEnemy;
             yield return base.BuffAction<Graze>(base.Value1, 0, 0, 0, 0.2f);
-            EnemyUnit[] enemies = selector.GetEnemies(base.Battle);
-            foreach (EnemyUnit enemy in enemies)
-            {
-                intention = base.IntentionCheck(enemy);
-                if (intention == 1 || intention == 3 || intention == 5)
-                    count++;
-            }
-            if (count > 0)
+            intention = base.IntentionCheck(selectedEnemy);
+            if (intention == 1 || intention == 3 || intention == 5)
             {
                 yield return new ApplyStatusEffectAction<Vulnerable>(selectedEnemy, base.Value1, 0, 0, 0, 0.2f);
             }

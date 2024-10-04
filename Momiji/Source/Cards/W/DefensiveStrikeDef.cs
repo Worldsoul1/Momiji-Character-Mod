@@ -30,8 +30,8 @@ namespace Momiji.Source.Cards
             config.Type = CardType.Attack;
             config.TargetType = TargetType.SingleEnemy;
 
-            config.Damage = 12;
-            config.UpgradedDamage = 12;
+            config.Damage = 15;
+            config.UpgradedDamage = 15;
 
 
             //The Accuracy keyword is enough to make an attack accurate.

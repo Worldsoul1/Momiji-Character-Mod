@@ -15,6 +15,10 @@ DestabilizeSe:
     Name: Destabilize
     Description: Whenever you deal attack damage to an enemy, gain {Level} |Block|.
 
+DistractSe:
+    Name: Distract
+    Description: Whenever {PlayerName} deals damage to an enemy with |Vulnerable|, apply 1 |Weak| to that enemy.
+
 FakeOpeningSe:
     Name: Fake Opening
     Description: At the start of {PlayerName}'s turn, gain {Level} |Retaliation|.
@@ -54,6 +58,10 @@ MountainsideTrailTrackingSe:
 SenseWeaknessSe:
     Name: Sense Weakness
     Description: Enemies with Vulnerable take {Level}% more damage.
+
+ShieldCounterSe:
+    Name: Shield Counter
+    Description: When |Reflection| is triggered, apply {Level} |Vulnerable| to the attacker.
 
 SmellofDeathSe:
     Name: Smell of Death
