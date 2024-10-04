@@ -37,8 +37,8 @@ FeedOnTheWeak:
         "Whenever an enemy dies, {PlayerName} gains 10 <sprite=\"Point\" name=\"Power\"> and 4 life."
     FlavorText: Only the strong and the lucky survive.
 
-SmellofDeath:
-    Name: Smell of Death
+ScentofDeath:
+    Name: Scent of Death
     Description: |-
         When target enemy dies, it deals damage to all other enemies equal to half its max HP.
     FlavorText: It's foul.
@@ -66,6 +66,12 @@ AyaTeammate:
   ExtraDescription2: "{UltimateCostIcon}Gain 1 |Wind God Girl|. {PlayerName}'s attacks are |Accurate| for the rest of combat."
   UpgradedExtraDescription2: "{UltimateCostIcon}Gain 1 |Wind God Girl|. {PlayerName}'s attacks are |Accurate| for the rest of combat."
   FlavorText: Many decades of mutual animosity have led to a grudging antipathy.
+
+WoodlandSentry:
+    Name: Woodland Sentry
+    Description: |-
+        Heal {Value2} hp.
+        At the end of {PlayerName}'s turn, gain {Value1} block for each card in hand.
 
 AutumnView:
     Name: Autumn View
@@ -310,6 +316,10 @@ ShieldCounter:
         Gain {Value2} |Reflection|.
         Whenever |Reflection| or |Static Charge| is triggered, apply {Value1} |Vulnerable| to the enemy that triggered it.
 
+SurgeofPower:
+    Name: Surge of Power
+    Description: the next {Value1} cards that {PlayerName} plays cost {Mana}.
+
 CrashingWaterBlade:
     Name: Crashing Water Blade
     Description: Deal {Damage} damage. Deals damage an additional time for every {Value1} |Reflection| {PlayerName} has.
@@ -341,6 +351,12 @@ PlungePool:
         Gain additional |Barrier| Equal to {PlayerName}'s |Reflection|.
     FlavorText: Don't let it trap you.
 
+AlwaysWatching:
+    Name: Always Watching
+    Description: |-
+        Gain {Shield} |Barrier|.
+        If any enemy has an |Offensive Intention|, gain {Block} |Block|.
+
 CallToArms:
     Name: Call to Arms
     Description: |-
@@ -364,6 +380,12 @@ DoubleDown:
     Name: Double Down
     Description: Deal {Damage} damage. If the enemy does not intend to attack, deal damage {Value1} additional time{Value1:plural one='' other='s'}.
     FlavorText: press hard against any attempt to disengage
+
+EyeforanEye:
+    Name: Eye for an Eye
+    Description: |-
+        Deal {Damage} damage.
+        The targeted enemy deals {Value1} damage to {Playername}.
 
 FalseWeakness:
     Name: False Weakness

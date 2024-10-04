@@ -71,7 +71,7 @@ StandWatchSe:
     Name: Stand Watch
     Description: At the start of {PlayerName's} turn, gain {Level} |Block|.
 
-SurgeofPower:
+SurgeofPowerSe:
     Name: Surge of Power
     Description: the next {Level} cards {PlayerName} plays will cost {Mana}.
 

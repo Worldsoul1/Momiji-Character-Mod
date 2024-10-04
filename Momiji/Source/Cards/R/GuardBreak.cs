@@ -38,7 +38,7 @@ namespace Momiji.Source.Cards
             config.TargetType = TargetType.SingleEnemy;
 
             config.Damage = 6;
-            config.UpgradedDamage = 8;
+            config.UpgradedDamage = 6;
 
             config.Value1 = 2;
             config.Value2 = 3;
@@ -61,6 +61,7 @@ namespace Momiji.Source.Cards
             EnemyUnit selectedEnemy = selector.SelectedEnemy;
             yield return base.AttackAction(selector, base.GunName);
             yield return base.AttackAction(selector, base.GunName);
+            if (this.IsUpgraded) { yield return base.AttackAction(selector, base.GunName); }
             if (base.Battle.BattleShouldEnd)
             {
                 yield break;

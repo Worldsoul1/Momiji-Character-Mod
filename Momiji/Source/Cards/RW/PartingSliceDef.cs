@@ -25,7 +25,7 @@ namespace Momiji.Source.Cards
             CardConfig config = GetCardDefaultConfig();
 
             config.Colors = new List<ManaColor>() { ManaColor.White, ManaColor.Red };
-            config.Cost = new ManaGroup() { Any = 1,White = 1, Red = 1 };
+            config.Cost = new ManaGroup() { Any = 1, White = 1, Red = 1 };
             config.Rarity = Rarity.Rare;
 
             config.Type = CardType.Attack;
@@ -37,7 +37,7 @@ namespace Momiji.Source.Cards
             config.Value1 = 1;
             config.Value2 = 2;
 
-            config.RelativeEffects = new List<string>() { nameof(Graze), nameof(OffensiveIntention) };
+            config.RelativeEffects = new List<string>() { nameof(Graze) };
             config.UpgradedRelativeEffects = new List<string>() { nameof(Graze) };
 
             config.Illustrator = "";

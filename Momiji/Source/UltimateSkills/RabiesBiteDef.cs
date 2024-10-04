@@ -18,7 +18,7 @@ namespace Momiji.Source.Ultimate
         public override UltimateSkillConfig MakeConfig()
         {
             UltimateSkillConfig config = GetDefaulUltConfig();
-            config.Damage = 10;
+            config.Damage = 15;
             config.Value1 = 3;
             config.Value2 = 4;
             config.Keywords = Keyword.Accuracy;

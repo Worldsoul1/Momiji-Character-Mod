@@ -27,6 +27,9 @@ namespace Momiji.Source
             config.Value1 = 2;
             config.UpgradedValue1 = 2;
 
+            config.Mana = new ManaGroup() { Any = 0 };
+            config.UpgradedMana = new ManaGroup() { Any = 0 };
+
             config.Illustrator = "";
 
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
@@ -40,7 +43,7 @@ namespace Momiji.Source
         protected override IEnumerable<BattleAction> Actions(UnitSelector selector, ManaGroup consumingMana, Interaction precondition)
         {
             //Add a token card to the hand.
-            yield return new ApplyStatusEffectAction<SurgeofPowerSe>(base.Battle.Player, base.Value1, 0, 0, 0, 0.2f);
+            yield return new ApplyStatusEffectAction<SurgeofPowerSe>(base.Battle.Player, base.Value1 + 1, 0, 0, 0, 0.2f);
             yield break;
         }
     }
