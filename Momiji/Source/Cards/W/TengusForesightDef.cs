@@ -23,12 +23,12 @@ namespace Momiji.Source.Cards
             config.Rarity = Rarity.Common;
 
             config.Type = CardType.Skill;
-            config.TargetType = TargetType.Nobody;
+            config.TargetType = TargetType.Self;
 
             config.Value1 = 2;
-            config.UpgradedValue1 = 2;
+            config.UpgradedValue1 = 3;
 
-            config.Illustrator = "";
+            config.Illustrator = "\n‚È‚¬";
 
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
             return config;

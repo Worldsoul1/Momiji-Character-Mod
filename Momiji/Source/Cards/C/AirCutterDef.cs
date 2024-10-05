@@ -42,7 +42,7 @@ namespace Momiji.Source
             //Setting Upgrading Keyword only provides the keyword when the card is upgraded.    
             config.UpgradedKeywords = Keyword.Exile | Keyword.Ethereal;
 
-            config.Illustrator = "";
+            config.Illustrator = "マール";
 
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
             return config;

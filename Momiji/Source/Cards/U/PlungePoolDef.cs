@@ -35,7 +35,7 @@ namespace Momiji.Source.Cards
 
             config.RelativeEffects = new List<string>() { nameof(RetaliationSe) };
 
-            config.Illustrator = "";
+            config.Illustrator = "Oba";
 
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
             return config;

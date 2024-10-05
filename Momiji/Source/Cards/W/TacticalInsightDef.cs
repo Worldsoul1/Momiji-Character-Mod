@@ -32,7 +32,7 @@ namespace Momiji.Source.Cards
 
             config.Mana = new ManaGroup() { Any = 0 };
 
-            config.Illustrator = "";
+            config.Illustrator = "yonaga (masa07240)";
 
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
             return config;

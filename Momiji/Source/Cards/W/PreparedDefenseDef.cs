@@ -30,7 +30,7 @@ namespace Momiji.Source.Cards
 
             config.RelativeEffects = new List<string>() { nameof(Reflect), nameof(TempElectric) };
 
-            config.Illustrator = "";
+            config.Illustrator = "cloudy_r";
 
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
             return config;

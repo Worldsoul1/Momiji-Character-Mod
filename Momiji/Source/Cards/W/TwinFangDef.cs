@@ -37,7 +37,7 @@ namespace Momiji.Source.Cards
             config.RelativeEffects = new List<string>() { nameof(Reflect) };
             config.UpgradedRelativeEffects = new List<string>() { nameof(Reflect) };
 
-            config.Illustrator = "";
+            config.Illustrator = "崩壊";
 
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
             return config;

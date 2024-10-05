@@ -34,7 +34,7 @@ namespace Momiji.Source.Cards
             config.Value1 = 2;
             config.UpgradedValue1 = 3;
 
-            config.Illustrator = "";
+            config.Illustrator = "砂(s73d)";
 
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
             return config;
