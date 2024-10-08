@@ -43,7 +43,7 @@ namespace Momiji.Source.Cards
             config.Value2 = 3;
             config.UpgradedValue2 = 4;
             
-            config.Illustrator = "";
+            config.Illustrator = "bowstringsmall";
 
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
             

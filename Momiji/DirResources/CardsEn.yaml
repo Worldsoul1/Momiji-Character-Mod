@@ -409,6 +409,11 @@ IronStance:
     Description: Gain {Block} |Block| and {Value1} |Static Charge| until {PlayerName}'s next turn.
     Flavortext: Iron is sturdy, and, more importantly, conductive.
 
+LongVigil:
+    Name: Long Vigil
+    Description: Exile up to three cards from your hand. Gain {Value2} |Block| for each card exiled this way.
+    UpgradedDescription: Exile up the three cards from your hand, draw, or discard piles. Gain {Value2} |Block| for each card exiled this way.
+
 MomijiReflect:
   Name: Reflect
   Description: |-
@@ -482,6 +487,17 @@ WardingStrike:
         Deal {Damage} damage.
         Deal additional damage equal to {PlayerName}'s |Reflection|.
     FlavorText: Make them pay for complacency.
+
+WaterfallMeditation:
+    Name: Waterfall Meditation
+    Description: |-
+        Select an enemy. Perform an action based on the selected enemy's intentions.
+        Draw {Value1} card{Value1:plural one='' other='s'}.
+    DetailText: |-
+        If the enemy has an |Offensive Intention|, gain {Value2} block and upgrade {Value1} random card in the hand{Value1:plural one='' other='s'}, prioritizing Attack cards.
+        If the enemy has a |Defensive Intention|, apply {Value1} |Frail| and |Vulnerable| to the enemy.
+        If the enemy has a |Special Intention|, gain {Value1} |Firepower|.
+
 
 WindsweptBlade:
     Name: Windswept Blade

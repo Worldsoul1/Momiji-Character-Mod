@@ -31,7 +31,7 @@ namespace Momiji.Source.Cards
 
             config.Value2 = 3;
 
-            config.Illustrator = "";
+            config.Illustrator = "É|ÉçÉäÉLÉì";
 
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
             return config;

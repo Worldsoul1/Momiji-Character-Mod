@@ -26,11 +26,11 @@ namespace Momiji.Source.Cards
             config.Type = CardType.Defense;
             config.TargetType = TargetType.Self;
 
-            config.Block = 10;
-            config.UpgradedBlock = 15;
+            config.Block = 13;
+            config.UpgradedBlock = 17;
 
 
-            config.Illustrator = "";
+            config.Illustrator = "降旗原";
 
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
             return config;

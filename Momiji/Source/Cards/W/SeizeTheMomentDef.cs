@@ -17,7 +17,7 @@ namespace Momiji.Source.Cards
         {
             CardConfig config = GetCardDefaultConfig();
 
-            config.Colors = new List<ManaColor>() { ManaColor.White, ManaColor.Red };
+            config.Colors = new List<ManaColor>() { ManaColor.White };
             //Hybrid colors:
             //0 = W/U
             //1 = W/B
@@ -41,7 +41,7 @@ namespace Momiji.Source.Cards
             config.UpgradedDamage = 16;
 
             config.Value1 = 3;
-            config.UpgradedValue1 = 2;
+            config.UpgradedValue1 = 4;
             config.Value2 = 1;
             config.UpgradedValue2 = 2;
 

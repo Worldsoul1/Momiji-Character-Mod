@@ -40,7 +40,7 @@ namespace Momiji.Source.Cards
 
             //The Accuracy keyword is enough to make an attack accurate.
 
-            config.Illustrator = "";
+            config.Illustrator = "しぃたけ";
 
                 config.Index = CardIndexGenerator.GetUniqueIndex(config);
                 return config;

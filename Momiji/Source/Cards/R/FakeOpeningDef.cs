@@ -29,7 +29,7 @@ namespace Momiji.Source.Cards
             config.RelativeEffects = new List<string>() { nameof(RetaliationSe) };
             config.UpgradedRelativeEffects = new List<string>() { nameof(RetaliationSe) };
 
-            config.Illustrator = "";
+            config.Illustrator = "îLêÖê£";
 
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
             return config;

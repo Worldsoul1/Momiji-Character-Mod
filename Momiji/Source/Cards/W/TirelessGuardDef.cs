@@ -30,7 +30,7 @@ namespace Momiji.Source.Cards.W
             config.RelativeEffects = new List<string>() { nameof(Reflect) };
             config.UpgradedRelativeEffects = new List<string>() { nameof(Reflect) };
 
-            config.Illustrator = "";
+            config.Illustrator = "Oba";
 
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
             return config;

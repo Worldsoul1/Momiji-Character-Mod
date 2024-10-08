@@ -40,7 +40,7 @@ namespace Momiji.Source.Cards
             config.RelativeEffects = new List<string>() { nameof(Graze) };
             config.UpgradedRelativeEffects = new List<string>() { nameof(Graze) };
 
-            config.Illustrator = "";
+            config.Illustrator = "竹篙";
 
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
             return config;

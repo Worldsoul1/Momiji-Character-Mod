@@ -37,7 +37,7 @@ namespace Momiji.Source.Cards
             config.Keywords = Keyword.Accuracy;
             config.UpgradedKeywords = Keyword.Accuracy;
 
-            config.Illustrator = "";
+            config.Illustrator = "トリノスケイ";
 
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
             return config;
