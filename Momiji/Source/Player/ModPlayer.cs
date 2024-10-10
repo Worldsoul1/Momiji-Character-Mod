@@ -50,6 +50,7 @@ namespace Momiji
                 {
                     RabiesUltimateSkill.OnEnterBattle(battle);
                 }
+
             }
         }
     }
