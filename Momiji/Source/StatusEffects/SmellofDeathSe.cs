@@ -27,7 +27,7 @@ namespace Momiji.Source.StatusEffects
     }
 
     [EntityLogic(typeof(SmellofDeathSeDef))]
-    public abstract class SmellofDeathSe : StatusEffect
+    public sealed class SmellofDeathSe : StatusEffect
     {
         // Token: 0x060001E7 RID: 487 RVA: 0x00005DE8 File Offset: 0x00003FE8
         protected override void OnAdded(Unit unit)
