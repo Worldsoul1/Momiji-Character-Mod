@@ -41,6 +41,7 @@ namespace Momiji.Source.Cards
     {
         protected override IEnumerable<BattleAction> Actions(UnitSelector selector, ManaGroup consumingMana, Interaction precondition)
         {
+            yield return new ApplyStatusEffectAction<RetaliationSe>(Battle.Player, base.Value1, 0, 0, 0, 0.2f);
             yield return new ApplyStatusEffectAction<FakeOpeningSe>(Battle.Player, base.Value1, 0, 0, 0, 0.2f);
             //This is equivalent to:
             //yield return new ApplyStatusEffectAction<SampleCharacterTurnGainSpiritSe>(Battle.Player, base.Value1, 0, 0, 0, 0.2f);

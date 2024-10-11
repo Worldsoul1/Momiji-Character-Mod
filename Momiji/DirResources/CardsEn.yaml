@@ -151,6 +151,9 @@ RipApart:
   Description: |-
     Deal {Damage} damage to each enemy.
     Apply {Value1} |Vulnerable| to each enemy.
+  UpgradedDescription: |-
+    Deal {Damage} damage to each enemy {Value1} times.
+    Apply {Value1} |Vulnerable| to each enemy.
   FlavorText: Cleave into them quickly.
 
 StandWatch:
@@ -411,8 +414,8 @@ IronStance:
 
 LongVigil:
     Name: Long Vigil
-    Description: Exile up to three cards from your hand. Gain {Value2} |Block| for each card exiled this way.
-    UpgradedDescription: Exile up the three cards from your hand, draw, or discard piles. Gain {Value2} |Block| for each card exiled this way.
+    Description: Exile up to three cards from your hand. Gain {Block} |Block| for each card exiled this way.
+    UpgradedDescription: Exile up the three cards from your hand, draw, or discard piles. Gain {Block} |Block| for each card exiled this way.
 
 MomijiReflect:
   Name: Reflect

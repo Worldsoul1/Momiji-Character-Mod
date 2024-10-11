@@ -66,10 +66,10 @@ namespace Momiji.Source.Cards
                         SpellCardIntention spellCardIntention = i as SpellCardIntention;
                         if (spellCardIntention == null || spellCardIntention.Damage == null)
                         {
-                            return true;
+                            return false;
                         }
                     }
-                    return false;
+                    return true;
                 }));
             }
             yield return base.AttackAction(selector, base.GunName);

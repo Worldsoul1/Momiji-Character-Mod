@@ -39,7 +39,7 @@ namespace Momiji.Source.Cards
     {
         protected override IEnumerable<BattleAction> Actions(UnitSelector selector, ManaGroup consumingMana, Interaction precondition)
         {
-            yield return new ApplyStatusEffectAction<CircularPacingSe>(Battle.Player, 1, 0, 0, 0, 0.2f);
+            yield return new ApplyStatusEffectAction<CircularPacingSe>(Battle.Player, base.Value1, 0, 0, 0, 0.2f);
             //This is equivalent to:
             //yield return new ApplyStatusEffectAction<SampleCharacterTurnGainSpiritSe>(Battle.Player, base.Value1, 0, 0, 0, 0.2f);
             yield break;

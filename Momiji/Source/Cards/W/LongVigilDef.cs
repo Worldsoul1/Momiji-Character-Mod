@@ -31,8 +31,8 @@ namespace Momiji.Source.Cards
 
             config.Value1 = 3;
 
-            config.Value2 = 7;
-            config.UpgradedValue2 = 7;
+            config.Block = 7;
+            config.UpgradedBlock = 7;
 
             config.Keywords = Keyword.Exile;
             config.UpgradedKeywords = Keyword.Exile;
@@ -86,7 +86,7 @@ namespace Momiji.Source.Cards
                     count = readOnlyList.Count;
                 }
             }
-            for(int i = 0; i < count; i++) { yield return new CastBlockShieldAction(base.Battle.Player, base.Value2, 0, BlockShieldType.Normal, true); }
+            for(int i = 0; i < count; i++) { yield return new CastBlockShieldAction(base.Battle.Player, base.Block.Block, 0, BlockShieldType.Normal, true); }
             yield break;
         }
     }
