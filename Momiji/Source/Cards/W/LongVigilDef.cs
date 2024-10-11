@@ -27,7 +27,7 @@ namespace Momiji.Source.Cards
             config.Rarity = Rarity.Uncommon;
 
             config.Type = CardType.Skill;
-            config.TargetType = TargetType.Nobody;
+            config.TargetType = TargetType.Self;
 
             config.Value1 = 3;
 
