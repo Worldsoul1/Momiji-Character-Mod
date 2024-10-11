@@ -421,8 +421,10 @@ IronStance:
 
 LongVigil:
     Name: Long Vigil
-    Description: Exile up to three cards from your hand. Gain {Block} |Block| for each card exiled this way.
-    UpgradedDescription: Exile up the three cards from your hand, draw, or discard piles. Gain {Block} |Block| for each card exiled this way.
+    Description: |-
+        Exile up to {Value1} cards from your hand. Gain {Block} |Block| for each card exiled this way.
+    UpgradedDescription: |-
+        Exile up the {Value1} cards from your hand, draw, or discard piles. Gain {Block} |Block| for each card exiled this way.
 
 MomijiReflect:
   Name: Reflect
