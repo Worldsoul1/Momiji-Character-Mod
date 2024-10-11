@@ -30,8 +30,8 @@ namespace Momiji.Source.Cards
             config.Type = CardType.Attack;
             config.TargetType = TargetType.SingleEnemy;
 
-            config.Damage = 10;
-            config.UpgradedDamage = 15;
+            config.Damage = 13;
+            config.UpgradedDamage = 18;
 
             config.Mana = new ManaGroup() { Red = 1 };
             config.UpgradedMana = new ManaGroup() { Red = 2 };
