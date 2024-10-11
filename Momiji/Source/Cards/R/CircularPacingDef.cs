@@ -24,7 +24,7 @@ namespace Momiji.Source.Cards
             config.Type = CardType.Ability;
             config.TargetType = TargetType.Nobody;
             config.Value1 = 3;
-            config.UpgradedValue1 = 3;
+            config.UpgradedValue1 = 4;
 
 
             config.Illustrator = "Oba";

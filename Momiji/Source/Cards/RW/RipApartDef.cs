@@ -41,6 +41,7 @@ namespace Momiji.Source.Cards
             config.UpgradedDamage = 8;
 
             config.Value1 = 1;
+            config.UpgradedValue1 = 2;
             config.Value2 = 2;
 
             config.RelativeEffects = new List<string>() { nameof(Vulnerable)};

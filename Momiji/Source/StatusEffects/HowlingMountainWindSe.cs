@@ -17,9 +17,8 @@ namespace Momiji.Source.StatusEffects
         public override StatusEffectConfig MakeConfig()
         {
             StatusEffectConfig config = GetDefaultStatusEffectConfig();
-            config.HasLevel = true;
-            config.LevelStackType = LBoL.Base.StackType.Add;
-            config.RelativeEffects = new List<string>() { nameof(Reflect) };
+            config.HasLevel = false;
+            config.RelativeEffects = new List<string>() { nameof(Vulnerable) };
             config.Order = 10;
             return config;
         }
@@ -41,10 +40,10 @@ namespace Momiji.Source.StatusEffects
             {
                 yield break;
             }
-            if (args.Card is AirCutter)
+            if (args.Card is AirCutter && args.Card.PendingTarget.HasStatusEffect<Vulnerable>())
             {
                 base.NotifyActivating();
-                yield return new ApplyStatusEffectAction<Reflect>(base.Owner, new int?(base.Level), null, null, null, 0f, true);
+                yield return new DamageAction(base.Battle.Player, args.Card.PendingTarget, args.Card.Damage, args.Card.GunName);
             }
             yield break;
         }

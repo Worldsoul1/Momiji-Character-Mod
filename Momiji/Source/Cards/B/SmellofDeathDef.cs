@@ -8,6 +8,7 @@ using LBoL.Core.Battle;
 using LBoL.Core;
 using LBoL.Core.Units;
 using LBoL.Core.Battle.BattleActions;
+using LBoL.Core.StatusEffects;
 
 namespace Momiji.Source.Cards
 {
@@ -23,6 +24,11 @@ namespace Momiji.Source.Cards
 
             config.Type = CardType.Skill;
             config.TargetType = TargetType.SingleEnemy;
+
+            config.Value1 = 2;
+
+            config.RelativeEffects = new List<string>() { nameof(Vulnerable) };
+            config.UpgradedRelativeEffects = new List<string>() { nameof(Vulnerable) };
 
             config.Keywords = Keyword.Exile;
             config.UpgradedKeywords = Keyword.Exile;
@@ -40,6 +46,7 @@ namespace Momiji.Source.Cards
         protected override IEnumerable<BattleAction> Actions(UnitSelector selector, ManaGroup consumingMana, Interaction precondition)
         {
             EnemyUnit selectedEnemy = selector.SelectedEnemy;
+            yield return new ApplyStatusEffectAction<Vulnerable>(selectedEnemy, 0, base.Value1, 0, 0, 0.2f);
             yield return new ApplyStatusEffectAction<SmellofDeathSe>(selectedEnemy, 1, 0, 0, 0, 0.2f);
             yield break;
         }

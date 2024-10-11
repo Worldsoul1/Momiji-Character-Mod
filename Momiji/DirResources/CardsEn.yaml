@@ -40,6 +40,7 @@ FeedOnTheWeak:
 ScentofDeath:
     Name: Scent of Death
     Description: |-
+        Apply {Value1} |Vulnerable|.
         When target enemy dies, it deals damage to all other enemies equal to half its max HP.
     FlavorText: It's foul.
 
@@ -103,7 +104,7 @@ GentlyCirclingLeaves:
 
 HowlingMountainWind:
     Name: Howling Mountain Wind
-    Description: Whenever {PlayerName} plays an |Air Cutter|, she gains {Value1} |Reflection|. Add {Value2} |Air Cutter{Value2:plural one='' other='s'}| to the hand.
+    Description: Whenever {PlayerName} plays an |Air Cutter| targeting an enemy with |Vulnerable|, that |Air Cutter| deals damage an additional time. Add {Value2} |Air Cutter{Value2:plural one='' other='s'}| to the hand.
     FlavorText: Come, Wind! Blow! Wrack!
 
 HuntingHurricanes:
@@ -219,7 +220,13 @@ CrispFallAir:
 
 Distract:
     Name: Distract
-    Description: Whenever {PlayerName} deals attack damage to an enemy, if that enemy has |Vulnerable|, {Playername} applies 1 |Weak| to that enemy.
+    Description: Whenever {PlayerName} deals attack damage to an enemy, if that enemy has |Vulnerable|, apply 1 |Weak| to that enemy.
+
+ExploitOpenings:
+    Name: Exploit Openings
+    Description: |-
+        Apply {Value1} |Vulnerable|.
+        Gain {Value1} |Firepower|. Gain additional |Firepower| equal to the target's |Vulnerable| level divided by {Value2}.
 
 ExtrasensoryPerception:
     Name: Extrasensory Perception
@@ -254,7 +261,7 @@ HuntersTrap:
 
 HuntingCall:
     Name: Hunting Call
-    Description: Apply 2 vulnerable to each enemy. If any enemy has an |Offensive Intention|, draw {Value2} cards. 
+    Description: Apply 2 |Vulnerable| to each enemy. If any enemy has an |Offensive Intention|, draw {Value2} cards. 
 
 ImageTraining:
     Name: Image Training
@@ -267,7 +274,7 @@ LookoutsIntuition:
     Name: Lookout's Intuition
     Description:
         Gain {Value1} |Graze|.
-        If an enemy has an |Offensive Intention|, Apply {Value1} Vulnerable to each enemy.
+        If an enemy has an |Offensive Intention|, Apply {Value1} |Vulnerable| to each enemy.
     FlavorText: Just a small hop to the left.
 
 MountainsideTrailTracking:

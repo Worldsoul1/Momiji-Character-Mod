@@ -17,9 +17,9 @@ namespace Momiji.Source.Cards
         public override CardConfig MakeConfig()
         {
             CardConfig config = GetCardDefaultConfig();
-            config.Colors = new List<ManaColor>() { ManaColor.White, ManaColor.Red };
-            config.Cost = new ManaGroup() { Any = 1, Hybrid = 1, HybridColor = 2 };
-            config.UpgradedCost = new ManaGroup() { Any = 1 };
+            config.Colors = new List<ManaColor>() { ManaColor.Red };
+            config.Cost = new ManaGroup() { Any = 3, Red = 2 };
+            config.UpgradedCost = new ManaGroup() { Any = 2, Red = 1 };
             config.Rarity = Rarity.Uncommon;
 
             config.Type = CardType.Ability;
@@ -29,8 +29,8 @@ namespace Momiji.Source.Cards
             config.Value2 = 1;
             config.UpgradedValue2 = 2;
 
-            config.RelativeEffects = new List<string>() { nameof(Reflect) };
-            config.UpgradedRelativeEffects = new List<string>() { nameof(Reflect) };
+            config.RelativeEffects = new List<string>() { nameof(Vulnerable) };
+            config.UpgradedRelativeEffects = new List<string>() { nameof(Vulnerable) };
 
             config.RelativeCards = new List<string>() { nameof(AirCutter) };
             config.UpgradedRelativeCards = new List<string>() { nameof(AirCutter) };
@@ -48,7 +48,7 @@ namespace Momiji.Source.Cards
         protected override IEnumerable<BattleAction> Actions(UnitSelector selector, ManaGroup consumingMana, Interaction precondition)
         {
             yield return new AddCardsToHandAction((Library.CreateCards<AirCutter>(Value2, false)));
-            yield return new ApplyStatusEffectAction<HowlingMountainWindSe>(Battle.Player, base.Value1, 0, 0, 0, 0.2f);
+            yield return new ApplyStatusEffectAction<HowlingMountainWindSe>(Battle.Player, 1, 0, 0, 0, 0.2f);
             //This is equivalent to:
             //yield return new ApplyStatusEffectAction<Firepower>(Battle.Player, base.Value1, 0, 0, 0, 0.2f);
             //yield return new ApplyStatusEffectAction<Spirit>(Battle.Player, base.Value2, 0, 0, 0, 0.2f);
