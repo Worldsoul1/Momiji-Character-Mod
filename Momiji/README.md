@@ -32,4 +32,4 @@ A massive thank you to the LBoL Modding Discord server, without which I never wo
 * Lvalon, who also playtested Momiji and provided invaluable feedback
 * rmrfmaxx, who provided an amazing template that allowed me to hit the ground running with creating Momiji
 * IntoxicatedKid, who created the code that Momiji uses to read the intentions of enemies, without which, this mod would be very different.
-* cyaneko, for being there to help with coding issues whenever I had problems
+* cyaneko, for being there to help with coding issues whenever I had problems 
