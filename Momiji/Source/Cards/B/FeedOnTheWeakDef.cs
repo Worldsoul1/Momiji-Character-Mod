@@ -30,7 +30,7 @@ namespace Momiji.Source.Cards
             config.Illustrator = "ïΩçsà⁄ìÆ";
 
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
-            return config; 
+            return config;
         }
     }
 
