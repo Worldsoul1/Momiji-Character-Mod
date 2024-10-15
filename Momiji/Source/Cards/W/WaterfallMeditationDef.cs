@@ -43,8 +43,8 @@ namespace Momiji.Source.Cards
             config.Value2 = 6;
             config.UpgradedValue2 = 9;
 
-            config.RelativeEffects = new List<string>() {  nameof(Vulnerable), nameof(Fragil), nameof(Firepower) };
-            config.UpgradedRelativeEffects = new List<string>() {  nameof(Vulnerable), nameof(Fragil), nameof(Firepower) };
+            config.RelativeEffects = new List<string>() {  nameof(Vulnerable), nameof(SpiritNegative), nameof(Firepower) };
+            config.UpgradedRelativeEffects = new List<string>() {  nameof(Vulnerable), nameof(SpiritNegative), nameof(Firepower) };
 
             config.Illustrator = "esai";
 
@@ -71,7 +71,7 @@ namespace Momiji.Source.Cards
             if (intention == 2 || intention == 3 || intention == 6)
             {
                 yield return new ApplyStatusEffectAction<Vulnerable>(selectedEnemy, 0, base.Value1, 0, 0, 0.2f);
-                yield return new ApplyStatusEffectAction<FragilForEnemies>(selectedEnemy, 0, base.Value1, 0, 0, 0.2f);
+                yield return new ApplyStatusEffectAction<SpiritNegative>(selectedEnemy, 0, base.Value1, 0, 0, 0.2f);
             }
             if (intention >= 4)
             { 

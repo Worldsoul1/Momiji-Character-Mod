@@ -453,7 +453,7 @@ SeizeTheMoment:
         Apply an additional effect based on the enemy's |Intention|.
     DetailText: |-
         If the enemy has an |Offensive Intention|, apply {Value1} |Temporary Firepower Down| to the enemy. 
-        If the enemy has a |Defensive Intention|, apply {Value2} |Vulnerable| and |Frail|.
+        If the enemy has a |Defensive Intention|, apply {Value2} |Vulnerable| and {Value1} |Spirit Down|.
         If the enemy has a |Special Intention|, deal damage an additional time.
     FlavorText: Always be prepared to act at a moment's notice.
 
@@ -507,7 +507,7 @@ WaterfallMeditation:
         Draw {Value1} card{Value1:plural one='' other='s'}.
     DetailText: |-
         If the enemy has an |Offensive Intention|, gain {Value2} block and upgrade {Value1} random card in the hand{Value1:plural one='' other='s'}, prioritizing Attack cards.
-        If the enemy has a |Defensive Intention|, apply {Value1} |Frail| and |Vulnerable| to the enemy.
+        If the enemy has a |Defensive Intention|, apply {Value1} |Frail| and |Spirit Down| to the enemy.
         If the enemy has a |Special Intention|, gain {Value1} |Firepower|.
 
 

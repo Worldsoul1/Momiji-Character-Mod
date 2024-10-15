@@ -23,6 +23,7 @@ Momiji uses Red and White mana, similar to Reimu. Her card pool contains 78 card
 Bug reports, card suggestions, balance feedback are appreciated. For feedback, post your suggestions in the modding channel in the LBoL Discord.
 
 * For the list of all the arts used, check ART.md.
+* For a log of all changes, check CHANGELOG.md.
 
 ## Special Thanks:
 

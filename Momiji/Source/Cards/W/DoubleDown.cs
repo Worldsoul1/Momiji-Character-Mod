@@ -55,25 +55,24 @@ namespace Momiji.Source.Cards
 
         protected override IEnumerable<BattleAction> Actions(UnitSelector selector, ManaGroup consumingMana, Interaction precondition)
         {
-            int attackCount = 0;
-            if (base.PlayInTriggered)
+            bool notAttacking = false;
+            EnemyUnit selectedEnemy = selector.SelectedEnemy;
+            notAttacking = selectedEnemy.Intentions.Any(delegate (Intention i)
             {
-                EnemyUnit[] enemies = selector.GetEnemies(base.Battle);
-                attackCount = enemies.Count((EnemyUnit enemy) => enemy.Intentions.Any(delegate (Intention i)
+                if (i is AttackIntention)
                 {
-                    if (!(i is AttackIntention))
-                    {
-                        SpellCardIntention spellCardIntention = i as SpellCardIntention;
-                        if (spellCardIntention == null || spellCardIntention.Damage == null)
-                        {
-                            return false;
-                        }
-                    }
-                    return true;
-                }));
-            }
+                    return false;
+                }
+                SpellCardIntention spellCardIntention = i as SpellCardIntention;
+                if (spellCardIntention != null && spellCardIntention.Damage != null)
+                {
+                    return false;
+                }
+                return true;
+            });
+
             yield return base.AttackAction(selector, base.GunName);
-            if (attackCount == 0)
+            if (notAttacking)
             {
                 if (this.IsUpgraded)
                 {

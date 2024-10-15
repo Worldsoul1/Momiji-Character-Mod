@@ -59,7 +59,7 @@ namespace Momiji.Source.Cards
             {
                 yield return new ApplyStatusEffectAction<Vulnerable>(enemyUnit, 0, base.Value1, 0, 0, 0.2f);
                 intention = base.IntentionCheck(enemyUnit);
-                if (intention >= 2)
+                if (intention == 1 || intention == 3 || intention == 5 || intention == 7)
                 {
                     count++;
                 }
