@@ -23,15 +23,15 @@ namespace Momiji.Source.Cards
             config.GunName = GunNameID.GetGunFromId(400);
 
             config.Colors = new List<ManaColor>() { ManaColor.Red };
-            config.Cost = new ManaGroup() { Any = 1, Red = 1 };
-            config.UpgradedCost = new ManaGroup() { Any = 1, Red = 1 };
+            config.Cost = new ManaGroup() { Red = 1 };
+            config.UpgradedCost = new ManaGroup() { Red = 1 };
             config.Rarity = Rarity.Uncommon;
 
             config.Type = CardType.Attack;
             config.TargetType = TargetType.SingleEnemy;
 
-            config.Damage = 13;
-            config.UpgradedDamage = 18;
+            config.Damage = 9;
+            config.UpgradedDamage = 13;
 
             config.Mana = new ManaGroup() { Red = 1 };
             config.UpgradedMana = new ManaGroup() { Red = 2 };

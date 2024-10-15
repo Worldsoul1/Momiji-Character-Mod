@@ -38,7 +38,7 @@ namespace Momiji.Source.Cards
             config.RelativeEffects = new List<string>() { nameof(FirepowerNegative) };
             config.UpgradedRelativeEffects = new List<string>() { nameof(FirepowerNegative) };
 
-            config.Illustrator = "thesilentgray";
+            config.Illustrator = "Belderchal";
 
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
             return config;

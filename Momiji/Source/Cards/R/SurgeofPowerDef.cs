@@ -30,7 +30,7 @@ namespace Momiji.Source
             config.Mana = new ManaGroup() { Any = 0 };
             config.UpgradedMana = new ManaGroup() { Any = 0 };
 
-            config.Illustrator = "";
+            config.Illustrator = "hara tamakita";
 
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
             return config;

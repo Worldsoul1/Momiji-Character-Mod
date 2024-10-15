@@ -29,7 +29,7 @@ namespace Momiji.Source.Cards
         config.RelativeCards = new List<string>() { nameof(MapleLeaf) };
         config.UpgradedRelativeCards = new List<string>() { nameof(MapleLeaf) };
 
-            config.Illustrator = "SK";
+            config.Illustrator = "‚³‚é‚©‚È";
 
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
             return config;

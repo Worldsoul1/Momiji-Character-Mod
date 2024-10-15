@@ -100,3 +100,7 @@ SpecialIntention:
     Name: Special Intention
     Description: "A Special Intention is one of the following: |Summon|, |Stunned|, |Do Nothing|, |Charge|, |Heal|, |Repair|,  |Cleanse|, |Noh of Darkness|, or |Jinx|."
 
+FragilForEnemies:
+    Name: Frail
+    Brief: '{PlayerName} gains {Value}% less |Block| and |Barrier| from cards.'
+    Description: "{PlayerName} gains {Value}% less |Block| and |Barrier| from cards {Duration:plural one='until end of turn' other='for the next % turns'}."

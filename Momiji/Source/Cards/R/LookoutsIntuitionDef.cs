@@ -33,13 +33,15 @@ namespace Momiji.Source.Cards
 
             config.Value1 = 2;
 
-            config.Value2 = 2;
-            config.UpgradedValue2 = 3;
+            config.Value2 = 3;
+            config.UpgradedValue2 = 2;
+            config.Shield = 3;
+            config.UpgradedShield = 3;
 
             config.RelativeEffects = new List<string>() { nameof(Vulnerable), nameof(Graze) };
             config.UpgradedRelativeEffects = new List<string>() { nameof(Vulnerable), nameof(Graze) };
 
-            config.Illustrator = "";
+            config.Illustrator = "Shirokaba114";
 
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
             return config;
@@ -52,13 +54,13 @@ namespace Momiji.Source.Cards
 
         protected override IEnumerable<BattleAction> Actions(UnitSelector selector, ManaGroup consumingMana, Interaction precondition)
         {
-            int intention = 0;
+            int count = 0;
             EnemyUnit selectedEnemy = selector.SelectedEnemy;
             yield return base.BuffAction<Graze>(base.Value1, 0, 0, 0, 0.2f);
-            intention = base.IntentionCheck(selectedEnemy);
-            if (intention == 1 || intention == 3 || intention == 5)
+            if(selectedEnemy.HasStatusEffect<Vulnerable>())
             {
-                yield return new ApplyStatusEffectAction<Vulnerable>(selectedEnemy, base.Value1, 0, 0, 0, 0.2f);
+                count = (selectedEnemy.GetStatusEffect<Vulnerable>().Duration) / base.Value2;
+                yield return new CastBlockShieldAction(base.Battle.Player, 0, count * base.Shield.Shield, BlockShieldType.Normal, false);
             }
             yield break;
         }

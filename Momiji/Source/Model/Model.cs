@@ -17,7 +17,7 @@ namespace Momiji.Source.model
         public static bool useInGameModel = BepinexPlugin.useInGameModel;
         public static string model_name = useInGameModel ? BepinexPlugin.modelName : "MomijiModel.png";
         //If a custom model is used, use a custom sprite for the Ultimate animation.
-        public static string spellsprite_name = "MomijiStand.png";
+        public static string spellsprite_name = "MomijiSpellCard.png";
 
         public override IdContainer GetId()
         {

@@ -29,7 +29,7 @@ namespace Momiji.Source.Cards
             config.Keywords = Keyword.Basic;
             config.UpgradedKeywords = Keyword.Basic;
 
-            config.Illustrator = "\nŒ¹ŒÜ˜YŠÛ";
+            config.Illustrator = "‚f•v";
 
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
             return config;

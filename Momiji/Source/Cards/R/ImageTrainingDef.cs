@@ -33,7 +33,7 @@ namespace Momiji.Source.Cards
             config.RelativeCards = new List<string>() { "AirCutter" };
             config.UpgradedRelativeCards = new List<string>() { "AirCutter" };
 
-            config.Illustrator = "\nきゃなが";
+            config.Illustrator = "きゃなが";
 
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
             return config;

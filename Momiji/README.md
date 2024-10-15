@@ -1,28 +1,33 @@
-## Template for [Sideloader](https://github.com/Neoshrimp/LBoL-Entity-Sideloader/tree/master) mod.
+## Momiji Character Mod.
 
-Use is highly encouraged as it has dependencies, publicizer and common boilerplate setup.
+Adds Momiji Inubarashi as a playable character to Lost branch of Legend
 
+## Overview:
 
-Instructions:
-- Copy [`LBoL Sideloader Template.zip`](https://github.com/Neoshrimp/LBoL-ModdingTools/raw/master/src/SideloaderTemplate/LBoL%20Sideloader%20Template.zip) to `<User>\Documents\Visual Studio 2022\Templates\ProjectTemplates` do NOT unzip.
+Momiji uses Red and White mana, similar to Reimu. Her card pool contains 78 cards.
 
-- Create a new project, search for LBoL Sideloader template.
+### Main Themes:
 
-![image](https://user-images.githubusercontent.com/89428565/236344254-6eefaa12-c897-4406-867c-1abfa2259f65.png)
-- Change _GameFolder_ in .csproj file to target the game installation folder.
+'Retaliation' (White): Momiji is capable of stacking a new status effect called Retaliation, which generates Reflection equal to its current level at the start of each turn. Several cards also scale with the amount of Retaliation Momiji has.
+'Vulnerable' (Red): Momiji has many cards that apply Vulnerable, and several cards that either gain a bonus effect if an enemy has Vulnerable, or gain scaling effects based on the amount of Vulnerable the target has.
 
-![image](https://user-images.githubusercontent.com/89428565/236344281-02c506b5-42bf-4398-a8fc-19a07d727785.png)
-- In `PluginInfo.cs` class fill out `GUID` and `Name`. Mod will fail to load without GUID!
+### Secondary Themes:
 
-![image](https://user-images.githubusercontent.com/89428565/236587701-cbeea462-62ff-4762-a1b0-54175b8a0918.png)
+'Intentions': Momiji has several cards that care about what the enemy is doing, grouped into three broad categories of **Offensive**, **Defensive**, and **Special** intentions. 
+'Air Cutters': A token card of choice for Momiji, **Air Cutters** are a cheap, one-use token that is fairly powerful, but has Ethereal, so it can only be used on the turn it is created.
 
+## Additional Notes:
 
-For first time setup:
-- Download [Sideloader.dll](https://github.com/Neoshrimp/LBoL-Entity-Sideloader/blob/master/src/LBoL-Entity-Sideloader/LBoL-Entity-Sideloader.dll) and put it in `BepInEx/plugins` folder. It will be used as reference in the project.
-- Download [scriptengine.dll](https://github.com/Neoshrimp/BepInEx.Debug/blob/master/src/ScriptEngine/ScriptEngine.dll), put in plugins folder. Create `BepInEx/plugins/scripts` directory. Technically, this is optional but workflow without scriptengine is 10 times slower.
+Bug reports, card suggestions, balance feedback are appreciated. For feedback, post your suggestions in the modding channel in th Lbol discord.
 
-Change post-build command to copy to `plugins` folder instead of `scripts` if ScriptEngine is not used.
+* For the list of all the arts used, check ART.md.
 
-`https://nuget.bepinex.dev/v3/index.json` might need to be added as a source for nuget manager for BepInEx packages to be installed correctly.
+## Special Thanks:
 
-![image](https://user-images.githubusercontent.com/89428565/236344506-aeba2284-a134-418c-aa65-39967290f6cc.png)
+A massive thank you to the LBoL Modding Discord server, without which I never would have made this mod. Specifically, I would like to highlight a few individuals who helped me massively during the creation process:
+* Zoisit, whose knowledge of C# was invaluable
+* Saevin_7, who playtested Momiji consistently and gave valuable feedback
+* Lvalon, who also playtested Momiji and provided invaluable feedback
+* rmrfmaxx, who provided an amazing template that allowed me to hit the ground running with creating Momiji
+* IntoxicatedKid, who created the code that Momiji uses to read the intentions of enemies, without which, this mod would be very different.
+* cyaneko, for being there to help with coding issues whenever I had problems
