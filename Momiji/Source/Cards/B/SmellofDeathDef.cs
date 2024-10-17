@@ -12,7 +12,7 @@ using LBoL.Core.StatusEffects;
 
 namespace Momiji.Source.Cards
 {
-    public sealed class ScentofDeathDef : SampleCharacterCardTemplate
+    public sealed class SmellofDeathDef : SampleCharacterCardTemplate
     {
         public override CardConfig MakeConfig()
         {
@@ -40,8 +40,8 @@ namespace Momiji.Source.Cards
         }
     }
     
-    [EntityLogic(typeof(ScentofDeathDef))]
-    public sealed class ScentofDeath : SampleCharacterCard
+    [EntityLogic(typeof(SmellofDeathDef))]
+    public sealed class SmellofDeath : SampleCharacterCard
     {
         protected override IEnumerable<BattleAction> Actions(UnitSelector selector, ManaGroup consumingMana, Interaction precondition)
         {

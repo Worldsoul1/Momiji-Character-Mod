@@ -33,6 +33,9 @@ namespace Momiji.Source.Cards
             config.Damage = 10;
             config.UpgradedDamage = 10;
 
+            config.Keywords = Keyword.Accuracy;
+            config.UpgradedKeywords = Keyword.Accuracy;
+
             config.RelativeEffects = new List<string>() { nameof(Reflect) };
             config.UpgradedRelativeEffects = new List<string>() { nameof(Reflect) };
             //The Accuracy keyword is enough to make an attack accurate.
@@ -59,6 +62,8 @@ namespace Momiji.Source.Cards
                 return 0;
             }
         }
+
+
 
         // Token: 0x17000178 RID: 376
         // (get) Token: 0x06000CED RID: 3309 RVA: 0x0001826C File Offset: 0x0001646C

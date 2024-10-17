@@ -29,7 +29,7 @@ namespace Momiji.Source.StatusEffects
     public sealed class FeedOnTheWeakSe : StatusEffect
     {
         // Token: 0x0600013A RID: 314 RVA: 0x000045BF File Offset: 0x000027BF
-        public void OnEnterBattle(BattleController battle)
+        protected override void OnAdded(Unit unit)
         {
             base.Owner.ReactBattleEvent<DieEventArgs>(base.Battle.EnemyDied, this.OnEnemyDied);
         }
@@ -37,7 +37,7 @@ namespace Momiji.Source.StatusEffects
         // Token: 0x0600013B RID: 315 RVA: 0x000045DE File Offset: 0x000027DE
         private IEnumerable<BattleAction> OnEnemyDied(DieEventArgs args)
         {
-            if (args.DieSource == this && !args.Unit.HasStatusEffect<Servant>())
+            if (!args.Unit.HasStatusEffect<Servant>())
             {
                 yield return new GainPowerAction(10);
                 yield return new HealAction(base.Battle.Player, base.Battle.Player, 4, HealType.Normal, 0.2f);

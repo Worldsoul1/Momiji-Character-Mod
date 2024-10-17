@@ -26,7 +26,6 @@ namespace Momiji.Source.StatusEffects
     [EntityLogic(typeof(DistractSeDef))]
     public sealed class DistractSe : StatusEffect
     {
-        int intention = 0;
         protected override void OnAdded(Unit unit)
         {
             base.ReactOwnerEvent<DamageDealingEventArgs>(base.Battle.Player.DamageDealing, this.OnPlayerDamageDealt);

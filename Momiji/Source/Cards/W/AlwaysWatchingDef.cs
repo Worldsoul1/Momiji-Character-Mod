@@ -52,12 +52,11 @@ namespace Momiji.Source.Cards
         {
             int intention = 0;
             int count = 0;
-            EnemyUnit[] enemies = selector.GetEnemies(base.Battle);
             yield return new CastBlockShieldAction(base.Battle.Player, base.Battle.Player, 0,  base.Shield.Shield, BlockShieldType.Normal, true);
-            foreach (EnemyUnit enemyUnit in enemies)
+            foreach (EnemyUnit enemyUnit in base.Battle.EnemyGroup.Alives)
             {
                 intention = base.IntentionCheck(enemyUnit);
-                if (intention == 1 || intention == 3 || intention ==5 || intention == 7)
+                if (intention == 1 || intention == 3 || intention == 5 || intention == 7)
                 {
                     count++;
                 }

@@ -2,6 +2,7 @@
 using LBoL.ConfigData;
 using LBoL.Core;
 using LBoL.Core.Battle;
+using LBoL.Core.Battle.BattleActions;
 using LBoL.Core.StatusEffects;
 using LBoL.Core.Units;
 using LBoL.EntityLib.StatusEffects.Basic;
@@ -28,6 +29,7 @@ namespace Momiji.Source.StatusEffects
 
         protected override void OnAdded(Unit unit)
         {
+            this.React(new ApplyStatusEffectAction<Reflect>(base.Battle.Player, base.Level, 0, 0, 0, 0.2f));
             base.ReactOwnerEvent<UnitEventArgs>(base.Owner.TurnStarted, new EventSequencedReactor<UnitEventArgs>(this.OnOwnerTurnStarted));
         }
 

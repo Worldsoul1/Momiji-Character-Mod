@@ -28,24 +28,5 @@ namespace Momiji.Source.StatusEffects
     public sealed class HowlingMountainWindSe : StatusEffect
     {
 
-        protected override void OnAdded(Unit unit)
-        {
-            base.ReactOwnerEvent<CardUsingEventArgs>(base.Battle.CardUsed, new EventSequencedReactor<CardUsingEventArgs>(this.OnCardUsed));
-        }
-
-        // Token: 0x06000092 RID: 146 RVA: 0x000030DC File Offset: 0x000012DC
-        private IEnumerable<BattleAction> OnCardUsed(CardUsingEventArgs args)
-        {
-            if (base.Battle.BattleShouldEnd)
-            {
-                yield break;
-            }
-            if (args.Card is AirCutter && args.Card.PendingTarget.HasStatusEffect<Vulnerable>())
-            {
-                base.NotifyActivating();
-                yield return new DamageAction(base.Battle.Player, args.Card.PendingTarget, args.Card.Damage, args.Card.GunName);
-            }
-            yield break;
-        }
     }
 }

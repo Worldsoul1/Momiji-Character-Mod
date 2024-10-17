@@ -49,7 +49,6 @@ namespace Momiji.Source.StatusEffects
                 {
                     reflectLevel = reflectLevel / 2;
                     yield return new ApplyStatusEffectAction<Reflect>(base.Battle.Player, reflectLevel, 0, 0, 0, 0.2f);
-                    yield return new RemoveStatusEffectAction(this, true, 0.1f);
                 }
             }
             yield break;

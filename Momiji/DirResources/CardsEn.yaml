@@ -37,8 +37,8 @@ FeedOnTheWeak:
         Whenever an enemy dies, {PlayerName} gains 10 <sprite="Point" name="Power"\> and 4 life.
     FlavorText: Only the strong and the lucky survive.
 
-ScentofDeath:
-    Name: Scent of Death
+SmellofDeath:
+    Name: Smell of Death
     Description: |-
         Apply {Value1} |Vulnerable|.
         When target enemy dies, it deals damage to all other enemies equal to half its max HP.
@@ -215,7 +215,7 @@ CrispFallAir:
         Add {Value1} |Air Cutters| to the hand.
         At the start of {PlayerName}'s next turn, gain {Mana}.
     UpgradedDescription: |-
-        Now and at the start of {PlayerName}'s next turn, add {Value1} |Air Cutter|s to the hand and gain {Mana}.
+        Now and at the start of {PlayerName}'s next turn, add {Value1} |Air Cutters| to the hand and gain {Mana}.
     FlavorText: Sharp enough to chill
 
 Distract:
@@ -226,7 +226,7 @@ ExploitOpenings:
     Name: Exploit Openings
     Description: |-
         Apply {Value1} |Vulnerable|.
-        Gain {Value1} |Firepower|. Gain additional |Firepower| equal to the target's |Vulnerable| level divided by {Value2}.
+        Gain {Value1} |Firepower|. Gain 1 additional |Firepower| for every {Value2} levels of |Vulnerable| target enemy has.
 
 ExtrasensoryPerception:
     Name: Extrasensory Perception

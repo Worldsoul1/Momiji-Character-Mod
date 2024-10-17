@@ -98,6 +98,7 @@ Riposte (猫水瀬): https://www.pixiv.net/en/artworks/38600870#1
 #### Rare
 
 Autumn View (半节): https://www.pixiv.net/en/artworks/94149009
+Indiscriminate Revenge (Oba): https://www.pixiv.net/en/artworks/120263395
 Instant of Contact (ツバサ): https://www.pixiv.net/en/artworks/22038043
 Parting Slice (竹篙): https://www.pixiv.net/en/artworks/63726185
 Stand Watch (スコッティ): https://danbooru.donmai.us/posts/428243?q=scottie_%28phantom2%29+inubashiri_momiji+

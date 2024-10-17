@@ -7,6 +7,7 @@ using Momiji.Source.GunName;
 using Momiji.Source.StatusEffects;
 using LBoL.Core.Battle;
 using LBoL.Core;
+using LBoL.Core.StatusEffects;
 using LBoL.Core.Cards;
 using LBoL.Core.Battle.BattleActions;
 using LBoL.EntityLib.StatusEffects.Cirno;
@@ -57,6 +58,11 @@ namespace Momiji.Source
             EnemyUnit selectedEnemy = selector.SelectedEnemy;
             yield return base.AttackAction(selector, base.GunName);
             yield return base.DefenseAction(true);
+
+            if(base.Battle.Player.HasStatusEffect<HowlingMountainWindSe>() && selectedEnemy.HasStatusEffect<Vulnerable>())
+            {
+                yield return base.AttackAction(selector, base.GunName);
+            }
         }
     }
 }

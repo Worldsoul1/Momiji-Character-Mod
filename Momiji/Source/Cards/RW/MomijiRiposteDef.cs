@@ -21,7 +21,7 @@ namespace Momiji.Source.Cards
             config.UpgradedCost = new ManaGroup() { Hybrid = 1, HybridColor = 2 };
             config.Rarity = Rarity.Uncommon;
 
-            config.Type = CardType.Ability;
+            config.Type = CardType.Skill;
             config.TargetType = TargetType.Self;
 
             config.Value1 = 6;
