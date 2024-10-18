@@ -31,6 +31,12 @@ namespace Momiji.Source.Ultimate
     [EntityLogic(typeof(ExpelleesCananDef))]
     public sealed class ExpelleesCanan : UltimateSkill
     {
+        public ExpelleesCanan()
+        {
+            base.TargetType = TargetType.AllEnemies;
+            base.GunName = GunNameID.GetGunFromId(4158);
+        }
+
         public BlockInfo Block
         {
             get
@@ -38,16 +44,11 @@ namespace Momiji.Source.Ultimate
                 return new BlockInfo(base.Value2, BlockShieldType.Normal);
             }
         }
-        public ExpelleesCanan()
-        {
-            base.TargetType = TargetType.AllEnemies;
-            base.GunName = GunNameID.GetGunFromId(4158);
-        }
 
         protected override IEnumerable<BattleAction> Actions(UnitSelector selector)
         {
             Unit[] targets = selector.GetUnits(base.Battle);
-            yield return PerformAction.Spell(base.Owner, "Expellee's Canan");
+            yield return PerformAction.Spell(base.Owner, nameof(ExpelleesCanan));
             yield return new CastBlockShieldAction(base.Owner, base.Owner, this.Block, false);
             yield return new DamageAction(base.Owner, targets, this.Damage, base.GunName, GunType.Single);
             if (base.Battle.BattleShouldEnd)

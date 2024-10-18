@@ -43,6 +43,10 @@ ImageTrainingSe:
     Name: Image Training
     Description: At the start of {OwnerName}'s turn, add an |Air Cutter| to the hand.
 
+IndiscriminateRevengeSe:
+    Name: Indiscriminate Revenge
+    Description: When |Reflection| is triggered, {OwnerName} deals damage to each enemy equal to their |Retaliation|.
+
 InstantofContactSe:
     name: Instant of Contact
     Description: Whenever an enemy takes attack damage, gain 2 Retaliation.

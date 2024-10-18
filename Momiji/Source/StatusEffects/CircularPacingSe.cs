@@ -20,7 +20,7 @@ namespace Momiji.Source.StatusEffects
             config.HasLevel = true;
             config.LevelStackType = LBoL.Base.StackType.Add;
             return config;
-        }
+        } 
     }
     [EntityLogic(typeof(CircularPacingSeDef))]
     public sealed class CircularPacingSe : StatusEffect

@@ -72,7 +72,7 @@ namespace Momiji.Source.model
                 UnitModelConfig config = DefaultConfig().Copy();
                 config.Flip = BepinexPlugin.modelIsFlipped;
                 config.Type = 0;
-                config.Offset = new Vector2(0, -0.10f);
+                config.Offset = new Vector2(0, -20.10f);
                 config.HasSpellPortrait = true;
                 return config;
             }   

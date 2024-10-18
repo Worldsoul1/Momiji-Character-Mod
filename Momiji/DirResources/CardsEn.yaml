@@ -110,9 +110,13 @@ HowlingMountainWind:
 HuntingHurricanes:
     Name: Hunting Hurricanes
     Description: |-
-        Deal {Damage} damage. 
+        Deal {Damage} damage to each enemy. 
         {SelfName} deals damage an additional time for each |Exiled Air Cutter|.
     Flavortext: A veritable Tornado
+
+IndiscriminateRevenge:
+    Name: Indiscriminate Revenge
+    Description: Whenever |Reflection| is triggered, {PlayerName} deals damage to all enemies equal to their |Retaliation|.
 
 InstantofContact:
     Name: Instant of Contact

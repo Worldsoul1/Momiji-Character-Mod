@@ -41,7 +41,7 @@ namespace Momiji.Source.Ultimate
         protected override IEnumerable<BattleAction> Actions(UnitSelector selector)
         {
             EnemyUnit enemy = selector.GetEnemy(base.Battle);
-            yield return PerformAction.Spell(base.Battle.Player, "RabiesBite");
+            yield return PerformAction.Spell(base.Battle.Player, nameof(RabiesBite));
             yield return new DamageAction(base.Owner, enemy, this.Damage, base.GunName, GunType.Single);
             yield return new DamageAction(base.Owner, enemy, this.Damage, base.GunName, GunType.Single);
 

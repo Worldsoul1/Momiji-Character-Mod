@@ -1,3 +1,15 @@
+## 1.0.4
+
+Korean Translation + a few fixes.
+
+* Indiscriminate Revenge now has actual text.
+* Attempted a fix for the two icon problem. Remains to be seen if it breaks something else
+* Hunting Hurricanes fixed to deal damage one additional time per exiled air cutter, rather than ten.
+* Hunting Hurricanes Localization updated to refleect its AoE nature
+* Attempted a fix for Momiji's in-game sprite floating higher than other sprites
+* Circular Pacing and Mountaiside Trail Tracking will no longer make attack cards display an error in their text boxes if they are played while the player has either status effect
+* attempted a fix to Momiji's Avatar to remove the weird cut-off bit
+
 ## 1.0.3
 
 More Focused Balance Changes.

@@ -59,7 +59,7 @@ namespace Momiji.Source.Cards
             {
                 if (base.Battle != null)
                 {
-                    return base.Value1 * base.Battle.ExileZone.OfType<AirCutter>().Count<AirCutter>();
+                    return base.Battle.ExileZone.OfType<AirCutter>().Count<AirCutter>();
                 }
                 else
                 {
@@ -69,6 +69,7 @@ namespace Momiji.Source.Cards
         }
         protected override IEnumerable<BattleAction> Actions(UnitSelector selector, ManaGroup consumingMana, Interaction precondition)
         {
+
                 yield return base.AttackAction(selector, GunName);
             for (int i = 0; i < AirCutterCount; i++) 
             {
