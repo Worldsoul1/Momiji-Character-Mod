@@ -1,3 +1,12 @@
+## 1.0.5
+
+Fixing the model.
+
+* Changed the coordinates of Momiji's in-game model so she would actually show up.
+* Changed Indiscriminnate Revenge from a Skill to an Ability, and bumped its rarity.
+* Changed MomijiB's starting deck to include Eye for an Eye.
+
+
 ## 1.0.4
 
 Korean Translation + a few fixes.

@@ -36,7 +36,7 @@ namespace Momiji.Source
             nameof(ShieldBash), 
             nameof(Parry), 
             nameof(Parry), 
-            nameof(Parry),
+            nameof(EyeforanEye),
             nameof(FarSight),
         };
 

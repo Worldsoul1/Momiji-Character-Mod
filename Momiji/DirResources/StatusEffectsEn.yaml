@@ -99,11 +99,11 @@ OffensiveIntention:
 
 DefensiveIntention:
     Name: Defensive Intention
-    Description: "a Defensive Intention is one of the following: |Buff|, |Defense|, |Graze|, or |Escape|."
+    Description: "a Defensive Intention is one of the following: |Buff|, |Cleanse|, |Defense|, |Graze|, |Escape|, or |Repair|."
 
 SpecialIntention:
     Name: Special Intention
-    Description: "A Special Intention is one of the following: |Summon|, |Stunned|, |Do Nothing|, |Charge|, |Heal|, |Repair|,  |Cleanse|, |Noh of Darkness|, or |Jinx|."
+    Description: "A Special Intention is one of the following: |Summon|, |Stunned|, |Do Nothing|, |Charge|, |Heal|, |Noh of Darkness|, or |Jinx|."
 
 WoodlandSentrySe:
     Name: Woodland Sentry

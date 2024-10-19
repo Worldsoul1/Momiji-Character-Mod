@@ -34,7 +34,7 @@ namespace Momiji.Source.StatusEffects
         // Token: 0x06000045 RID: 69 RVA: 0x0000273A File Offset: 0x0000093A
         private IEnumerable<BattleAction> OnPlayerDamageDealt(DamageEventArgs args)
         {
-            if (base.Battle.BattleShouldEnd)
+            if (base.Battle.BattleShouldEnd) 
             {
                 yield break;
             }
