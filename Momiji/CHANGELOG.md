@@ -1,3 +1,14 @@
+## 1.0.6
+
+Miscellaneous fixes
+
+* Fixed a bug allowing Mountainside Trail Tracking to activate multiple times per turn
+* Attempted a fix for a bug letting Distract apply Weak multiple times per card played.
+* Fixed a bug where Destabilize would provide Barrier instead of Block.
+* Properly formatted Retaliation to gain reflect when gaining new levels of Retaliation, not just when Retaliation is first gained.
+* Fixed a bug where Sense Weakness would not stack.
+
+
 ## 1.0.5
 
 Fixing the model.

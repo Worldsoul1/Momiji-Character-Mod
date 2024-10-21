@@ -42,7 +42,7 @@ namespace Momiji.Source.StatusEffects
                 DamageInfo damageInfo = args.DamageInfo;
                 if (damageInfo.Damage > 0f)
                 {
-                    yield return new CastBlockShieldAction(base.Battle.Player, 0, base.Level, BlockShieldType.Normal, false);
+                    yield return new CastBlockShieldAction(base.Battle.Player, base.Level, 0, BlockShieldType.Normal, false);
                 }
             }
             yield break;

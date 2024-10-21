@@ -34,6 +34,12 @@ namespace Momiji.Source.StatusEffects
             base.GameRun.EnemyVulnerableExtraPercentage += base.Level;
         }
 
+        public override bool Stack(StatusEffect other)
+        {
+            base.GameRun.EnemyVulnerableExtraPercentage += other.Level;
+            return base.Stack(other);
+        }
+
         // Token: 0x060003E8 RID: 1000 RVA: 0x0000A914 File Offset: 0x00008B14
         private IEnumerable<BattleAction> OnBattleEnding(GameEventArgs args)
         {

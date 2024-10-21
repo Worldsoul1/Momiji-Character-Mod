@@ -33,6 +33,12 @@ namespace Momiji.Source.StatusEffects
             base.ReactOwnerEvent<UnitEventArgs>(base.Owner.TurnStarted, new EventSequencedReactor<UnitEventArgs>(this.OnOwnerTurnStarted));
         }
 
+
+        public override bool Stack(StatusEffect other)
+        {
+            this.React(base.BuffAction<Reflect>(other.Level, 0, 0, 0, 0.2f));
+            return base.Stack(other);
+        }
         private IEnumerable<BattleAction> OnOwnerTurnStarted(UnitEventArgs args)
         {
             //At the start of the Player's turn, gain Spirit.

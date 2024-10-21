@@ -28,20 +28,17 @@ namespace Momiji.Source.StatusEffects
     {
         protected override void OnAdded(Unit unit)
         {
-            base.ReactOwnerEvent<DamageDealingEventArgs>(base.Battle.Player.DamageDealing, this.OnPlayerDamageDealt);
+            base.ReactOwnerEvent<DamageEventArgs>(base.Battle.Player.DamageDealt, this.OnPlayerDamageDealt);
         }
 
-        public IEnumerable<BattleAction> OnPlayerDamageDealt(DamageDealingEventArgs args)
+        public IEnumerable<BattleAction> OnPlayerDamageDealt(DamageEventArgs args)
         {
-            if (args.Source == base.Battle.Player && args.Targets != null && args.DamageInfo.DamageType == DamageType.Attack)
+            if (args.Source == base.Battle.Player && args.Target != null && args.DamageInfo.DamageType == DamageType.Attack)
             {
-                foreach (EnemyUnit enemyUnit in args.Targets)
+                if (args.Target.IsAlive && args.Target.HasStatusEffect<Vulnerable>())
                 {
-                    if (enemyUnit.IsAlive && enemyUnit.HasStatusEffect<Vulnerable>())
-                    {
-                        yield return new ApplyStatusEffectAction<Weak>(enemyUnit, 0, 1, 0, 0, 0.2f);
-                        //DamageInfo must be either Reaction or HpLoss since Attack could potentially trigger an infinite loop without additional checks.
-                    }
+                    yield return new ApplyStatusEffectAction<Weak>(args.Target, 0, 1, 0, 0, 0.2f);
+                    //DamageInfo must be either Reaction or HpLoss since Attack could potentially trigger an infinite loop without additional checks.
                 }
             }
         }

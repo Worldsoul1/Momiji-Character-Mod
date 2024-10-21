@@ -387,7 +387,7 @@ DefensiveStrike:
 
 Destabilize:
     Name: Destabilize
-    Description: Whenever {PlayerName} deals attack damage, they gain {Value1} |Block|.
+    Description: Whenever {PlayerName} deals unblocked attack damage, they gain {Value1} |Block|.
     Flavortext: with quick, light strikes to keep her opponents off balance, Momiji leaves them unable to land a solid hit on her.
 
 DoubleDown:

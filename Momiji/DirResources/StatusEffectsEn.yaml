@@ -13,7 +13,7 @@ CrispFallAirSe:
 
 DestabilizeSe:
     Name: Destabilize
-    Description: Whenever you deal attack damage to an enemy, gain {Level} |Block|.
+    Description: Whenever {Ownername} deals unblocked attack damage to an enemy, they gain {Level} |Block|.
 
 DistractSe:
     Name: Distract

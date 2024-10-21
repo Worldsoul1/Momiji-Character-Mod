@@ -1,6 +1,6 @@
 ## Momiji Character Mod.
 
-Adds Momiji Inubarashi as a playable character to Lost branch of Legend
+Adds Momiji Inubashiri as a playable character to Lost branch of Legend
 
 ## Overview:
 
@@ -29,7 +29,7 @@ Bug reports, card suggestions, balance feedback are appreciated. For feedback, p
 
 A massive thank you to the LBoL Modding Discord server, without which I never would have made this mod. Specifically, I would like to highlight a few individuals who helped me massively during the creation process:
 * Zoisit, whose knowledge of C# was invaluable
-* Saevin_7, who playtested Momiji consistently and gave valuable feedback
+* Saevin_7, who playtested Momiji consistently and gave invaluable feedback
 * Lvalon, who also playtested Momiji and provided invaluable feedback
 * rmrfmaxx, who provided an amazing template that allowed me to hit the ground running with creating Momiji
 * IntoxicatedKid, who created the code that Momiji uses to read the intentions of enemies, without which, this mod would be very different.
