@@ -9,6 +9,7 @@ using LBoL.Core.Battle.BattleActions;
 using LBoL.Core.StatusEffects;
 using LBoL.EntityLib.StatusEffects.Basic;
 using LBoL.EntityLib.StatusEffects.Cirno;
+using Momiji.Source.StatusEffects;
 
 namespace Momiji.Source.Cards
 {
@@ -47,7 +48,7 @@ namespace Momiji.Source.Cards
         protected override IEnumerable<BattleAction> Actions(UnitSelector selector, ManaGroup consumingMana, Interaction precondition)
         {
             yield return DefenseAction(true);
-            yield return base.BuffAction<ExtraDraw>(base.Value1, 0, 0, 0, 0.2f);
+            yield return base.BuffAction<DrawNextTurnSe>(base.Value1, 0, 0, 0, 0.2f);
             yield break;
             //This is equivalent to:
             //yield return new CastBlockShieldAction(Battle.Player, base.Block, base.Shield, BlockShieldType.Normal, true);

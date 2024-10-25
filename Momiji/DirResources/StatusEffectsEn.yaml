@@ -1,7 +1,9 @@
 RetaliationSe:
   Name: Retaliation
   Description: At the start of {OwnerName}'s turn, gain {Level} |Reflection|.
-  Brief: gain x |Reflection| at the start of the turn, where x is the level of Retaliation {OwnerName} has.
+  Brief: |-
+    Whenever {OwnerName} gains |Retaliation|, gain that much |Reflection|. 
+    Gain x |Reflection| at the start of the turn, where x is the level of |Retaliation| {OwnerName} has.
 
 CircularPacingSe:
     Name: Circular Pacing
@@ -58,6 +60,10 @@ MapleLeafFestivalSe:
 MountainsideTrailTrackingSe:
     Name: Mountainside Trail Tracking
     Description: Whenever {OwnerName} deals damage to an enemy with |Vulnerable| for the first time each turn, draw {Level} cards.
+
+NextTurnDrawSe:
+    Name: Next Turn Draw
+    Description: at the start of {OwnerName}'s next turn, draw {Level} additional cards.
 
 SenseWeaknessSe:
     Name: Sense Weakness

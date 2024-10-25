@@ -1,3 +1,12 @@
+## 1.0.7
+
+More Miscellaneous fixes
+
+* Vacuum Cutter is now Red
+* Tireless Guard now grants the player 6 Reflection, or 12 on Upgrade.
+* The description for Retaliation now reflects that it gives Reflection when gained.
+* Raging Waterfall now grants a generic "cards next turn" status effect, instead of Fairy Intellect
+
 ## 1.0.6
 
 Miscellaneous fixes

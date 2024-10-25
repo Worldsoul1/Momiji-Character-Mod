@@ -18,9 +18,9 @@ namespace Momiji.Source.Cards
             CardConfig config = GetCardDefaultConfig();
             config.GunName = GunNameID.GetGunFromId(400);
 
-            config.Colors = new List<ManaColor>() { ManaColor.White };
-            config.Cost = new ManaGroup() { Any = 1, White = 1 };
-            config.UpgradedCost = new ManaGroup() { White = 1 };
+            config.Colors = new List<ManaColor>() { ManaColor.Red };
+            config.Cost = new ManaGroup() { Any = 1, Red = 1 };
+            config.UpgradedCost = new ManaGroup() { Red = 1 };
             config.Rarity = Rarity.Common;
 
             config.Type = CardType.Attack;

@@ -27,6 +27,9 @@ namespace Momiji.Source.Cards.W
             config.Value1 = 1;
             config.UpgradedValue1 = 1;
 
+            config.Value2 = 6;
+            config.UpgradedValue2 = 12;
+
             config.RelativeEffects = new List<string>() { nameof(Reflect) };
             config.UpgradedRelativeEffects = new List<string>() { nameof(Reflect) };
 
@@ -43,6 +46,7 @@ namespace Momiji.Source.Cards.W
         protected override IEnumerable<BattleAction> Actions(UnitSelector selector, ManaGroup consumingMana, Interaction precondition)
         {
             yield return new ApplyStatusEffectAction<TirelessGuardSe>(Battle.Player, base.Value1, 0, 0, 0, 0.2f);
+            yield return new ApplyStatusEffectAction<Reflect>(Battle.Player, base.Value2, 0, 0, 0, 0.2f);
             //This is equivalent to:
             //yield return new ApplyStatusEffectAction<SampleCharacterTurnGainSpiritSe>(Battle.Player, base.Value1, 0, 0, 0, 0.2f);
             yield break;
