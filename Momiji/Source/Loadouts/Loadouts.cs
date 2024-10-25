@@ -19,11 +19,11 @@ namespace Momiji.Source
             nameof(Shoot),
             nameof(Boundary),
             nameof(Boundary),
-            nameof(Slice),
-            nameof(Slice), 
-            nameof(GuardUp), 
-            nameof(GuardUp), 
-            nameof(GuardUp),
+            nameof(MomijiAttackR),
+            nameof(MomijiAttackR), 
+            nameof(MomijiBlockW), 
+            nameof(MomijiBlockW), 
+            nameof(MomijiBlockW),
             nameof(GuardBreak)
         };
 
@@ -32,10 +32,10 @@ namespace Momiji.Source
             nameof(Shoot),
             nameof(Boundary),
             nameof(Boundary),
-            nameof(ShieldBash),
-            nameof(ShieldBash), 
-            nameof(Parry), 
-            nameof(Parry), 
+            nameof(MomijiAttackW),
+            nameof(MomijiAttackW), 
+            nameof(MomijiBlockR), 
+            nameof(MomijiBlockR), 
             nameof(EyeforanEye),
             nameof(FarSight),
         };

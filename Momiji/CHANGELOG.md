@@ -1,3 +1,14 @@
+## 1.0.8
+
+Minor text changes+Balancing
+
+* Fixed the wording on Woodland Sentry to be in line with other cards that give the player life.
+* Fixed Waterfall meditation to properly apply Spirit Down.
+* Call to Arms now can grab cards from the Discard pile as well as the draw pile
+* Rewrote the status effect and card localization for howling Mountain Wind to make it clear that the effect does not stack.
+* Added the Basic keyword to Guard Up
+* did some internal rewording to make certain that all cards have correct art.
+
 ## 1.0.7
 
 More Miscellaneous fixes

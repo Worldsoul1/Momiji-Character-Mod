@@ -47,7 +47,7 @@ namespace Momiji.Source.Cards
     {
         public override Interaction Precondition()
         {
-            IReadOnlyList<Card> drawZoneToShow = base.Battle.DrawZoneToShow;
+            IReadOnlyList<Card> drawZoneToShow = (from card in base.Battle.DrawZoneToShow.Concat(base.Battle.DiscardZone) where card != this select card).ToList<Card>();
             if (drawZoneToShow.Count <= 0)
             {
                 return null;

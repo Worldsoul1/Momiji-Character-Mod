@@ -39,7 +39,7 @@ FrigidSkySe:
 
 HowlingMountainWindSe:
     Name: Howling Mountain Wind
-    Description: Whenever {OwnerName} plays an |Air Cutter| targeting an enemy with |Vulnerable|, that |Air Cutter| deals damage an additional time.
+    Description: Whenever {OwnerName} plays an |Air Cutter| targeting an enemy with |Vulnerable|, that |Air Cutter| deals damage twice.
 
 ImageTrainingSe:
     Name: Image Training

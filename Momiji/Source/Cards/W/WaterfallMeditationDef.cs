@@ -71,7 +71,7 @@ namespace Momiji.Source.Cards
             if (intention == 2 || intention == 3 || intention == 6)
             {
                 yield return new ApplyStatusEffectAction<Vulnerable>(selectedEnemy, 0, base.Value1, 0, 0, 0.2f);
-                yield return new ApplyStatusEffectAction<SpiritNegative>(selectedEnemy, 0, base.Value1, 0, 0, 0.2f);
+                yield return new ApplyStatusEffectAction<SpiritNegative>(selectedEnemy, base.Value1, 0, 0, 0, 0.2f);
             }
             if (intention >= 4)
             { 

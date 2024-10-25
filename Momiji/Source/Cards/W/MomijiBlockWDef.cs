@@ -9,7 +9,7 @@ using LBoL.Core.Battle.BattleActions;
 
 namespace Momiji.Source.Cards
 {
-    public sealed class GuardUpDef : SampleCharacterCardTemplate
+    public sealed class MomijiBlockWDef : SampleCharacterCardTemplate
     {
 
 
@@ -29,6 +29,8 @@ namespace Momiji.Source.Cards
             config.Block = 10;
             config.UpgradedBlock = 13;
 
+            config.Keywords = Keyword.Basic;
+            config.UpgradedKeywords = Keyword.Basic;
 
             config.Illustrator = "â©êÚÇ§Ç≥Ç¨";
 
@@ -37,8 +39,8 @@ namespace Momiji.Source.Cards
         }
     }
     
-    [EntityLogic(typeof(GuardUpDef))]
-    public sealed class GuardUp : SampleCharacterCard
+    [EntityLogic(typeof(MomijiBlockWDef))]
+    public sealed class MomijiBlockW : SampleCharacterCard
     {
         protected override IEnumerable<BattleAction> Actions(UnitSelector selector, ManaGroup consumingMana, Interaction precondition)
         {

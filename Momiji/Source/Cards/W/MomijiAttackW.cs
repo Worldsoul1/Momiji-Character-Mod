@@ -7,13 +7,14 @@ using Momiji.Source.GunName;
 
 namespace Momiji.Source.Cards
 {
-    public sealed class ShieldBashDef : SampleCharacterCardTemplate
+    public sealed class MomijiAttackWDef : SampleCharacterCardTemplate
     {
         public override CardConfig MakeConfig()
         {
             CardConfig config = GetCardDefaultConfig();
             config.GunName = GunNameID.GetGunFromId(400);
             config.IsPooled = false;
+            config.FindInBattle = false;
 
             config.Colors = new List<ManaColor>() { ManaColor.White };
             config.Cost = new ManaGroup() { Any = 1, White = 1 };
@@ -36,8 +37,8 @@ namespace Momiji.Source.Cards
         }
     }
     
-    [EntityLogic(typeof(ShieldBashDef))]
-    public sealed class ShieldBash : SampleCharacterCard
+    [EntityLogic(typeof(MomijiAttackWDef))]
+    public sealed class MomijiAttackW : SampleCharacterCard
     {
         //By default, if config.Damage / config.Block / config.Shield are set:
         //The card will deal damage or gain Block/Barrier without having to set anything.

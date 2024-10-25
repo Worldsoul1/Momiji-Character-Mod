@@ -1,19 +1,19 @@
-ShieldBash:
+MomijiAttackW:
   Name: Shield Bash
   Description: Deal {Damage} damage.
   FlavorText: And a shield can be a good weapon.
 
-Slice:
+MomijiAttackR:
   Name: Slice
   Description: Deal {Damage} damage.
   FlavorText: and Dice.
 
-Parry:
+MomijiBlockR:
   Name: Parry
   Description: Gain {Block} |Block|.
   FlavorText: A sword can be a good defensive tool.
 
-GuardUp:
+MomijiBlockW:
   Name: Guard Up
   Description: Gain {Block} |Block|.
   FlavorText: You never know what's aimed at your heart'
@@ -71,7 +71,7 @@ AyaTeammate:
 WoodlandSentry:
     Name: Woodland Sentry
     Description: |-
-        Heal {Value2} hp.
+        Gain {Value2} life.
         At the end of {PlayerName}'s turn, gain {Value1} block for each card in hand.
 
 AutumnView:
@@ -104,7 +104,7 @@ GentlyCirclingLeaves:
 
 HowlingMountainWind:
     Name: Howling Mountain Wind
-    Description: Whenever {PlayerName} plays an |Air Cutter| targeting an enemy with |Vulnerable|, that |Air Cutter| deals damage an additional time. Add {Value2} |Air Cutter{Value2:plural one='' other='s'}| to the hand.
+    Description: Whenever {PlayerName} plays an |Air Cutter| targeting an enemy with |Vulnerable|, that |Air Cutter| deals damage twice. Add {Value2} |Air Cutter{Value2:plural one='' other='s'}| to the hand.
     FlavorText: Come, Wind! Blow! Wrack!
 
 HuntingHurricanes:
@@ -374,7 +374,7 @@ AlwaysWatching:
 CallToArms:
     Name: Call to Arms
     Description: |-
-        Choose up to {Value1} card{Value1:plural one='' other='s'} in the draw pile and put {Value1:plural one='it' other='them'} into the hand. 
+        Choose up to {Value1} card{Value1:plural one='' other='s'} in the draw or discard piles and put {Value1:plural one='it' other='them'} into the hand. 
         Upgrade {Value1:plural one='it' other='them'}. 
     FlavorText: A clarion call to tell other Whit Wolves that an intruder has been discovered.
 
