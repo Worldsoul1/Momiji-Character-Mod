@@ -5,6 +5,11 @@ RetaliationSe:
     Whenever {OwnerName} gains |Retaliation|, gain that much |Reflection|. 
     Gain x |Reflection| at the start of the turn, where x is the level of |Retaliation| {OwnerName} has.
 
+BlackWindSe:
+    Name: Black Wind
+    Description: |-
+        |Air Cutters| inflict 1 Vulnerable.
+
 CircularPacingSe:
     Name: Circular Pacing
     Description: Whenever an enemy gains a debuff, gain {Level} |Barrier|.
@@ -102,14 +107,17 @@ OffensiveIntention:
     Name: Offensive Intention
     Description: |-
         "An Offensive Intention is one of the following Intentions: |Attack|, |Debuff|, |Status|, |Detonate|, or |Spell Card|."
+    Brief: "An offensive intention is one of the following intentions: |Attack|, |Debuff|, |Status|, |Detonate|, or |Spell Card|."
 
 DefensiveIntention:
     Name: Defensive Intention
     Description: "a Defensive Intention is one of the following: |Buff|, |Cleanse|, |Defense|, |Graze|, |Escape|, or |Repair|."
+    Brief: "a Defensive Intention is one of the following: |Buff|, |Cleanse|, |Defense|, |Graze|, |Escape|, or |Repair|."
 
 SpecialIntention:
     Name: Special Intention
     Description: "A Special Intention is one of the following: |Summon|, |Stunned|, |Do Nothing|, |Charge|, |Heal|, |Noh of Darkness|, or |Jinx|."
+    Brief: "A Special Intention is one of the following: |Summon|, |Stunned|, |Do Nothing|, |Charge|, |Heal|, |Noh of Darkness|, or |Jinx|."
 
 WoodlandSentrySe:
     Name: Woodland Sentry

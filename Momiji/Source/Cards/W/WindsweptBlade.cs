@@ -19,18 +19,18 @@ namespace Momiji.Source.Cards
             config.GunName = GunNameID.GetGunFromId(400);
 
             config.Colors = new List<ManaColor>() { ManaColor.White };
-            config.Cost = new ManaGroup() { Any = 2, White = 1 };
-            config.UpgradedCost = new ManaGroup() { Any = 2, White = 1 };
+            config.Cost = new ManaGroup() { Any = 1, White = 1 };
+            config.UpgradedCost = new ManaGroup() { Any = 1, White = 1 };
             config.Rarity = Rarity.Common;
 
             config.Type = CardType.Attack;
             config.TargetType = TargetType.SingleEnemy;
 
-            config.Damage = 9;
-            config.UpgradedDamage = 13;
+            config.Damage = 7;
+            config.UpgradedDamage = 9;
 
-            config.Value1 = 5;
-            config.Value2 = 8;
+            config.Value1 = 3;
+            config.Value2 = 6;
 
             config.RelativeEffects = new List<string>() { nameof(RetaliationSe) };
             config.UpgradedRelativeEffects = new List<string>() { nameof(RetaliationSe) };

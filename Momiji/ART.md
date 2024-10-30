@@ -19,6 +19,7 @@ Hunting Call (黒てー): https://www.pixiv.net/en/artworks/54118566
 Lookout's Intuition (Shirokaba114): https://danbooru.donmai.us/posts/3720386?q=shirokaba114+
 Overhand Blade(魚ウサ王): https://www.pixiv.net/en/artworks/42035660
 Scattering Leaves(トリノスケイ): https://www.pixiv.net/en/artworks/72010188
+Taunt(さるかな): https://www.pixiv.net/en/artworks/115866119
 
 #### Uncommon
 
@@ -113,6 +114,7 @@ Plunge Pool (Oba): https://www.pixiv.net/en/artworks/92857039
 
 ### B
 
+Black Wind(そうたつ): https://www.pixiv.net/en/artworks/109888491
 Feed on the Weak (平行移動): https://www.pixiv.net/en/artworks/15995431
 Smell of Death (真塚ケイ): https://www.pixiv.net/en/artworks/28320609
 

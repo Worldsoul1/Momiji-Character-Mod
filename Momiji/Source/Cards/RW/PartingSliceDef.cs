@@ -37,8 +37,8 @@ namespace Momiji.Source.Cards
             config.Value1 = 1;
             config.Value2 = 2;
 
-            config.RelativeEffects = new List<string>() { nameof(Graze) };
-            config.UpgradedRelativeEffects = new List<string>() { nameof(Graze) };
+            config.RelativeEffects = new List<string>() { nameof(Graze), nameof(OffensiveIntention) };
+            config.UpgradedRelativeEffects = new List<string>() { nameof(Graze), nameof(OffensiveIntention) };
 
             config.Illustrator = "竹篙";
 
@@ -58,7 +58,7 @@ namespace Momiji.Source.Cards
             foreach (EnemyUnit enemy in enemies)
             {
                 intention = base.IntentionCheck(enemy);
-                if (intention == 1 || intention == 3 || intention == 5)
+                if (intention == 1 || intention == 3 || intention == 5 || intention == 7)
                     count++;
             }
             yield return base.AttackAction(selector, base.GunName);

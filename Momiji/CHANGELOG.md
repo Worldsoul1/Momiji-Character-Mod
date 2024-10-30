@@ -1,3 +1,17 @@
+## 1.0.9
+
+Intention Fixing
+
+* All cards that interact with enemy intention categories(Hunting Call, Parting Slice, Training Record, Always Watching, Double Down, Seize the Moment, Waterfall Meditation) now display what specific intentions are grouped under which category.
+* Seize the Moment fixed to properly apply Negative Firepower.
+* Overhand Blade, Defensive Strike, and Windswept Blade have all been changed to 2-cost cards. Damage numbers have been tweaked to account for this.
+* Stand Watch now costs 1WR unupgraded, or WR upgraded.
+* Cleaving Swipe and Rip Apart both have had their damage buffed.
+* Twin Fang's Localization has been updated to reflect that it gives the player a small amount of Reflection when played.
+* A bug causing Exploit Openings to softlock the game when played targeting an enemy with Amulet or a Drone has been patched.
+* New card added to Momiji's card pool: Black Wind, a Black card that makes Air Cutters apply Vulnerable on hit.
+* New card added to Momiji's card pool: Taunt, a common Red card that applies weak and vulnerable to an enemy for 1 mana, at the cost fo the enemy attacking Momiji for a small amount of damage.
+
 ## 1.0.8
 
 Minor text changes+Balancing

@@ -28,23 +28,20 @@ namespace Momiji.Source.StatusEffects
     {
         protected override void OnAdded(Unit unit)
         {
-            base.ReactOwnerEvent<DamageDealingEventArgs>(base.Battle.Player.DamageDealing, this.OnPlayerDamageDealt);
+            base.ReactOwnerEvent<DamageEventArgs>(base.Battle.Player.DamageDealt, this.OnPlayerDamageDealt);
             base.ReactOwnerEvent<UnitEventArgs>(base.Battle.Player.TurnEnded, this.OnTurnEnding);
         }
 
-        public IEnumerable<BattleAction> OnPlayerDamageDealt(DamageDealingEventArgs args)
+        public IEnumerable<BattleAction> OnPlayerDamageDealt(DamageEventArgs args)
         {
-            if (args.Source == base.Battle.Player && args.Targets != null && args.DamageInfo.DamageType == DamageType.Attack)
+            if (args.Source == base.Battle.Player && args.Target != null && args.DamageInfo.DamageType == DamageType.Attack)
             {
                 base.NotifyActivating();
-                foreach (Unit enemyUnit in args.Targets)
+                if (args.Target.IsAlive)
                 {
-                    if (enemyUnit.IsAlive)
-                    {
-                        yield return new DamageAction(base.Owner, enemyUnit, DamageInfo.Reaction((float)base.Battle.Player.GetStatusEffect<RetaliationSe>().Level, false), GunNameID.GetGunFromId(400), GunType.Single);
-                        //DamageInfo must be either Reaction or HpLoss since Attack could potentially trigger an infinite loop without additional checks.
-                    }
-                }
+                    yield return new DamageAction(base.Owner, args.Target, DamageInfo.Reaction((float)base.Battle.Player.GetStatusEffect<RetaliationSe>().Level, false), GunNameID.GetGunFromId(400), GunType.Single);
+                    //DamageInfo must be either Reaction or HpLoss since Attack could potentially trigger an infinite loop without additional checks.
+                }                
             }
         }
         private IEnumerable<BattleAction> OnTurnEnding(UnitEventArgs args)

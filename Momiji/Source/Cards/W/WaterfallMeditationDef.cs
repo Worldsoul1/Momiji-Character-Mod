@@ -38,13 +38,13 @@ namespace Momiji.Source.Cards
             config.Type = CardType.Skill;
             config.TargetType = TargetType.SingleEnemy;
 
-            config.Value1 = 1;
-            config.UpgradedValue1 = 2;
+            config.Value1 = 2;
+            config.UpgradedValue1 = 3;
             config.Value2 = 6;
             config.UpgradedValue2 = 9;
 
-            config.RelativeEffects = new List<string>() {  nameof(Vulnerable), nameof(SpiritNegative), nameof(Firepower) };
-            config.UpgradedRelativeEffects = new List<string>() {  nameof(Vulnerable), nameof(SpiritNegative), nameof(Firepower) };
+            config.RelativeEffects = new List<string>() {  nameof(Vulnerable), nameof(SpiritNegative), nameof(Firepower), nameof(OffensiveIntention), nameof(DefensiveIntention), nameof(SpecialIntention) };
+            config.UpgradedRelativeEffects = new List<string>() {  nameof(Vulnerable), nameof(SpiritNegative), nameof(Firepower), nameof(OffensiveIntention), nameof(DefensiveIntention), nameof(SpecialIntention) };
 
             config.Illustrator = "esai";
 

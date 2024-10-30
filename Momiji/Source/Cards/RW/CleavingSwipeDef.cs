@@ -27,8 +27,8 @@ namespace Momiji.Source
             //TargetType.AllEnemies will change the selector to all enemies for attacks/status effects.
             config.TargetType = TargetType.AllEnemies;
 
-            config.Damage = 12;
-            config.UpgradedDamage = 9;
+            config.Damage = 14;
+            config.UpgradedDamage = 10;
 
             config.Value1 = 2;
             config.UpgradedValue1 = 2;

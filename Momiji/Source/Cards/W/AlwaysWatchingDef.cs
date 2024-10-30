@@ -10,6 +10,7 @@ using LBoL.Core.StatusEffects;
 using LBoL.EntityLib.StatusEffects.Basic;
 using LBoL.EntityLib.StatusEffects.Cirno;
 using LBoL.Core.Units;
+using Momiji.Source.StatusEffects;
 
 namespace Momiji.Source.Cards
 {
@@ -37,6 +38,9 @@ namespace Momiji.Source.Cards
 
             config.Value1 = 2;
             config.UpgradedValue1 = 3;
+
+            config.RelativeEffects = new List<string>() { nameof(OffensiveIntention) };
+            config.UpgradedRelativeEffects = new List<string>() { nameof(OffensiveIntention) };
 
             config.Illustrator = "Oba";
 

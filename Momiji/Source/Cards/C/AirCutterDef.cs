@@ -63,6 +63,10 @@ namespace Momiji.Source
             {
                 yield return base.AttackAction(selector, base.GunName);
             }
+            if(base.Battle.Player.HasStatusEffect<BlackWindSe>())
+            {
+                yield return new ApplyStatusEffectAction<Vulnerable>(selectedEnemy, 0, 1, 0, 0, 0.2f);
+            }
         }
     }
 }

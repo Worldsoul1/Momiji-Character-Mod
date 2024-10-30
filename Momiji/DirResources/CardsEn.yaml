@@ -31,6 +31,12 @@ AirCutter:
     Gain {Block} |Block|.
   Flavortext: Slice the air
 
+BlackWind:
+    Name: Black Wind
+    Description: |-
+        Air Cutters inflict {Value1} Vulnerable.
+        Add {Value2} |Air Cutters| to the hand.
+
 FeedOnTheWeak:
     Name: Feed on the Weak
     Description: |-
@@ -116,7 +122,9 @@ HuntingHurricanes:
 
 IndiscriminateRevenge:
     Name: Indiscriminate Revenge
-    Description: Whenever |Reflection| is triggered, {PlayerName} deals damage to all enemies equal to their |Retaliation|.
+    Description: |-
+        Whenever |Reflection| is triggered, {PlayerName} deals damage to all enemies equal to their |Retaliation|.
+        Gain {Value1} |Retaliation|.
 
 InstantofContact:
     Name: Instant of Contact
@@ -334,6 +342,12 @@ SurgeofPower:
     Name: Surge of Power
     Description: the next {Value1} cards that {PlayerName} plays cost {Mana}.
 
+Taunt:
+    Name: Taunt
+    Description: |-
+        Apply {Value1} weak and {Value1} Vulnerable.
+        The targeted enemy deals {Value2} damage to {Playername}.
+
 CrashingWaterBlade:
     Name: Crashing Water Blade
     Description: Deal {Damage} damage. Deals damage an additional time for every {Value1} |Reflection| {PlayerName} has.
@@ -486,7 +500,9 @@ TrapStance:
 
 TwinFang:
     Name: Twin Fang    
-    Description: The next time |Reflection| is triggered, gain |Reflection| equal to the amount of damage dealt by {PlayerName}'s |Reflection|.
+    Description: |-
+        Gain {Value2} |Reflection|.
+        The next time |Reflection| is triggered, gain |Reflection| equal to the amount of damage dealt by {PlayerName}'s |Reflection|.
     Flavortext: Always strike twice.
 
 VacuumCutter:

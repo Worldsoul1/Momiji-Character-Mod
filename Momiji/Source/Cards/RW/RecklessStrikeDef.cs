@@ -42,7 +42,7 @@ namespace Momiji.Source.Cards
 
             config.Value1 = 3;
             config.Value2 = 2;
-            config.UpgradedValue2 = 1;
+            config.UpgradedValue2 = 2;
 
             config.RelativeEffects = new List<string>() { nameof(Vulnerable), nameof(Fragil) };
             config.UpgradedRelativeEffects = new List<string>() { nameof(Vulnerable), nameof(Fragil) };

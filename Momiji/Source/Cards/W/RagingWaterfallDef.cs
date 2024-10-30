@@ -22,15 +22,15 @@ namespace Momiji.Source.Cards
             CardConfig config = GetCardDefaultConfig();
 
             config.Colors = new List<ManaColor>() { ManaColor.White };
-            config.Cost = new ManaGroup() { Any = 2, White = 2 };
-            config.UpgradedCost = new ManaGroup() { Any = 3, White = 1 };
+            config.Cost = new ManaGroup() { Any = 2, White = 1 };
+            config.UpgradedCost = new ManaGroup() { Any = 2, White = 1 };
             config.Rarity = Rarity.Uncommon;
 
             config.Type = CardType.Defense;
             config.TargetType = TargetType.Self;
 
-            config.Block = 24;
-            config.UpgradedBlock = 30;
+            config.Block = 19;
+            config.UpgradedBlock = 25;
 
             config.Value1 = 2;
             config.UpgradedValue1 = 3;

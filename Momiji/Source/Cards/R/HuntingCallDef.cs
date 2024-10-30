@@ -14,6 +14,7 @@ using Momiji.Source.BattleActions;
 using LBoL.EntityLib.StatusEffects.Basic;
 using LBoL.Core.Battle.BattleActions;
 using LBoL.Core.Units;
+using Momiji.Source.StatusEffects;
 
 namespace Momiji.Source.Cards
 {
@@ -36,8 +37,8 @@ namespace Momiji.Source.Cards
             config.Value2 = 2;
             config.UpgradedValue2 = 3;
 
-            config.RelativeEffects = new List<string>() { nameof(Vulnerable) };
-            config.UpgradedRelativeEffects = new List<string>() { nameof(Vulnerable)};
+            config.RelativeEffects = new List<string>() { nameof(Vulnerable), nameof(OffensiveIntention) };
+            config.UpgradedRelativeEffects = new List<string>() { nameof(Vulnerable), nameof(OffensiveIntention) };
 
             config.Illustrator = "黒てー";
 

@@ -49,8 +49,8 @@ namespace Momiji.Source.Cards
             config.Keywords = Keyword.Exile;
             config.UpgradedKeywords = Keyword.Exile | Keyword.Accuracy;
 
-            config.RelativeEffects = new List<string>() { nameof(TempFirepowerNegative), nameof(Vulnerable), nameof(Fragil) };
-            config.UpgradedRelativeEffects = new List<string>() { nameof(TempFirepowerNegative), nameof(Vulnerable), nameof(Fragil) };
+            config.RelativeEffects = new List<string>() { nameof(TempFirepowerNegative), nameof(Vulnerable), nameof(SpiritNegative), nameof(OffensiveIntention), nameof(DefensiveIntention), nameof(SpecialIntention) };
+            config.UpgradedRelativeEffects = new List<string>() { nameof(TempFirepowerNegative), nameof(Vulnerable), nameof(SpiritNegative), nameof(OffensiveIntention), nameof(DefensiveIntention), nameof(SpecialIntention) };
 
             config.Illustrator = "かなめや";
 
@@ -74,7 +74,7 @@ namespace Momiji.Source.Cards
                 yield return new ApplyStatusEffectAction<TempFirepowerNegative>(selectedEnemy, base.Value1, 0, 0, 0, 0.2f);
             if (intention == 2 || intention == 3 || intention == 6)
                 yield return new ApplyStatusEffectAction<Vulnerable>(selectedEnemy, 0, base.Value2, 0, 0, 0.2f);
-                yield return new ApplyStatusEffectAction<SpiritNegative>(selectedEnemy, 0, base.Value1, 0, 0, 0.2f);
+                yield return new ApplyStatusEffectAction<SpiritNegative>(selectedEnemy, base.Value1, 0, 0, 0, 0.2f);
             if (intention >= 4)
                 yield return base.AttackAction(selector, base.GunName);
 

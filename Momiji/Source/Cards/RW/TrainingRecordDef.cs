@@ -13,6 +13,7 @@ using LBoL.Core.Cards;
 using System.Linq;
 using LBoL.Core.Units;
 using LBoL.EntityLib.Cards.Character.Sakuya;
+using Momiji.Source.StatusEffects;
 
 namespace Momiji.Source
 {
@@ -44,6 +45,9 @@ namespace Momiji.Source
 
             config.Keywords = Keyword.Exile;
             config.UpgradedKeywords = Keyword.Exile;
+
+            config.RelativeEffects = new List<string>() { nameof(OffensiveIntention), nameof(DefensiveIntention), nameof(SpecialIntention) };
+            config.UpgradedRelativeEffects = new List<string>() { nameof(OffensiveIntention), nameof(DefensiveIntention), nameof(SpecialIntention) };
 
             //Add Lock On descrption when hovering over the card.
 

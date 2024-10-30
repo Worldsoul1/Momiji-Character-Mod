@@ -20,15 +20,15 @@ namespace Momiji.Source.Cards
             CardConfig config = GetCardDefaultConfig();
 
             config.Colors = new List<ManaColor>() { ManaColor.Red };
-            config.Cost = new ManaGroup() { Any = 2, Red = 2 };
-            config.UpgradedCost = new ManaGroup() { Any = 3, Red = 1 };
+            config.Cost = new ManaGroup() { Any = 2, Red = 1 };
+            config.UpgradedCost = new ManaGroup() { Any = 2, Red = 1 };
             config.Rarity = Rarity.Common;
 
             config.Type = CardType.Defense;
             config.TargetType = TargetType.Self;
 
-            config.Block = 24;
-            config.UpgradedBlock = 30;
+            config.Block = 18;
+            config.UpgradedBlock = 24;
 
             config.Value1 = 2;
             config.UpgradedValue1 = 3;
