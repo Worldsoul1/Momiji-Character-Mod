@@ -67,6 +67,10 @@ namespace Momiji.Source
             {
                 yield return new ApplyStatusEffectAction<Vulnerable>(selectedEnemy, 0, 1, 0, 0, 0.2f);
             }
+            if(base.Battle.Player.HasStatusEffect<FrigidSkySe>())
+            {
+                yield return base.DebuffAction<Cold>(selectedEnemy, 0, 0, 0, 0, true, 0.03f);
+            }
         }
     }
 }

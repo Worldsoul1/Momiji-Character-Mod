@@ -346,7 +346,7 @@ Taunt:
     Name: Taunt
     Description: |-
         Apply {Value1} weak and {Value1} Vulnerable.
-        The targeted enemy deals {Value2} damage to {Playername}.
+        The targeted enemy deals {Value2} damage to {PlayerName}.
 
 CrashingWaterBlade:
     Name: Crashing Water Blade
@@ -434,7 +434,10 @@ Howl:
 
 IronStance:
     Name: Iron Stance
-    Description: Gain {Block} |Block| and {Value1} |Static Charge| until {PlayerName}'s next turn.
+    Description: |-
+        Gain {Block} |Block| and {Value1} |Static Charge| until {PlayerName's} next turn.
+    UpgradedDescription: |-
+        Gain {Shield} |Barrier| and {Value1} |Static Charge| until {Playername's} next turn.
     Flavortext: Iron is sturdy, and, more importantly, conductive.
 
 LongVigil:

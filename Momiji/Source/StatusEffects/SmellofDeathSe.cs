@@ -23,7 +23,7 @@ namespace Momiji.Source.StatusEffects
         public override StatusEffectConfig MakeConfig()
         {
             StatusEffectConfig config = GetDefaultStatusEffectConfig();
-            config.HasLevel = false;
+            config.HasLevel = true;
             return config;
         }
     }

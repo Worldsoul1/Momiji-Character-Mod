@@ -1,3 +1,12 @@
+## 1.0.10
+
+Miscelaneous bugfixing
+
+* Feed on the Weak is now Rare instead of Uncommon
+* Iron Stance now gives Barrier on upgrade
+* Fixed a bug where Smell of Death would softlock on play.
+* Fixed a bug where Frigid Sky would not correctly work
+
 ## 1.0.9
 
 Intention Fixing

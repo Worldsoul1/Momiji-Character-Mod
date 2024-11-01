@@ -25,7 +25,10 @@ namespace Momiji.Source.Cards
             config.TargetType = TargetType.Self;
 
             config.Block = 12;
-            config.UpgradedBlock = 17;
+            config.UpgradedBlock = 0;
+
+            config.Shield = 0;
+            config.UpgradedShield = 16;
 
             config.Value1 = 3;
             config.UpgradedValue1 = 4;
