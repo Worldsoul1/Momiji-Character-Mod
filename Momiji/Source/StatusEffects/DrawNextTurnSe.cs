@@ -12,7 +12,7 @@ using Momiji.Source.StatusEffects;
 
 namespace Momiji.Source.StatusEffects
 {
-    public sealed class DrawnextTurnSeDef : SampleCharacterStatusEffectTemplate
+    public sealed class DrawNextTurnSeDef : SampleCharacterStatusEffectTemplate
     {
         public override StatusEffectConfig MakeConfig()
         {
@@ -22,7 +22,7 @@ namespace Momiji.Source.StatusEffects
             return config;
         }
     }
-    [EntityLogic(typeof(DrawnextTurnSeDef))]
+    [EntityLogic(typeof(DrawNextTurnSeDef))]
     public sealed class DrawNextTurnSe : StatusEffect
     {
         // Token: 0x060002D7 RID: 727 RVA: 0x00007A24 File Offset: 0x00005C24

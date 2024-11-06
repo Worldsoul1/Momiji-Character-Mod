@@ -34,8 +34,8 @@ AirCutter:
 BlackWind:
     Name: Black Wind
     Description: |-
-        Air Cutters inflict {Value1} Vulnerable.
-        Add {Value2} |Air Cutters| to the hand.
+        Air Cutters inflict {Value1} |Vulnerable|.
+        Add {Value2} |Air Cutter:plural one='' other='s'| to the hand.
 
 FeedOnTheWeak:
     Name: Feed on the Weak
@@ -130,14 +130,14 @@ InstantofContact:
     Name: Instant of Contact
     Description: |-
         Gain {Value1} |Retaliation|.
-        End {PlayerName}'s turn. Then, take an extra turn.
+        End {PlayerName's} turn. Then, take an extra turn.
         During this extra turn, whenever {PlayerName} gains |Block| or |Barrier|, {PlayerName} gains {Value2} |Retaliation|.
         |d:Time Limit {Mana}.|
     FlavorText: When Blades lock, and glares meet over crossed swords.
 
 MapleLeafFestival:
   Name: Maple Leaf Festival
-  Description: At the start of {PlayerName}'s turn, add a |Maple Leaf| to the hand.
+  Description: At the start of {PlayerName}'s' turn, add a |Maple Leaf| to the hand.
   Flavortext: a celebration of the end of Summer.
 
 MomijiRiposte:
@@ -345,7 +345,7 @@ SurgeofPower:
 Taunt:
     Name: Taunt
     Description: |-
-        Apply {Value1} weak and {Value1} Vulnerable.
+        Apply {Value1} |Weak| and {Value1} |Vulnerable|.
         The targeted enemy deals {Value2} damage to {PlayerName}.
 
 CrashingWaterBlade:
@@ -390,7 +390,7 @@ CallToArms:
     Description: |-
         Choose up to {Value1} card{Value1:plural one='' other='s'} in the draw or discard piles and put {Value1:plural one='it' other='them'} into the hand. 
         Upgrade {Value1:plural one='it' other='them'}. 
-    FlavorText: A clarion call to tell other Whit Wolves that an intruder has been discovered.
+    FlavorText: A clarion call to tell other White Wolves that an intruder has been discovered.
 
 DefensiveStrike:
     Name: Defensive Strike
@@ -435,9 +435,9 @@ Howl:
 IronStance:
     Name: Iron Stance
     Description: |-
-        Gain {Block} |Block| and {Value1} |Static Charge| until {PlayerName's} next turn.
+        Gain {Block} |Block| and {Value1} |Static Charge| until {PlayerName}'s next turn.
     UpgradedDescription: |-
-        Gain {Shield} |Barrier| and {Value1} |Static Charge| until {Playername's} next turn.
+        Gain {Shield} |Barrier| and {Value1} |Static Charge| until {Playername}'s next turn.
     Flavortext: Iron is sturdy, and, more importantly, conductive.
 
 LongVigil:
@@ -491,7 +491,9 @@ TengusForesight:
 
 TirelessGuard:
     Name: Tireless Guard
-    Description: Whenever |Reflection| is triggered, gain |Reflection| equal to half the damage dealt by {PlayerName}'s |Reflection|.
+    Description: |-
+        Whenever |Reflection| is triggered, gain |Reflection| equal to half the damage dealt by {PlayerName}'s |Reflection|.
+        Gain {Value2} |Reflection|.
     FlavorText: Always be ready for their second strike.
 
 TrapStance:

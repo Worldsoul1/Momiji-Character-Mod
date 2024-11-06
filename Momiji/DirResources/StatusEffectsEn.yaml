@@ -55,7 +55,7 @@ IndiscriminateRevengeSe:
     Description: When |Reflection| is triggered, {OwnerName} deals damage to each enemy equal to their |Retaliation|.
 
 InstantofContactSe:
-    name: Instant of Contact
+    Name: Instant of Contact
     Description: Whenever an enemy takes attack damage, gain 2 Retaliation.
 
 MapleLeafFestivalSe:

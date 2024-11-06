@@ -1,3 +1,11 @@
+## 1.0.11
+
+Localization fixes
+
+* fixed localization errors on Black Wind and Taunt
+* fixed a bug where Raging Waterfall would cause a softlock on play
+* 
+
 ## 1.0.10
 
 Miscelaneous bugfixing
