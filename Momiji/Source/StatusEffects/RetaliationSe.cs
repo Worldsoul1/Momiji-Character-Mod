@@ -43,6 +43,12 @@ namespace Momiji.Source.StatusEffects
         {
             //At the start of the Player's turn, gain Spirit.
             yield return base.BuffAction<Reflect>(base.Level, 0, 0, 0, 0.2f);
+            int level = base.Level - 1;
+            base.Level = level;
+            if (base.Level <= 0)
+            {
+                yield return new RemoveStatusEffectAction(this, true, 0.1f);
+            }
             //This is equivalent to:
             //yield return new ApplyStatusEffectAction<SampleCharacterTurnGainSpiritSe>(base.Owner, base.Level, 0, 0, 0, 0.2f);
             yield break;

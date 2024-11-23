@@ -40,8 +40,10 @@ namespace Momiji.Source.Cards
 
             config.Value1 = 2;
             config.UpgradedValue1 = 3;
-            config.Value2 = 6;
-            config.UpgradedValue2 = 9;
+            config.Value2 = 1;
+            config.UpgradedValue2 = 2;
+            config.Block = 6;
+            config.UpgradedBlock = 9;
 
             config.RelativeEffects = new List<string>() {  nameof(Vulnerable), nameof(SpiritNegative), nameof(Firepower), nameof(OffensiveIntention), nameof(DefensiveIntention), nameof(SpecialIntention) };
             config.UpgradedRelativeEffects = new List<string>() {  nameof(Vulnerable), nameof(SpiritNegative), nameof(Firepower), nameof(OffensiveIntention), nameof(DefensiveIntention), nameof(SpecialIntention) };
@@ -65,8 +67,8 @@ namespace Momiji.Source.Cards
             int intention = base.IntentionCheck(selectedEnemy);
             if (intention == 1 || intention == 3 || intention == 5 || intention == 7)
             {
-                yield return new CastBlockShieldAction(base.Battle.Player, base.Battle.Player, base.Value2, 0, BlockShieldType.Normal, true);
-                yield return base.UpgradeRandomHandAction(base.Value1, CardType.Attack); 
+                yield return new CastBlockShieldAction(base.Battle.Player, base.Battle.Player, base.Block.Block, 0, BlockShieldType.Normal, true);
+                yield return base.UpgradeRandomHandAction(base.Value2, CardType.Attack); 
             }
             if (intention == 2 || intention == 3 || intention == 6)
             {
@@ -75,7 +77,7 @@ namespace Momiji.Source.Cards
             }
             if (intention >= 4)
             { 
-                yield return new ApplyStatusEffectAction<Firepower>(base.Battle.Player, base.Value1, 0, 0, 0, 0.2f); 
+                yield return new ApplyStatusEffectAction<Firepower>(base.Battle.Player, base.Value2, 0, 0, 0, 0.2f); 
             }
             yield return new DrawManyCardAction(base.Value1);
         }

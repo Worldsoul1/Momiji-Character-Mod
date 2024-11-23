@@ -35,7 +35,7 @@ BlackWind:
     Name: Black Wind
     Description: |-
         Air Cutters inflict {Value1} |Vulnerable|.
-        Add {Value2} |Air Cutter:plural one='' other='s'| to the hand.
+        Add {Value2} |Air Cutter{Value2:plural one='' other='s'}| to the hand.
 
 FeedOnTheWeak:
     Name: Feed on the Weak
@@ -532,7 +532,7 @@ WaterfallMeditation:
         Draw {Value1} card{Value1:plural one='' other='s'}.
     DetailText: |-
         If the enemy has an |Offensive Intention|, gain {Value2} block and upgrade {Value1} random card in the hand{Value1:plural one='' other='s'}, prioritizing Attack cards.
-        If the enemy has a |Defensive Intention|, apply {Value1} |Frail| and |Spirit Down| to the enemy.
+        If the enemy has a |Defensive Intention|, apply {Value1} |Vulnerable| and |Spirit Down| to the enemy.
         If the enemy has a |Special Intention|, gain {Value1} |Firepower|.
 
 

@@ -28,8 +28,8 @@ namespace Momiji.Source.Cards.R
 
             config.Value1 = 2;
             config.UpgradedValue1 = 2;
-            config.Value2 = 6;
-            config.UpgradedValue2 = 4;
+            config.Value2 = 4;
+            config.UpgradedValue2 = 2;
 
             config.Illustrator = "さるかな";
 

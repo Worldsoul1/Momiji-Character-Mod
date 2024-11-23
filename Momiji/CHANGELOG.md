@@ -1,10 +1,28 @@
+## 1.1.0
+
+Update for Koishi
+
+* Fixed Momiji to work with Koishi. Will no longer work with earlier versions of LBoL.
+* Surge of Power and Indiscriminate Revenge are now Rare.
+* Indiscriminate Revenge+ now costs WWRR, instead of 1WR.
+* Taunt now deals 4 damage to the player. Taunt+ now deals 2 damage to the player.
+* The cost for Stand Watch has been reverted to WWRR, or 1WR upgraded.
+* Retaliation now decreases by 1 each turn. Further potential nerfs may come in the future.
+
+## 1.0.12
+
+More Localization Fixes
+
+* Fixed a localization error where Waterfall Meditation said it would aplly Frail instead of Vulnerable.
+* Slightly adjusted the balance of Waterfall Meditation to slightly nerf it.
+* Fixed a localization error on Black Wind
+
 ## 1.0.11
 
 Localization fixes
 
 * fixed localization errors on Black Wind and Taunt
 * fixed a bug where Raging Waterfall would cause a softlock on play
-* 
 
 ## 1.0.10
 

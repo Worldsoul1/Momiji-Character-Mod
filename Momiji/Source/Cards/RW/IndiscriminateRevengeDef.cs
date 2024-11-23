@@ -18,17 +18,17 @@ namespace Momiji.Source.Cards
             CardConfig config = GetCardDefaultConfig();
             config.Colors = new List<ManaColor>() { ManaColor.White, ManaColor.Red };
             config.Cost = new ManaGroup() { White = 2, Red = 2 };
-            config.UpgradedCost = new ManaGroup() { Any = 1, White = 1, Red = 1 };
-            config.Rarity = Rarity.Uncommon;
+            config.UpgradedCost = new ManaGroup() { White = 2, Red = 2 };
+            config.Rarity = Rarity.Rare;
 
             config.Type = CardType.Ability;
             config.TargetType = TargetType.Self;
 
-            config.Value1 = 10;
-            config.UpgradedValue1 = 15;
+            config.Value1 = 7;
+            config.UpgradedValue1 = 12;
 
-            config.RelativeEffects = new List<string>() { nameof(RetaliationSe) };
-            config.UpgradedRelativeEffects = new List<string>() { nameof(RetaliationSe) };
+            config.RelativeEffects = new List<string>() { nameof(RetaliationSe), nameof(Reflect) };
+            config.UpgradedRelativeEffects = new List<string>() { nameof(RetaliationSe), nameof(Reflect) };
 
 
             config.Illustrator = "";
