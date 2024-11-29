@@ -65,6 +65,10 @@ namespace Momiji.Source.Cards
                 }));
             
             yield return new ApplyStatusEffectAction<Reflect>(Battle.Player, base.Value1, 0, 0, 0, 0.2f);
+            if (base.Battle.Player.HasStatusEffect<Reflect>())
+            {
+                base.Battle.Player.GetStatusEffect<Reflect>().Gun = (this.IsUpgraded ? "心抄斩B" : "心抄斩");
+            }
             if (attackCount > 0)
             {
                 yield return base.DefenseAction(true) ;

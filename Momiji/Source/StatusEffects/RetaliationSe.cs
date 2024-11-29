@@ -37,6 +37,10 @@ namespace Momiji.Source.StatusEffects
         public override bool Stack(StatusEffect other)
         {
             this.React(base.BuffAction<Reflect>(other.Level, 0, 0, 0, 0.2f));
+            if (base.Battle.Player.HasStatusEffect<Reflect>())
+            {
+                base.Battle.Player.GetStatusEffect<Reflect>().Gun = ("心抄斩");
+            }
             return base.Stack(other);
         }
         private IEnumerable<BattleAction> OnOwnerTurnStarted(UnitEventArgs args)

@@ -24,7 +24,7 @@ namespace Momiji.Source.Ultimate
             config.Keywords = Keyword.Accuracy;
 
             // Add the relative status effects in the description box.   
-            config.RelativeEffects = new List<string>() { nameof(Weak) };
+            config.RelativeEffects = new List<string>() { nameof(Vulnerable) };
             return config;
         }
     }

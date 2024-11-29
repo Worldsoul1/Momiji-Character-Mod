@@ -56,7 +56,7 @@ IndiscriminateRevengeSe:
 
 InstantofContactSe:
     Name: Instant of Contact
-    Description: Whenever an enemy takes attack damage, gain 2 Retaliation.
+    Description: Whenever {OwnerName} gains |Block| or |Barrier|, gain {Level} |Retaliation|.
 
 MapleLeafFestivalSe:
     Name: Maple Leaf Festival

@@ -42,6 +42,10 @@ namespace Momiji.Source.StatusEffects
                 if (reflectLevel > 0f)
                 {
                     yield return new ApplyStatusEffectAction<Reflect>(base.Battle.Player, reflectLevel, 0, 0, 0, 0.2f);
+                    if (base.Battle.Player.HasStatusEffect<Reflect>())
+                    {
+                        base.Battle.Player.GetStatusEffect<Reflect>().Gun = ("心抄斩");
+                    }
                     yield return new RemoveStatusEffectAction(this, true, 0.1f);
                 }
             }

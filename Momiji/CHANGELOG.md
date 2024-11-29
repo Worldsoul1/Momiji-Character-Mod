@@ -1,3 +1,29 @@
+## 1.1.3
+
+Bug Patching + Updating Localization
+
+* Attempted a fix for the bug that causes Gently Circling Leaves to softlock when two defense cards are drawn.
+* Updated the Japanese/Korean localization to match the new version of Gently Circling Leaves
+* Fixed minor errors in the localization for Maple Leaf Festival and Instant of Contact
+* Added flavor text to most cards.
+
+## 1.1.2
+
+Hotfix Localization
+
+* Updated the localization for Gently Circling Leaves to match its new effect
+
+## 1.1.1
+
+Localization fixes
+
+* Updated Momiji's Korean localization to match current english status effect/card text.
+* Added a new Japanese localization for Momiji, created by neff on the Lost Branch of Legend Modding Discord.
+* Fixed the code for Rabies Bite to correctly reference Vulnerable instead of Weak
+* Fixed the localization of Momiji's exhibits to correct errors related to her last name's spelling.
+* Added an effect for when Reflection granted by most of the cards and/or status effects Momiji has access to activates.
+* Reworked Gently Circling Leaves. Now grants 3 Reflection per Atttack card drawn, and 4 Block per Defense card drawn.
+
 ## 1.1.0
 
 Update for Koishi

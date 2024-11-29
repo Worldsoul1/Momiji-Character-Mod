@@ -16,7 +16,7 @@ MomijiBlockR:
 MomijiBlockW:
   Name: Guard Up
   Description: Gain {Block} |Block|.
-  FlavorText: You never know what's aimed at your heart'
+  FlavorText: You never know what's aimed at your heart.
 
 MapleLeaf:
   Name: Maple Leaf
@@ -36,6 +36,7 @@ BlackWind:
     Description: |-
         Air Cutters inflict {Value1} |Vulnerable|.
         Add {Value2} |Air Cutter{Value2:plural one='' other='s'}| to the hand.
+    FlavorText: Dark winds bring ill omens.
 
 FeedOnTheWeak:
     Name: Feed on the Weak
@@ -79,6 +80,7 @@ WoodlandSentry:
     Description: |-
         Gain {Value2} life.
         At the end of {PlayerName}'s turn, gain {Value1} block for each card in hand.
+    FlavorText: The woods are a friend, more than most other Tengu.
 
 AutumnView:
     Name: Autumn View
@@ -105,7 +107,10 @@ CleavingSwipe:
 
 GentlyCirclingLeaves:
     Name: Gently Circling Leaves
-    Description: Draw {Value1} cards. Gain {Value2} |Retaliation| for each Attack or Skill drawn this way.
+    Description: |-
+        Draw {Value1} cards. 
+        Gain {Value2} |Reflection| for each Attack card drawn this way.
+        Gain {Block} |Block| for each Defense card drawn this way
     FlavorText: Fall slowly, little ones.
 
 HowlingMountainWind:
@@ -118,33 +123,34 @@ HuntingHurricanes:
     Description: |-
         Deal {Damage} damage to each enemy. 
         {SelfName} deals damage an additional time for each |Exiled Air Cutter|.
-    Flavortext: A veritable Tornado
+    FlavorText: A veritable Tornado
 
 IndiscriminateRevenge:
     Name: Indiscriminate Revenge
     Description: |-
-        Whenever |Reflection| is triggered, {PlayerName} deals damage to all enemies equal to their |Retaliation|.
+        Whenever |Reflection| is triggered, {PlayerName} deals damage to all enemies equal to her |Retaliation|.
         Gain {Value1} |Retaliation|.
+    FlavorText: "Two graves? When I'm done, I'll fill a cemetery."
 
 InstantofContact:
     Name: Instant of Contact
     Description: |-
         Gain {Value1} |Retaliation|.
-        End {PlayerName's} turn. Then, take an extra turn.
+        End {PlayerName}'s turn. Then, take an extra turn.
         During this extra turn, whenever {PlayerName} gains |Block| or |Barrier|, {PlayerName} gains {Value2} |Retaliation|.
         |d:Time Limit {Mana}.|
     FlavorText: When Blades lock, and glares meet over crossed swords.
 
 MapleLeafFestival:
   Name: Maple Leaf Festival
-  Description: At the start of {PlayerName}'s' turn, add a |Maple Leaf| to the hand.
-  Flavortext: a celebration of the end of Summer.
+  Description: At the start of {PlayerName}'s turn, add a |Maple Leaf| to the hand.
+  FlavorText: a celebration of the end of Summer.
 
 MomijiRiposte:
   Name: Riposte
   Description: |-
     Gain {Value1} |Retaliation|.
-  Flavortext: Step into my guard.
+  FlavorText: Step into my guard.
 
 PatientHunter:
     Name: Patient Hunter
@@ -186,6 +192,7 @@ TrainingRecord:
         If the enemy has an |Offensive Intention|, an Attack card may be upgraded. 
         If the enemy has a |Defensive Intention|, a Defense card may be upgraded.
         If the enemy has a |Special Intention|, an Ability or Skill card may be upgraded.
+    FlavorText: Your opponents are your most important teachers.
 
 
 AdvantageousPosition:
@@ -193,7 +200,7 @@ AdvantageousPosition:
     Description: |-
         Gain {Block} |Block|.
         Gain {Value1} |Temporary Firepower|.
-    Flavortext: They never look up, even if they're flying.
+    FlavorText: They never look up, even if they're flying.
 
 BladeWarding:
     Name: Blade Warding
@@ -201,7 +208,7 @@ BladeWarding:
         Apply {Value1} |Weak|.
         Gain {Value1} |Retaliation|.
         Add an |Air Cutter| to the hand.
-    Flavortext: "Get away from me!"
+    FlavorText: "Get away from me!"
 
 BloodScent:
   Name: Blood Scent
@@ -233,12 +240,14 @@ CrispFallAir:
 Distract:
     Name: Distract
     Description: Whenever {PlayerName} deals attack damage to an enemy, if that enemy has |Vulnerable|, apply 1 |Weak| to that enemy.
+    FlavorText: By constantly presenting a changing image, you can make your opponent hesitate.
 
 ExploitOpenings:
     Name: Exploit Openings
     Description: |-
         Apply {Value1} |Vulnerable|.
         Gain {Value1} |Firepower|. Gain 1 additional |Firepower| for every {Value2} levels of |Vulnerable| target enemy has.
+    FlavorText: "everyone has one."
 
 ExtrasensoryPerception:
     Name: Extrasensory Perception
@@ -274,6 +283,7 @@ HuntersTrap:
 HuntingCall:
     Name: Hunting Call
     Description: Apply 2 |Vulnerable| to each enemy. If any enemy has an |Offensive Intention|, draw {Value2} cards. 
+    Flavortext: The signal to Momiji's fellow Patrol Tengu that an intruder has been sighted.
 
 ImageTraining:
     Name: Image Training
@@ -300,7 +310,7 @@ OverhandBlade:
         Deal {Damage} damage.
         If the target has |Vulnerable|, apply {Value1} |Weak|.
         If the target has |Weak|, apply {Value1} |Vulnerable|.
-    Flavortext: Strike when they're off balance.
+    FlavorText: Strike when they're off balance.
 
 PartingSlice:
     Name: Parting Slice
@@ -310,7 +320,7 @@ PartingSlice:
     UpgradedDescription: |-
         Deal {Damage} damage to each enemy two times.
         For each enemy with an |Offensive Intention|, gain {Value1} |Graze|.
-    Flavortext: Marginally less effective than a Parting Shot.
+    FlavorText: Marginally less effective than a Parting Shot.
 
 Patrol:
     Name: Patrol
@@ -325,7 +335,7 @@ Patrol:
 ScatteringLeaves:
   Name: Scattering Leaves
   Description: Deal {Damage} damage to a random enemy {Value1} times.
-  Flavortext: A flurry of blinding red.
+  FlavorText: A flurry of blinding red.
 
 SenseWeakness:
     Name: Sense Weakness
@@ -337,16 +347,19 @@ ShieldCounter:
     Description: |-
         Gain {Value2} |Reflection|.
         Whenever |Reflection| or |Static Charge| is triggered, apply {Value1} |Vulnerable| to the enemy that triggered it.
+    FlavorText: You're wide open
 
 SurgeofPower:
     Name: Surge of Power
     Description: the next {Value1} cards that {PlayerName} plays cost {Mana}.
+    FlavorText: Often accompanied by loud yells and bleached hair.
 
 Taunt:
     Name: Taunt
     Description: |-
         Apply {Value1} |Weak| and {Value1} |Vulnerable|.
         The targeted enemy deals {Value2} damage to {PlayerName}.
+    FlavorText: A technique learned from the best.
 
 CrashingWaterBlade:
     Name: Crashing Water Blade
@@ -384,6 +397,7 @@ AlwaysWatching:
     Description: |-
         Gain {Shield} |Barrier|.
         If any enemy has an |Offensive Intention|, gain {Block} |Block|.
+    FlavorText: Alwways listening.
 
 CallToArms:
     Name: Call to Arms
@@ -402,7 +416,7 @@ DefensiveStrike:
 Destabilize:
     Name: Destabilize
     Description: Whenever {PlayerName} deals unblocked attack damage, they gain {Value1} |Block|.
-    Flavortext: with quick, light strikes to keep her opponents off balance, Momiji leaves them unable to land a solid hit on her.
+    FlavorText: with quick, light strikes to keep her opponents off balance, Momiji leaves them unable to land a solid hit on her.
 
 DoubleDown:
     Name: Double Down
@@ -414,6 +428,7 @@ EyeforanEye:
     Description: |-
         Deal {Damage} damage.
         The targeted enemy deals {Value1} damage to {PlayerName}.
+    FlavorText: They'll go blind first.
 
 FalseWeakness:
     Name: False Weakness
@@ -438,7 +453,7 @@ IronStance:
         Gain {Block} |Block| and {Value1} |Static Charge| until {PlayerName}'s next turn.
     UpgradedDescription: |-
         Gain {Shield} |Barrier| and {Value1} |Static Charge| until {Playername}'s next turn.
-    Flavortext: Iron is sturdy, and, more importantly, conductive.
+    FlavorText: Iron is sturdy, and, more importantly, conductive.
 
 LongVigil:
     Name: Long Vigil
@@ -446,6 +461,7 @@ LongVigil:
         Exile up to {Value1} cards from your hand. Gain {Block} |Block| for each card exiled this way.
     UpgradedDescription: |-
         Exile up the {Value1} cards from your hand, draw, or discard piles. Gain {Block} |Block| for each card exiled this way.
+    FlavorText: The Night will be long. Best be prepared.
 
 MomijiReflect:
   Name: Reflect
@@ -466,6 +482,7 @@ RagingWaterfall:
     Description: |-
         Gain {Block} Block.
         Draw {Value1} extra cards at the stard of {PlayerName}'s next turn.
+    FlavorText: Perfect for meditation or ambushes.
 
 SeizeTheMoment:
     Name: Seize the Moment
@@ -480,7 +497,7 @@ SeizeTheMoment:
 
 TacticalInsight:
     Name: Tactical Insight
-    Description: Add {Value2} of {Value1} |Defense| cards to the hand. It temporarily costs {Mana} and has |Exile| and |Ethereal|.
+    Description: Add {Value2} of {Value1} |p:completely random| defense cards to the hand. It temporarily costs {Mana} and has |Exile| and |Ethereal|.
     FlavorText: Study your opponents to know them. Then, steal their best tactics
 
 TengusForesight:
@@ -508,7 +525,7 @@ TwinFang:
     Description: |-
         Gain {Value2} |Reflection|.
         The next time |Reflection| is triggered, gain |Reflection| equal to the amount of damage dealt by {PlayerName}'s |Reflection|.
-    Flavortext: Always strike twice.
+    FlavorText: Always strike twice.
 
 VacuumCutter:
     Name: Vacuum Cutter
@@ -534,7 +551,7 @@ WaterfallMeditation:
         If the enemy has an |Offensive Intention|, gain {Value2} block and upgrade {Value1} random card in the hand{Value1:plural one='' other='s'}, prioritizing Attack cards.
         If the enemy has a |Defensive Intention|, apply {Value1} |Vulnerable| and |Spirit Down| to the enemy.
         If the enemy has a |Special Intention|, gain {Value1} |Firepower|.
-
+    FlavorText: Just don't ask her how long it takes her tail to dry.
 
 WindsweptBlade:
     Name: Windswept Blade

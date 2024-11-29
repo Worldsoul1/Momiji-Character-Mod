@@ -47,6 +47,10 @@ namespace Momiji.Source.Cards.W
         {
             yield return new ApplyStatusEffectAction<TirelessGuardSe>(Battle.Player, base.Value1, 0, 0, 0, 0.2f);
             yield return new ApplyStatusEffectAction<Reflect>(Battle.Player, base.Value2, 0, 0, 0, 0.2f);
+            if (base.Battle.Player.HasStatusEffect<Reflect>())
+            {
+                base.Battle.Player.GetStatusEffect<Reflect>().Gun = (this.IsUpgraded ? "心抄斩B" : "心抄斩");
+            }
             //This is equivalent to:
             //yield return new ApplyStatusEffectAction<SampleCharacterTurnGainSpiritSe>(Battle.Player, base.Value1, 0, 0, 0, 0.2f);
             yield break;

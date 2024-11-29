@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using LBoL.Base;
 using LBoL.ConfigData;
 using LBoL.Core;
@@ -60,6 +60,10 @@ namespace Momiji.Source.Exhibits
                     Triggered = true;
                     base.NotifyActivating();
                     yield return new ApplyStatusEffectAction<Reflect>(base.Owner, base.Value1, null, null, null, 0.1f, true);
+                    if (base.Battle.Player.HasStatusEffect<Reflect>())
+                    {
+                        base.Battle.Player.GetStatusEffect<Reflect>().Gun = ("心抄斩");
+                    }
                 }
             }
 

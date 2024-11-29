@@ -1,7 +1,12 @@
 RetaliationSe:
   Name: 보복
   Description: "{OwnerName}의 턴 시작 시 |반사|를 {Level} 얻습니다."
-  Brief: "{OwnerName}의 턴 시작 시 |반사|를 얻습니다."
+  Brief: "{OwnerName}가 |보복|을 얻으면, 그만큼 |반사|를 얻습니다. {OwnerName}의 턴 시작 시 |반사|를 얻습니다."
+
+BlackWindSe:
+  Name: 흑풍
+  Description: |-
+    |에어 커터|가 |취약|을 1 줍니다.
 
 CircularPacingSe:
   Name: 원형 순환
@@ -13,7 +18,7 @@ CrispFallAirSe:
 
 DestabilizeSe:
   Name: 불안정화
-  Description: 적에게 공격 피해를 줄 때마다 |방어|를 {Level} 얻습니다.
+  Description: "{Ownername}가 막히지 않은 공격 피해를 줄 때마다 |방어|를 {Level} 얻습니다."
 
 DistractSe:
   Name: 방해
@@ -43,6 +48,10 @@ ImageTrainingSe:
   Name: 이미지 트레이닝
   Description: "{OwnerName}의 턴 시작 시 손에 |에어 커터|를 추가합니다."
 
+IndiscriminateRevengeSe:
+  Name: 무차별 복수
+  Description: "|반사|가 발동할 시, {PlayerName}가 모든 적에게 피해를 |보복|만큼 줍니다."
+
 InstantofContactSe:
   Name: 접촉의 순간
   Description: "{OwnerName}가 |방어| 또는 |보호막|을 얻을 때마다, {OwnerName}는 |보복|을 {Level} 얻습니다."
@@ -54,6 +63,10 @@ MapleLeafFestivalSe:
 MountainsideTrailTrackingSe:
   Name: 오솔길 추적
   Description: "{OwnerName}가 매 턴 처음 |취약|를 가진 적에게 공격 피해를 줄 때마다 카드를 {Level}장 뽑습니다."
+
+NextTurnDrawSe:
+  Name: 다음 턴 드로우
+  Description: "{OwnerName}의 턴 시작시, 카드를 추가로 {Level}장 뽑습니다."
 
 SenseWeaknessSe:
   Name: 약점 감지
@@ -92,14 +105,17 @@ OffensiveIntention:
   Name: 공격 의도
   Description: |-
     "공격 의도는 다음 중 하나입니다: |공격|, |상태 이상|, |상태|, |폭발|,|스펠 카드|"
+  Brief: "공격 의도는 다음 중 하나입니다: |공격|, |상태 이상|, |상태|, |폭발|,|스펠 카드|"
 
 DefensiveIntention:
   Name: 방어 의도
-  Description: "방어 의도는 다음 중 하나입니다: |버프|, |방어|, |그레이즈|, |탈출|"
+  Description: "방어 의도는 다음 중 하나입니다: |버프|, |방어|, |그레이즈|, |탈출|, |수리|"
+  Brief: "방어 의도는 다음 중 하나입니다: |버프|, |방어|, |그레이즈|, |탈출|, |수리|"
 
 SpecialIntention:
   Name: 특수 의도
-  Description: "특수 의도는 다음 중 하나입니다: |소환|, |기절|, |아무것도 하지 않기|, |충전|, |치유|, |수리|, |정화|, |암흑 노가쿠|, |방해|"
+  Description: "특수 의도는 다음 중 하나입니다: |소환|, |기절|, |아무것도 하지 않기|, |충전|, |치유|, |암흑 노가쿠|, |방해|"
+  Brief: "특수 의도는 다음 중 하나입니다: |소환|, |기절|, |아무것도 하지 않기|, |충전|, |치유|, |암흑 노가쿠|, |방해|"
 
 WoodlandSentrySe:
   Name: 산림 감시

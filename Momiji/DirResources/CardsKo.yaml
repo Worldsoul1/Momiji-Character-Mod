@@ -1,19 +1,19 @@
-ShieldBash:
+MomijiAttackW:
   Name: 방패 강타
   Description: 피해를 {Damage} 줍니다.
   FlavorText: 방패도 훌륭한 무기가 될 수 있다.
 
-Slice:
+MomijiAttackR:
   Name: 베기
   Description: 피해를 {Damage} 줍니다.
   FlavorText: 그리고 난도질.
 
-Parry:
+MomijiBlockR:
   Name: 튕겨내기
   Description: "|방어|를 {Block} 얻습니다."
   FlavorText: 검은 좋은 방어 도구가 될 수 있다.
 
-GuardUp:
+MomijiBlockW:
   Name: 방어 태세
   Description: "|방어|를 {Block} 얻습니다."
   FlavorText: 언제나 심장을 겨냥한 위협이 있을지 모른다.
@@ -30,6 +30,12 @@ AirCutter:
     피해를 {Damage} 줍니다. 
     |방어|를 {Block} 얻습니다.
   Flavortext: 공기를 가르는 검격.
+
+BlackWind:
+  Name: 흑풍
+  Description: |-
+    에어 커터가 |취약|을 {Value1} 줍니다.
+    |에어 커터|를 {Value2}장 얻습니다.
 
 FeedOnTheWeak:
   Name: 약자의 피
@@ -71,7 +77,7 @@ AyaTeammate:
 WoodlandSentry:
   Name: 숲의 경비병
   Description: |-
-    체력을 {Value2} 회복합니다.
+    체력을 {Value2} 얻습니다.
     {PlayerName}의 턴 종료 시, 손에 있는 카드 1장당 |방어|를 {Value1} 얻습니다.
 
 AutumnView:
@@ -98,7 +104,10 @@ CleavingSwipe:
 
 GentlyCirclingLeaves:
   Name: 부드럽게 도는 잎
-  Description: 카드를 {Value1}장 뽑습니다. 뽑은 공격/스킬 카드마다 |보복|을 {Value2} 얻습니다.
+  Description: |-
+    카드를 {Value1}장 뽑습니다.
+    뽑은 공격 카드마다 |반사|를 {Value2} 얻습니다.
+    뽑은 방어 카드마다 |방어|를 {Block} 얻습니다.
   FlavorText: 천천히 떨어져라, 작은 잎들아.
 
 HowlingMountainWind:
@@ -106,10 +115,16 @@ HowlingMountainWind:
   Description: "{PlayerName}가 |에어 커터|로 |취약| 상태의 적을 공격할 때마다, |에어 커터|가 한 번 더 피해를 줍니다. |에어 커터|를 {Value2}장 손에 추가합니다."
   FlavorText: 바람아 불어라! 휘몰아쳐라!
 
+IndiscriminateRevenge:
+  Name: 무차별 복수
+  Description: |-
+    |반사|가 발동할 시, {PlayerName}가 모든 적에게 피해를 |보복|만큼 줍니다.
+    |보복|을 {Value1} 얻습니다.
+
 HuntingHurricanes:
   Name: 사냥하는 회오리바람
   Description: |-
-    피해를 {Damage} 줍니다.
+    모든 적에게 피해를 {Damage} 줍니다.
     {SelfName}은 추방된 |에어 커터|마다 한 번 더 피해를 줍니다.
   Flavortext: 실로 거대한 폭풍.
 
@@ -270,8 +285,9 @@ ImageTraining:
 
 LookoutsIntuition:
   Name: 경계자의 직감
-  Description: "|그레이즈|를 {Value1} 얻습니다.
-    선택한 적의 |취약| 값 {Value2}마다 |보호막|을 {Shield} 얻습니다."
+  Description: |-
+    |그레이즈|를 {Value1} 얻습니다.
+    선택한 적의 |취약| 값 {Value2}마다 |보호막|을 {Shield} 얻습니다.
   FlavorText: 왼쪽으로 작은 도약.
 
 MountainsideTrailTracking:
@@ -327,6 +343,12 @@ SurgeofPower:
   Name: 힘의 급증
   Description: "{PlayerName}의 다음 {Value1}장의 카드 비용이 {Mana}가 됩니다."
 
+Taunt:
+  Name: 도발
+  Description: |-
+    |허약|과 |취약|을 {Value1} 줍니다.
+    대상 적이 {PlayerName}에게 피해를 {Value2} 줍니다.
+
 CrashingWaterBlade:
   Name: 폭포 떨구기
   Description: 피해를 {Damage} 줍니다. {PlayerName}가 가진 |반사|만큼 추가로 피해를 줍니다.
@@ -367,7 +389,7 @@ AlwaysWatching:
 CallToArms:
   Name: 무장 호출
   Description: |-
-    뽑을 카드 더미에서 카드를 최대 {Value1}장 선택해 손으로 가져옵니다. 
+    뽑을 카드 더미나 버린 카드 더미에서 카드를 최대 {Value1}장 선택해 손으로 가져옵니다. 
     그 카드들을 강화합니다.
   FlavorText: 침입자가 발견되었음을 다른 백랑 텐구에게 알리는 경종.
 
@@ -380,7 +402,7 @@ DefensiveStrike:
 
 Destabilize:
   Name: 불안정화
-  Description: "{PlayerName}가 공격 피해를 줄 때마다, |방어|를 {Value1} 얻습니다."
+  Description: "{PlayerName}가 막히지 않은 공격 피해를 줄 때마다, |방어|를 {Value1} 얻습니다."
   Flavortext: 빠르고 가벼운 타격으로 상대의 균형을 잃게 하며, 그들이 제대로된 공격을 가하는 것을 막는다.
 
 DoubleDown:
@@ -413,7 +435,10 @@ Howl:
 
 IronStance:
   Name: 강철 태세
-  Description: "{PlayerName}의 다음 턴까지 |방어|를 {Block} 얻고, |정전기|를 {Value1} 얻습니다."
+  Description: |-
+    {PlayerName}의 다음 턴까지 |방어|를 {Block} 얻고, |정전기|를 {Value1} 얻습니다.
+  UpgradedDescription: |-
+    {PlayerName}의 다음 턴까지 |보호막|을 {Block} 얻고, |정전기|를 {Value1} 얻습니다.
   Flavortext: 강철은 튼튼하고, 더 중요한 것은, 전도성이 있다.
 
 LongVigil:
@@ -467,7 +492,9 @@ TengusForesight:
 
 TirelessGuard:
   Name: 지치지 않는 수호
-  Description: "|반사|가 발동할 때마다, {PlayerName}의 |반사|가 입힌 피해의 절반만큼 |반사|를 얻습니다."
+  Description: |-
+    |반사|가 발동할 때마다, {PlayerName}의 |반사|가 입힌 피해의 절반만큼 |반사|를 얻습니다.
+    |반사|를 {Value2} 얻습니다.
   FlavorText: 하루종일도 할 수 있어.
 
 TrapStance:
@@ -479,7 +506,9 @@ TrapStance:
 
 TwinFang:
   Name: 쌍송곳니
-  Description: 다음 |반사|가 발동할 때, {PlayerName}의 |반사|가 입힌 피해량과 같은 양의 |반사|를 얻습니다.
+  Description: |-
+    |반사|를 {Value2} 얻습니다.
+    다음 |반사|가 발동할 때, {PlayerName}의 |반사|가 입힌 피해량과 같은 양의 |반사|를 얻습니다.
   Flavortext: 항상 두 번 타격하라.
 
 VacuumCutter:
@@ -504,7 +533,7 @@ WaterfallMeditation:
     카드를 {Value1}장 뽑습니다.
   DetailText: |-
     적이 |공격|하려 한다면, |방어|를 {Value2} 얻고, 손의 카드를 {Value1}장(공격 카드를 우선적으로) 강화합니다.
-    적이 |방어|하려 한다면, 적에게 |연약|과 |영력 저하|를 {Value1} 적용합니다.
+    적이 |방어|하려 한다면, 적에게 |취약|과 |영력 저하|를 {Value1} 적용합니다.
     적이 |특수한 행동|을 하려 한다면, |화력|을 {Value1} 얻습니다.
 
 WindsweptBlade:

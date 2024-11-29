@@ -13,6 +13,7 @@ using LBoL.Core.Units;
 using Momiji.Source.StatusEffects;
 using System.Linq;
 using LBoL.Core.Cards;
+using LBoL.Core.StatusEffects;
 
 namespace Momiji.Source.Cards
 {
@@ -32,11 +33,13 @@ namespace Momiji.Source.Cards
 
             config.Value1 = 3;
             config.UpgradedValue1 = 3;
-            config.Value2 = 4;
-            config.UpgradedValue2 = 4;
+            config.Value2 = 3;
+            config.UpgradedValue2 = 3;
+            config.Block = 4;
+            config.UpgradedBlock = 4;
 
-            config.RelativeEffects = new List<string>() { nameof(RetaliationSe) };
-            config.UpgradedRelativeEffects = new List<string>() { nameof(RetaliationSe) };
+            config.RelativeEffects = new List<string>() { nameof(Reflect) };
+            config.UpgradedRelativeEffects = new List<string>() { nameof(Reflect) };
 
             config.Illustrator = "瑠@紅楼夢J-14a";
 
@@ -50,22 +53,19 @@ namespace Momiji.Source.Cards
     {
         protected override IEnumerable<BattleAction> Actions(UnitSelector selector, ManaGroup consumingMana, Interaction precondition)
         {
-            List <Card> AttackOrSkill = null; 
             DrawManyCardAction drawAction = new DrawManyCardAction(base.Value1);
             yield return drawAction;
             IReadOnlyList<Card> drawnCards = drawAction.DrawnCards;
-            if (drawnCards != null && drawnCards.Count > 0)
+            int num = drawnCards.Count((Card card) => card.CardType == (CardType.Attack));
+            int defense = drawnCards.Count((Card card) => card.CardType == CardType.Defense);
+            if (num > 0)
             {
-                AttackOrSkill = (from card in drawnCards
-                            where (card.CardType == CardType.Skill || card.CardType == CardType.Attack)
-                            select card).ToList<Card>();
+                yield return base.BuffAction<Reflect>(base.Value2 * num, 0, 0, 0, 0.2f);
             }
-            foreach (Card card in AttackOrSkill)
+            if (defense > 0)
             {
-                yield return new ApplyStatusEffectAction<RetaliationSe>(Battle.Player, base.Value2, 0, 0, 0, 0.2f);
+                yield return base.DefenseAction(base.Block.Block * defense, 0, BlockShieldType.Direct, false);
             }
-            //This is equivalent to:
-            //yield return new CastBlockShieldAction(Battle.Player, base.Block, base.Shield, BlockShieldType.Normal, true); 
             yield break;
         }
     }
