@@ -28,7 +28,7 @@ namespace Momiji.Source.Cards
             config.UpgradedBlock = 0;
 
             config.Shield = 0;
-            config.UpgradedShield = 16;
+            config.UpgradedShield = 12;
 
             config.Value1 = 3;
             config.UpgradedValue1 = 4;

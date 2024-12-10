@@ -1,3 +1,14 @@
+## 1.1.4
+
+Fixing bugs
+
+* fixed an error in the code for Shield Counter that would cause it to infinitely loop with Dance of Empty Masks
+* Updated the Japanese Localization to match the English
+* fixed an error in the description of Raging Waterfall
+* Fixed Follow Up to now correctly grant mana when a targeted enemy with Vulnerable dies because of it.
+* Fixed several small localization errors for both cards and status effects
+* This changelog should now directly show up on the Thunderstore page
+
 ## 1.1.3
 
 Bug Patching + Updating Localization

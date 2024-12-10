@@ -64,10 +64,10 @@ RabidBite:
 AyaTeammate:
   Name: Aya, Tengu Reporter
   Description: |-
-    {FriendS} Gain {Graze} |Graze|.
+    {FriendS}Gain {Graze} |Graze|.
     {PassiveCostIcon}|Graze| does not decay at the start of {PlayerName}'s turn.
   UpgradedDescription: |-
-    {FriendS}Gain {Graze} |Graze|
+    {FriendS}Gain {Graze} |Graze|.
     {PassiveCostIcon}|Graze| does not decay at the start of {PlayerName}'s turn.
   ExtraDescription1: "{ActiveCostIcon}Apply {Value2} |Lock On| to each enemy. Add {Value1} |Air Cutter{Value1:plural one='' other='s'}| to the hand."
   UpgradedExtraDescription1: "{ActiveCostIcon}Apply {Value2} |Lock On| to each enemy. Add {Value1} |Air Cutter{Value1:plural one='' other='s'}| to the hand."
@@ -79,7 +79,7 @@ WoodlandSentry:
     Name: Woodland Sentry
     Description: |-
         Gain {Value2} life.
-        At the end of {PlayerName}'s turn, gain {Value1} block for each card in hand.
+        At the end of {PlayerName}'s turn, gain {Value1} |Block| for each card in hand.
     FlavorText: The woods are a friend, more than most other Tengu.
 
 AutumnView:
@@ -381,13 +381,13 @@ PlungePool:
     Description: |-
         Gain {Block} |Block|.
         Gain additional |Block| Equal to {PlayerName}'s |Retaliation|. ({ReflectShield})
-    NonBattleDescription: |-
+    NonbattleDescription: |-
         Gain {Block} |Block|.
         Gain additional |Block| Equal to {PlayerName}'s |Retaliation|.
     UpgradedDescription: |-
         Gain {Shield} |Barrier|.
         Gain additional |Barrier| Equal to {PlayerName}'s |Retaliation|. ({ReflectShield})
-    UpgradedNonBattleDescription:
+    UpgradedNonbattleDescription:
         Gain {Shield} |Barrier|.
         Gain additional |Barrier| Equal to {PlayerName}'s |Retaliation|.
     FlavorText: Don't let it trap you.
@@ -452,7 +452,7 @@ IronStance:
     Description: |-
         Gain {Block} |Block| and {Value1} |Static Charge| until {PlayerName}'s next turn.
     UpgradedDescription: |-
-        Gain {Shield} |Barrier| and {Value1} |Static Charge| until {Playername}'s next turn.
+        Gain {Shield} |Barrier| and {Value1} |Static Charge| until {PlayerName}'s next turn.
     FlavorText: Iron is sturdy, and, more importantly, conductive.
 
 LongVigil:
@@ -481,7 +481,7 @@ RagingWaterfall:
     Name: Raging Waterfall
     Description: |-
         Gain {Block} Block.
-        Draw {Value1} extra cards at the stard of {PlayerName}'s next turn.
+        Draw {Value1} extra cards at the start of {PlayerName}'s next turn.
     FlavorText: Perfect for meditation or ambushes.
 
 SeizeTheMoment:

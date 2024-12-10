@@ -7,7 +7,7 @@ namespace Momiji
         // each loaded plugin needs to have a unique GUID. usually author+generalCategory+Name is good enough
         public const string GUID = "worldsoul.test.momiji.mod";
         public const string Name = "Momiji Mod";
-        public const string version = "1.1.3";
+        public const string version = "1.1.4";
         public static readonly Harmony harmony = new Harmony(GUID);
 
     }

@@ -20,7 +20,7 @@ CrispFallAirSe:
 
 DestabilizeSe:
     Name: Destabilize
-    Description: Whenever {Ownername} deals unblocked attack damage to an enemy, they gain {Level} |Block|.
+    Description: Whenever {OwnerName} deals unblocked attack damage to an enemy, they gain {Level} |Block|.
 
 DistractSe:
     Name: Distract
@@ -121,4 +121,4 @@ SpecialIntention:
 
 WoodlandSentrySe:
     Name: Woodland Sentry
-    Description: At the end of {OwnerName}'s turn, gain |Block| equal to {level} times the number of cards in hand.
+    Description: At the end of {OwnerName}'s turn, gain |Block| equal to {Level} times the number of cards in hand.

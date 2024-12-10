@@ -29,13 +29,14 @@ AirCutter:
   Description: |-
     {Damage}ダメージを与える。
     {Block}|ブロック|を得る。
-  Flavortext: 空を切り裂く。
+  FlavorText: 空を切り裂く。
 
 BlackWind:
     Name: 黒い風
     Description: |-
         |エアカッター|は|弱体|{Value1}を与えるようになる。
         |エアカッター|を{Value2}枚手札に加える。
+    FlavorText: 黒い風が凶兆を運んでくる。
 
 FeedOnTheWeak:
     Name: 弱者狩り
@@ -58,7 +59,7 @@ ForestAmbush:
 RabidBite:
     Name: 獣の一噛み
     Description: "{Damage}ダメージを与える。 ライフ{Value1}を回復する。"
-    Flavortext: "獰猛な敵を打ち負かすための獰猛な一撃。"
+    FlavorText: "獰猛な敵を打ち負かすための獰猛な一撃。"
 
 AyaTeammate:
     Name: 天狗記者、文
@@ -79,6 +80,7 @@ WoodlandSentry:
     Description: |-
         ライフ{Value2}を回復する。
         {PlayerName}のターン終了時、手札1枚につき{Value1}|ブロック|を得る。
+    FlavorText: 森は私にとって、ほとんどの天狗よりも親しい友だ。
 
 AutumnView:
     Name: 秋模様
@@ -123,12 +125,14 @@ HuntingHurricanes:
     Description: |-
         すべての敵に{Damage}ダメージを与える。
         |廃棄されたエアカッター|の1枚につき、{SelfName}は追加でダメージを1回与える。
-    Flavortext: 本物の竜巻
+    FlavorText: 本物の竜巻
 
 IndiscriminateRevenge:
     Name: 無情な復讐
     Description: |-
         |反射|が発動する時、すべての敵に|報復|に等しいダメージを与える。
+        |報復|{Value1}を得る。
+    FlavorText: "墓が二つ？終わる頃には墓地を満杯にしてやる。"
 
 InstantofContact:
     Name: 睨み合う剣
@@ -142,13 +146,13 @@ MapleLeafFestival:
     Name: 紅葉祭り
     Description: |-
         {PlayerName}のターン開始時、|楓の葉|を手札に加える。
-    Flavortext: 夏の終わりのお祝い
+    FlavorText: 夏の終わりのお祝い
 
 MomijiRiposte:
     Name: 反撃の構え
     Description: |-
         |報復|{Value1}を得る。
-    Flavortext: 私の守りに踏み込め
+    FlavorText: 私の守りに踏み込め
 
 PatientHunter:
     Name: 好機を待つ狩人
@@ -162,7 +166,7 @@ RecklessStrike:
     Description: |-
         {Damage}ダメージを与える。
         |弱体|{Value1}を与える。
-        |脱力|{Value2}を得る。
+        |脆弱化|{Value2}を得る。
     FlavorText: どんな犠牲を払ってでも勝利を手にする
 
 RipApart:
@@ -192,13 +196,14 @@ TrainingRecord:
         |攻撃姿勢|なら、攻撃カードをアップグレードできる。
         |防御姿勢|なら、防御カードをアップグレードできる。 
         |特殊姿勢|なら、能力かスキルカードをアップグレードできる。 
+    FlavorText: 敵こそが最も重要な師だ。
 
 AdvantageousPosition:
     Name: 見下ろす優位
     Description: |-
         {Block}|ブロック|を得る。
         |臨時火力|{Value1}を得る。
-    Flavortext: 彼らは空を飛んでいても、上を警戒しない
+    FlavorText: 彼らは空を飛んでいても、上を警戒しない
 
 BladeWarding:
     Name: 拒絶の刃
@@ -206,7 +211,7 @@ BladeWarding:
         |脱力|{Value1}を与える。
         |報復|{Value1}を得る。
         |エアカッター|を1枚手札に加える。
-    Flavortext: "私に近づくな！"
+    FlavorText: "私に近づくな！"
 
 BloodScent:
     Name: 血の香り
@@ -225,7 +230,7 @@ CollectingMomiji:
     Name: 椛集め
     Description: |-
         手札に|楓の葉|を{Value1}枚加える。
-    Flavortext: 天狗じゃなくて葉っぱ
+    FlavorText: 天狗じゃなくて葉っぱ
 
 CrispFallAir:
     Name: 木枯らし
@@ -242,12 +247,14 @@ Distract:
     Name: 狼狽
     Description: |-
         {PlayerName}が敵に攻撃する度に、相手が|弱体|を持っていれば|脱力|1を与える。
+    FlavorText: 異なる一面を見せることで、相手に隙を作らせる。
 
 ExploitOpenings:
     Name: 隙を突く
     Description: |-
         |弱体|{Value1}を得る。
         |火力|{Value1}を得る。対象の|弱体|2ごとに、追加で|火力|1を得る。
+    FlavorText: "誰にでも１つはある。"
 
 ExtrasensoryPerception:
     Name: 超感覚的直感
@@ -287,6 +294,7 @@ HuntingCall:
     Description: |-
         敵全体に|弱体|2を与える。
         |攻撃姿勢|の敵がいればカードを{Value2}枚引く。
+    FlavorText: 侵入者を発見した時の、椛の仲間への合図
 
 ImageTraining:
     Name: イメージトレーニング
@@ -315,7 +323,7 @@ OverhandBlade:
         {Damage}ダメージを与える。
         対象が|弱体|を持っているならば、|脱力|{Value1}を得る。
         対象が|脱力|を持っているならば、|弱体|{Value1}を得る。        
-    Flavortext: バランスを崩した瞬間を狙う
+    FlavorText: バランスを崩した瞬間を狙う
 
 PartingSlice:
     Name: 別れの一刀
@@ -325,7 +333,7 @@ PartingSlice:
     UpgradedDescription: |-
         すべての敵に{Damage}ダメージを2回与える。
         |攻撃態勢|の敵の数ごとに、グレイズ{Value1}を得る。
-    Flavortext: 去り際に一歩劣る
+    FlavorText: 去り際に一歩劣る
 
 Patrol:
     Name: 巡回
@@ -341,7 +349,7 @@ ScatteringLeaves:
     Name: 紅葉の舞
     Description: |-
         ランダムな敵に{Damage}ダメージを{Value1}回与える。
-    Flavortext: 目もくらむような赤い閃光
+    FlavorText: 目もくらむような赤い閃光
 
 SenseWeakness:
     Name: 弱点感知
@@ -354,17 +362,21 @@ ShieldCounter:
     Description: |-
         |反射|{Value2}を得る。
         |反射|か|帯電|が発動する度に、その対象に|弱体|{Value1}を与える。
+    FlavorText: 隙だらけだ！
+
 
 SurgeofPower:
     Name: 力の奔流
     Description: |-
         次にプレイする{Value1}枚のカードコストが{Mana}になる。
+    FlavorText: 大きな叫びと白髪を伴うことが多い。
 
 Taunt:
     Name: 嘲弄
     Description: |-
         |脱力|{Value1}と|弱体|{Value1}を与える。
         対象の敵が{PlayerName}に{Value2}ダメージを与える。
+    FlavorText: 一流に学ぶテクニック。
 
 CrashingWaterBlade:
     Name: 水流の刃
@@ -404,6 +416,7 @@ AlwaysWatching:
     Description: |-
         {Shield}|バリア|を得る。
         |攻撃姿勢|の敵がいれば、{Block}|ブロック|を得る。
+    FlavorText: いつも耳を立てている。
 
 CallToArms:
     Name: 白狼の召集
@@ -423,7 +436,7 @@ Destabilize:
     Name: 揺らぐ足元
     Description: |-
         {PlayerName}の攻撃がブロックされなかった度に、{Value1}|ブロック|を得る。
-    Flavortext: 素早く軽い打撃で相手のバランスを崩し、相手の攻撃をそらす。
+    FlavorText: 素早く軽い打撃で相手のバランスを崩し、相手の攻撃をそらす。
 
 DoubleDown:
     Name: 追い打ち
@@ -437,6 +450,7 @@ EyeforanEye:
     Description: |-
         {Damage}ダメージを与える。
         対象の敵が{PlayerName}に{Value1}ダメージを与える。
+    FlavorText: 最初に失うのは目だ。
 
 FalseWeakness:
     Name: 見せかけの弱点
@@ -462,7 +476,9 @@ IronStance:
     Name: 鉄の構え
     Description: |-
         {Block}|ブロック|と{Value1}|帯電|を得る。次のターンまで失われない。
-    Flavortext: 鉄は頑丈である。そして、より重要なのは、導電性があるということ。
+    UpgradedDescription: |-
+        {Shield}|バリア|と{Value1}|帯電|を得る。次のターンまで失われない。
+    FlavorText: 鉄は頑丈である。そして、より重要なのは、導電性があるということ。
 
 LongVigil:
     Name: 長時間の監視
@@ -472,6 +488,7 @@ LongVigil:
     UpgradedDescription: |-
         手札、山札、捨て札から{Value1}枚までカードを|廃棄|する。
         このカードで廃棄したカード1枚につき、{Block}|ブロック|を得る。
+    FlavorText: 夜は長くなるだろう。準備を怠るな。
 
 MomijiReflect:
   Name: 反省する
@@ -492,6 +509,7 @@ RagingWaterfall:
     Description: |-
         {Block}|ブロック|を得る。
         {PlayerName}の次のターン開始時、追加でカードを{Value1}枚引く。
+    FlavorText: 瞑想や待ち伏せには最適。
 
 SeizeTheMoment:
     Name: チャンスを掴め
@@ -499,10 +517,8 @@ SeizeTheMoment:
         {Damage}ダメージを与える。
         敵の行動により、追加効果を得る。
     DetailText: |-
-        敵が攻撃姿勢の時： 対象に|臨時火力ダウン|{Value1}を与える。
-        
-        敵が防御姿勢の時： |弱体|{Value2}と|霊力ダウン|{Value2}を与える。
-        
+        敵が攻撃姿勢の時： 対象に|臨時火力ダウン|{Value1}を与える。        
+        敵が防御姿勢の時： |弱体|{Value2}と|霊力ダウン|{Value2}を与える。        
         特殊行動の時： 追加でもう1回攻撃する。
     FlavorText: いつも一瞬の判断で行動できるように準備しておけ
 
@@ -537,8 +553,9 @@ TrapStance:
 TwinFang:
     Name: 二つの牙
     Description: |-
+        |反射|{Value2}を得る。
         次に|反射|は発動する時、|反射|で与えたダメージに等しい|反射|を得る。
-    Flavortext: 必ず二度攻撃する！
+    FlavorText: 必ず二度攻撃する！
 
 VacuumCutter:
     Name: 真空刃
@@ -573,6 +590,7 @@ WaterfallMeditation:
         
         特殊行動の時： |火力|{Value1}を得る。
         (|召喚|、|スタン|、|なにもしない|、|チャージ|、|回復|、|暗黒能楽|、|呪い|)
+    FlavorText: ただし、彼女の尻尾が乾くのにどれくらい時間がかかるかは聞かない方がいい。
 
 WindsweptBlade:
     Name: 吹きさらしの刃

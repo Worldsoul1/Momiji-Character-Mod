@@ -33,17 +33,17 @@ namespace Momiji.Source.StatusEffects
 
         public IEnumerable<BattleAction> OnPlayerDamageDealt(DamageEventArgs args)
         {
-            if (args.Source == base.Battle.Player && args.Target != null && args.DamageInfo.DamageType == DamageType.Reaction)
+            if ((args.ActionSource is TempElectric || args.ActionSource is Reflect) && args.Target != null)
             {
                 base.NotifyActivating();
                     if (args.Target.IsAlive)
                     {
                         yield return new ApplyStatusEffectAction<Vulnerable>(args.Target, 0, base.Level, 0, 0, 0.2f);
-                        //DamageInfo must be either Reaction or HpLoss since Attack could potentially trigger an infinite loop without additional checks.
+                    //DamageInfo must be either Reaction or HpLoss since Attack could potentially trigger an infinite loop without additional checks.
                     }
                 yield break;
             }
         }
-       
+
     }
 }

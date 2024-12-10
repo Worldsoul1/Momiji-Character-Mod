@@ -58,8 +58,9 @@ namespace Momiji.Source.Cards
 
         protected override IEnumerable<BattleAction> Actions(UnitSelector selector, ManaGroup consumingMana, Interaction precondition)
         {
+            bool flag = selector.SelectedEnemy.HasStatusEffect<Vulnerable>();
             yield return base.AttackAction(selector, base.GunName);
-            if (base.PendingTarget.HasStatusEffect<Vulnerable>())
+            if (flag)
             {
                 yield return new GainManaAction(Mana);
             }
