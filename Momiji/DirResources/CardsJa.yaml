@@ -400,13 +400,13 @@ PlungePool:
     Description: |-
         {Block}|ブロック|を得る。
         追加で{PlayerName}の|報復|に等しい|ブロック|を得る。({ReflectShield})
-    NonBattleDescription: |-
+    NonbattleDescription: |-
         {Block}ブロックを得る。
         追加で{PlayerName}の|報復|に等しい|ブロック|を得る。
     UpgradedDescription: |-
         {Shield}|バリア|を得る。
         追加で{PlayerName}の|報復|に等しい|バリア|を得る。({ReflectShield})
-    UpgradedNonBattleDescription: |-
+    UpgradedNonbattleDescription: |-
         {Shield}|バリア|を得る。
         追加で{PlayerName}の|報復|に等しい|バリア|を得る。
     FlavorText: ハマるなよ
@@ -475,9 +475,9 @@ Howl:
 IronStance:
     Name: 鉄の構え
     Description: |-
-        {Block}|ブロック|と{Value1}|帯電|を得る。次のターンまで失われない。
+        {Block}|ブロック|と{Value1}|帯電|を得る。{PlayerName}の次のターンまで失われない。
     UpgradedDescription: |-
-        {Shield}|バリア|と{Value1}|帯電|を得る。次のターンまで失われない。
+        {Shield}|バリア|と{Value1}|帯電|を得る。{PlayerName}の次のターンまで失われない。
     FlavorText: 鉄は頑丈である。そして、より重要なのは、導電性があるということ。
 
 LongVigil:

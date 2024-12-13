@@ -69,7 +69,7 @@ namespace Momiji.Source.Cards
                     DamageInfo damageInfo = args.DamageInfo;
                     if (damageInfo.Damage > 0f)
                     {
-                        yield return new CastBlockShieldAction(base.Battle.Player, (int)damageInfo.Damage, 0, BlockShieldType.Normal, false);
+                        yield return new CastBlockShieldAction(base.Battle.Player, (int)damageInfo.Damage, 0, BlockShieldType.Direct, false);
                     }
                 }
             yield break;

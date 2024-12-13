@@ -24,6 +24,7 @@ namespace Momiji.Source.StatusEffects
         {
             StatusEffectConfig config = GetDefaultStatusEffectConfig();
             config.HasLevel = true;
+            config.Type = StatusEffectType.Negative;
             return config;
         }
     }

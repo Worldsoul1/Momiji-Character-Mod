@@ -41,7 +41,7 @@ namespace Momiji.Source.StatusEffects
         {
             if (args.Effect.Type == StatusEffectType.Negative)
             {
-                yield return new CastBlockShieldAction(base.Battle.Player, 0, base.Level, BlockShieldType.Normal, false);
+                yield return new CastBlockShieldAction(base.Battle.Player, 0, base.Level, BlockShieldType.Direct, false);
             }
             yield break;
         }

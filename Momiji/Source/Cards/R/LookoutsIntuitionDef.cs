@@ -60,7 +60,7 @@ namespace Momiji.Source.Cards
             if(selectedEnemy.HasStatusEffect<Vulnerable>())
             {
                 count = (selectedEnemy.GetStatusEffect<Vulnerable>().Duration) / base.Value2;
-                yield return new CastBlockShieldAction(base.Battle.Player, 0, count * base.Shield.Shield, BlockShieldType.Normal, false);
+                yield return new CastBlockShieldAction(base.Battle.Player, 0, count * base.Shield.Shield, BlockShieldType.Direct, false);
             }
             yield break;
         }

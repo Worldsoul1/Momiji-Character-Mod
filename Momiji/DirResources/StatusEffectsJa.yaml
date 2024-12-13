@@ -83,7 +83,7 @@ ShieldCounterSe:
 
 SmellofDeathSe:
     Name: "死を呼ぶ香"
-    Description: "{OwnerName}が倒れる時、他のすべて敵に最大HPの半分に等しいダメージ与える。"
+    Description: "{OwnerName}が倒れる時、他のすべて敵に{FinalDamage}ダメージ与える。"
     Brief: "敵が倒れる時、その最大HPの半分に等しいダメージを他の敵に与える。"
 
 StandWatchSe:
@@ -132,4 +132,4 @@ SpecialIntention:
 
 WoodlandSentrySe:
     Name: "森の守護者"
-    Description: "{OwnerName}のターン終了時、手札1枚につき{level}|ブロック|を得る。"
+    Description: "{OwnerName}のターン終了時、手札1枚につき{Level}|ブロック|を得る。"

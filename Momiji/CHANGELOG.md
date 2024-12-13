@@ -1,3 +1,13 @@
+## 1.1.5
+
+Minor bugfixing+localization changes
+
+* finally fixed an error that would cause Training Record to softlock the game if it did not find a viable upgrade target.
+* updated Japanese localization
+* Smell of Death should now properly be tracked as a debuff, and subject to the same mechanics as a debuff(status cleansing/amulet)
+* Fixed an error with Lookout's Intuition and Defensive strike that caused them to be affected by Frail.
+* Fixed an error with the Status Effects granted by Circular Pacing, Destabilize, Stand Watch, and Woodland Sentry that caused them to be affected by Frail(note: the block granted by playing Stand Watch will still be affected by frail. The passive block gained each turn will not)
+
 ## 1.1.4
 
 Fixing bugs

@@ -68,7 +68,7 @@ namespace Momiji.Source
             {
                 if (base.Battle != null)
                 {
-                    return !base.Battle.BattleCardUsageHistory.Any((Card card) => card is TimeWalk);
+                    return !base.Battle.BattleCardUsageHistory.Any((Card card) => card is TrainingRecord);
                 }
                 return true;
             }
@@ -106,12 +106,13 @@ namespace Momiji.Source
                 if (cardInDeckToUpgrade != null)
                 {
                     base.GameRun.UpgradeDeckCard(cardInDeckToUpgrade, false);
-                }
 
-                Card cardInBattleToUpgrade = base.Battle.EnumerateAllCards().Where(c => c.CanUpgrade && c.InstanceId == cardInDeckToUpgrade.InstanceId).FirstOrDefault();
-                if (null != cardInBattleToUpgrade)
-                {
-                    yield return new UpgradeCardAction(cardInBattleToUpgrade);
+
+                    Card cardInBattleToUpgrade = base.Battle.EnumerateAllCards().Where(c => c.CanUpgrade && c.InstanceId == cardInDeckToUpgrade.InstanceId).FirstOrDefault();
+                    if (null != cardInBattleToUpgrade)
+                    {
+                        yield return new UpgradeCardAction(cardInBattleToUpgrade);
+                    }
                 }
             }
             yield return base.AttackAction(selector, GunName);
