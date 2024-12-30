@@ -14,7 +14,6 @@ namespace Momiji.Source.Cards
             CardConfig config = GetCardDefaultConfig();
             config.GunName = GunNameID.GetGunFromId(400);
             config.IsPooled = false;
-            config.FindInBattle = false;
 
             config.Colors = new List<ManaColor>() { ManaColor.White };
             config.Cost = new ManaGroup() { Any = 1, White = 1 };

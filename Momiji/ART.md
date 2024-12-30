@@ -27,7 +27,7 @@ Blade Warding (ツバサ): https://www.pixiv.net/en/artworks/30260057
 Circular Pacing (Oba): https://www.pixiv.net/en/artworks/110822157
 Collecting Momiji (en (shihi no utage)): https://danbooru.donmai.us/posts/3784639?q=en_%28shisui_no_utage%29+
 Crisp Fall Air (Cube85): https://www.pixiv.net/en/artworks/54372675
-Exploit Openings (ゾウノセ): https://www.pixiv.net/en/artworks/25526594
+Exploit Openings (Radal): https://discord.gg/8M6ykVXH
 Fake Opening (猫水瀬): https://www.pixiv.net/en/artworks/38600870#1
 Follow Up (cuon): https://danbooru.donmai.us/posts/1710954?q=cuon_%28kuon%29+inubashiri_momiji+
 Hunter's Trap (田中 ぬぬ): https://x.com/nunupon0514/status/906835691794964480
@@ -103,7 +103,7 @@ Indiscriminate Revenge (Oba): https://www.pixiv.net/en/artworks/120263395
 Instant of Contact (ツバサ): https://www.pixiv.net/en/artworks/22038043
 Parting Slice (竹篙): https://www.pixiv.net/en/artworks/63726185
 Stand Watch (スコッティ): https://danbooru.donmai.us/posts/428243?q=scottie_%28phantom2%29+inubashiri_momiji+
-Training Record (konabetate): https://www.pixiv.net/en/artworks/85081611
+Training Record (Radal): https://discord.gg/8M6ykVXH
 
 
 ### U

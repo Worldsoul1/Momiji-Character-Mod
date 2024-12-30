@@ -1,3 +1,11 @@
+## 1.1.6
+
+bugfixing+new art
+
+* fixed a bug where damaging spellcards would not be correctly read as Offensive Intentions.
+* fixed a bug preventing MomijiB's basic attack(Shield Bash) from being copied, be it by cards or by exhibits.
+* Added new artwork by the artist Radal on the Touhou LBoL Discord for the cards Exploit Openings and Traning Record
+
 ## 1.1.5
 
 Minor bugfixing+localization changes

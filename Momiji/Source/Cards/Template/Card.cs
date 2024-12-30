@@ -37,7 +37,7 @@ namespace Momiji.Source
                 else if (intention is SpellCardIntention) 
                 {
                     SpellCardIntention spellCardIntention = intention as SpellCardIntention;
-                    if (spellCardIntention == null || spellCardIntention.Damage == null) 
+                    if (!(spellCardIntention == null || spellCardIntention.Damage == null)) 
                     {
                         attack = true;
                         value += 1;
