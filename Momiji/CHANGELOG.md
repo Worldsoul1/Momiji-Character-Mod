@@ -1,3 +1,15 @@
+## 1.1.7
+
+fixing art+small buffs
+
+* the existing art by Radal has been resized to fix the card frames without stretching/distortion, and new art for Always Watching has been added.
+* Howling Mountain Wind now costs 2RR unupgraded
+* Image Training+ now adds 2 Air Cutters to the hand
+* Black Wind now costs 3B instead of 1BB, to enable it to be found more easily
+* Black Wind+ now adds 2 Air Cutters to the hand instead of 1
+* Double Down has undergone a slight rework, and its text has been updated to account for the rework.
+* Waterfall Meditation should now correctly apply vulnerable and spirit down if the targeted enemy has all three Intentions.
+
 ## 1.1.6
 
 bugfixing+new art

@@ -45,7 +45,7 @@ namespace Momiji.Source.Cards
     {
         protected override IEnumerable<BattleAction> Actions(UnitSelector selector, ManaGroup consumingMana, Interaction precondition)
         {
-            yield return new AddCardsToHandAction(Library.CreateCards<AirCutter>(1, false), AddCardsType.Normal);
+            yield return new AddCardsToHandAction(Library.CreateCards<AirCutter>(base.Value1, false), AddCardsType.Normal);
             yield return base.BuffAction<ImageTrainingSe>(1, 0, 0, 0, 0.2f);
             //This is equivalent to:
             //yield return new ApplyStatusEffectAction<Firepower>(Battle.Player, base.Value1, 0, 0, 0, 0.2f);

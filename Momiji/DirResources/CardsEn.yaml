@@ -420,7 +420,7 @@ Destabilize:
 
 DoubleDown:
     Name: Double Down
-    Description: Deal {Damage} damage. If the enemy does not intend to attack, deal damage {Value1} additional time{Value1:plural one='' other='s'}.
+    Description: Deal {Damage} damage. If the enemy has a |Defensive Intention|, deal damage {Value1} additional time{Value1:plural one='' other='s'}.
     FlavorText: press hard against any attempt to disengage
 
 EyeforanEye:
@@ -548,7 +548,7 @@ WaterfallMeditation:
         Select an enemy. Perform an action based on the selected enemy's intentions.
         Draw {Value1} card{Value1:plural one='' other='s'}.
     DetailText: |-
-        If the enemy has an |Offensive Intention|, gain {Value2} block and upgrade {Value1} random card in the hand{Value1:plural one='' other='s'}, prioritizing Attack cards.
+        If the enemy has an |Offensive Intention|, gain {Block} block and upgrade {Value2} random card in the hand{Value1:plural one='' other='s'}, prioritizing Attack cards.
         If the enemy has a |Defensive Intention|, apply {Value1} |Vulnerable| and |Spirit Down| to the enemy.
         If the enemy has a |Special Intention|, gain {Value1} |Firepower|.
     FlavorText: Just don't ask her how long it takes her tail to dry.

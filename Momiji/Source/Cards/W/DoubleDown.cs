@@ -11,6 +11,7 @@ using System.Text;
 using LBoL.Core.Units;
 using System.Linq;
 using Momiji.Source.GunName;
+using Momiji.Source.StatusEffects;
 
 namespace Momiji.Source.Cards
 {
@@ -36,6 +37,8 @@ namespace Momiji.Source.Cards
             config.Value1 = 1;
             config.UpgradedValue1 = 2;
 
+            config.RelativeEffects = new List<string>() { nameof(DefensiveIntention) };
+            config.UpgradedRelativeEffects = new List<string>() { nameof(DefensiveIntention) };
             //The Accuracy keyword is enough to make an attack accurate.
 
             config.Illustrator = "ちゃんせ";
@@ -56,20 +59,13 @@ namespace Momiji.Source.Cards
         protected override IEnumerable<BattleAction> Actions(UnitSelector selector, ManaGroup consumingMana, Interaction precondition)
         {
             bool notAttacking = false;
+            int intention = 0;
             EnemyUnit selectedEnemy = selector.SelectedEnemy;
-            notAttacking = selectedEnemy.Intentions.Any(delegate (Intention i)
+            intention = base.IntentionCheck(selectedEnemy);
+            if (intention == 2 || intention == 3 || intention == 6 || intention == 7)
             {
-                if (i is AttackIntention)
-                {
-                    return false;
-                }
-                SpellCardIntention spellCardIntention = i as SpellCardIntention;
-                if (spellCardIntention != null && spellCardIntention.Damage != null)
-                {
-                    return false;
-                }
-                return true;
-            });
+                notAttacking = true;
+            }
 
             yield return base.AttackAction(selector, base.GunName);
             if (notAttacking)

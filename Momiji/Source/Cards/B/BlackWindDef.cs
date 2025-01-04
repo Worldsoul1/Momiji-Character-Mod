@@ -18,7 +18,7 @@ namespace Momiji.Source.Cards
         {
             CardConfig config = GetCardDefaultConfig();
             config.Colors = new List<ManaColor>() { ManaColor.Black };
-            config.Cost = new ManaGroup() { Any = 1, Black = 2 };
+            config.Cost = new ManaGroup() { Any = 3, Black = 1 };
             config.UpgradedCost = new ManaGroup() { Any = 1, Black = 1 };
             config.Rarity = Rarity.Uncommon;
 
@@ -47,7 +47,7 @@ namespace Momiji.Source.Cards
     {
         protected override IEnumerable<BattleAction> Actions(UnitSelector selector, ManaGroup consumingMana, Interaction precondition)
         {
-            yield return new AddCardsToHandAction((Library.CreateCards<AirCutter>(Value2, false)));
+            yield return new AddCardsToHandAction((Library.CreateCards<AirCutter>(base.Value2, false)));
             yield return new ApplyStatusEffectAction<BlackWindSe>(Battle.Player, 1, 0, 0, 0, 0.2f);
             //This is equivalent to:
             //yield return new ApplyStatusEffectAction<Firepower>(Battle.Player, base.Value1, 0, 0, 0, 0.2f);

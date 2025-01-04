@@ -70,7 +70,7 @@ namespace Momiji.Source.Cards
                 yield return new CastBlockShieldAction(base.Battle.Player, base.Battle.Player, base.Block.Block, 0, BlockShieldType.Normal, true);
                 yield return base.UpgradeRandomHandAction(base.Value2, CardType.Attack); 
             }
-            if (intention == 2 || intention == 3 || intention == 6)
+            if (intention == 2 || intention == 3 || intention == 6 || intention == 7)
             {
                 yield return new ApplyStatusEffectAction<Vulnerable>(selectedEnemy, 0, base.Value1, 0, 0, 0.2f);
                 yield return new ApplyStatusEffectAction<SpiritNegative>(selectedEnemy, base.Value1, 0, 0, 0, 0.2f);
