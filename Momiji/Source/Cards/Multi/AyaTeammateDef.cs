@@ -42,7 +42,13 @@ namespace Momiji.Source.Cards
             config.UpgradedValue1 = 2;
             config.Value2 = 3;
             config.UpgradedValue2 = 4;
-            
+
+            config.RelativeEffects = new List<string> { nameof(WindGirl) };
+            config.UpgradedRelativeEffects = new List<string> { nameof(WindGirl) };
+
+            config.RelativeCards = new List<string> { nameof(AirCutter) };
+            config.UpgradedRelativeCards = new List<string> { nameof(AirCutter) };
+
             config.Illustrator = "bowstringsmall";
 
             config.Index = CardIndexGenerator.GetUniqueIndex(config);
@@ -145,7 +151,7 @@ namespace Momiji.Source.Cards
                 {
                     yield return battleAction;
                 }
-                yield return new AddCardsToHandAction(Library.CreateCards<MapleLeaf>(Value1, false));
+                yield return new AddCardsToHandAction(Library.CreateCards<AirCutter>(Value1, false));
                 yield return base.SkillAnime;
 			}
 			else

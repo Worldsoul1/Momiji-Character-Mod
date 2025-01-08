@@ -1,3 +1,11 @@
+## 1.1.8
+
+bugfixing
+
+* Aya, Tengu Reporter now has reminder text for Wind God Girl in the detail text
+* Aya, Tengu Reporter's activated ability now properly adds Air Cutters to the hand instead of Maple Leaves.
+* Fixed the localization for Image Training+ to reflect the amount of Air Cutters added to the hand.
+
 ## 1.1.7
 
 fixing art+small buffs

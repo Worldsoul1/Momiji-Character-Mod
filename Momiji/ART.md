@@ -73,7 +73,7 @@ Waterfall Meditation (esai): https://www.pixiv.net/en/artworks/116201334
 
 #### Rare
 
-Always Watching (Oba): https://www.pixiv.net/en/artworks/93063039
+Always Watching (Radal): https://discord.gg/8M6ykVXH
 Seize the Moment (かなめや): https://www.pixiv.net/en/artworks/29152867
 Tactical Insight (yonaga (masa07240)): https://danbooru.donmai.us/posts/2123510?q=yonaga_%28masa07240%29+
 Tireless Guard (Oba): https://www.pixiv.net/en/artworks/81593678
