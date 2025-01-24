@@ -187,7 +187,7 @@ TrainingRecord:
     Name: Training Record
     Description: |-
         Deal {Damage} damage.
-        If this is the first time a {SelfName} has been played this combat, upgrade a card in {PlayerName}'s deck based on the targeted enemy's intention.
+        If this is the first time a {SelfName} has been played this combat, upgrade a random card in {PlayerName}'s deck based on the targeted enemy's intention.
     DetailText: |-
         If the enemy has an |Offensive Intention|, an Attack card may be upgraded. 
         If the enemy has a |Defensive Intention|, a Defense card may be upgraded.
@@ -361,7 +361,7 @@ Taunt:
     Name: Taunt
     Description: |-
         Apply {Value1} |Weak| and {Value1} |Vulnerable|.
-        The targeted enemy deals {Value2} damage to {PlayerName}.
+        The targeted enemy deals {Value2} attack damage to {PlayerName}.
     FlavorText: A technique learned from the best.
 
 CrashingWaterBlade:
@@ -430,7 +430,7 @@ EyeforanEye:
     Name: Eye for an Eye
     Description: |-
         Deal {Damage} damage.
-        The targeted enemy deals {Value1} damage to {PlayerName}.
+        The targeted enemy deals {Value1} attack damage to {PlayerName}.
     FlavorText: They'll go blind first.
 
 FalseWeakness:
@@ -551,7 +551,7 @@ WaterfallMeditation:
         Select an enemy. Perform an action based on the selected enemy's intentions.
         Draw {Value1} card{Value1:plural one='' other='s'}.
     DetailText: |-
-        If the enemy has an |Offensive Intention|, gain |Block| block and upgrade {Value2} random card{Value1:plural one='' other='s'} in the hand, prioritizing Attack cards.
+        If the enemy has an |Offensive Intention|, gain {CardBlock} |Block| and upgrade {Value2} random card{Value1:plural one='' other='s'} in the hand, prioritizing Attack cards.
         If the enemy has a |Defensive Intention|, apply {Value1} |Vulnerable| and |Spirit Down| to the enemy.
         If the enemy has a |Special Intention|, gain {Value1} |Firepower|.
     FlavorText: Just don't ask her how long it takes her tail to dry.

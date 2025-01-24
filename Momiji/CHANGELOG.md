@@ -1,3 +1,15 @@
+## 1.1.10
+Small localization fixes
+
+* Updated the localization of Taunt and Eye for an Eye to make it clear that the targeted enemy deals attack damage.
+
+## 1.1.9
+
+Localization Fixing
+
+* Hopefully fixed the problems with the Detail Text of Waterfall Meditation
+* Updated the localization of Training Record to make it clear that it targets a random applicable card.
+
 ## 1.1.8
 
 bugfixing

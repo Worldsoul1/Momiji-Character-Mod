@@ -58,9 +58,13 @@ namespace Momiji.Source.Cards
     [EntityLogic(typeof(WaterfallMeditationDef))]
     public sealed class WaterfallMeditation : SampleCharacterCard
     {
-
-
         // Token: 0x060009C6 RID: 2502 RVA: 0x00014544 File Offset: 0x00012744
+        public int CardBlock {
+            get
+            {
+                return base.Block.Block;
+            }
+        }
         protected override IEnumerable<BattleAction> Actions(UnitSelector selector, ManaGroup consumingMana, Interaction precondition)
         {
             EnemyUnit selectedEnemy = selector.SelectedEnemy;
