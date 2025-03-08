@@ -18,7 +18,7 @@ CrispFallAirSe:
 
 DestabilizeSe:
   Name: 불안정화
-  Description: "{Ownername}가 막히지 않은 공격 피해를 줄 때마다 |방어|를 {Level} 얻습니다."
+  Description: "{OwnerName}가 막히지 않은 공격 피해를 줄 때마다 |방어|를 {Level} 얻습니다."
 
 DistractSe:
   Name: 방해
@@ -119,4 +119,4 @@ SpecialIntention:
 
 WoodlandSentrySe:
   Name: 산림 감시
-  Description: "{OwnerName}의 턴 종료시, 손의 카드 한장 마다 |방어|를 {level} 얻습니다."
+  Description: "{OwnerName}의 턴 종료시, 손의 카드 한장 마다 |방어|를 {Level} 얻습니다."

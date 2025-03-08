@@ -35,7 +35,7 @@ BlackWind:
     Name: 黒い風
     Description: |-
         |エアカッター|は|弱体|{Value1}を与えるようになる。
-        |エアカッター|を{Value2}枚手札に加える。
+        手札に|エアカッター|を{Value2}枚加える。
     FlavorText: 黒い風が凶兆を運んでくる。
 
 FeedOnTheWeak:
@@ -71,8 +71,8 @@ AyaTeammate:
         {PassiveCostIcon}|グレイズ|は{PlayerName}のターン開始時失われない。
     ExtraDescription1: "{ActiveCostIcon}敵全体に|ロックオン|{Value2}を与える。手札に|エアカッター|を{Value1}枚加える。"
     UpgradedExtraDescription1: "{ActiveCostIcon}敵全体に|ロックオン|{Value2}を与える。手札に|エアカッター|を{Value1}枚加える。"
-    ExtraDescription2: "{UltimateCostIcon}|風神少女|1を得る。戦闘終了まで{PlayerName}の攻撃は|精密|を持つ。"
-    UpgradedExtraDescription2: "{UltimateCostIcon}|風神少女|1を得る。戦闘終了まで{PlayerName}の攻撃は|精密|を持つ。"
+    ExtraDescription3: "{UltimateCostIcon}|風神少女|1を得る。戦闘終了まで{PlayerName}の攻撃は|精密|を持つ。"
+    UpgradedExtraDescription3: "{UltimateCostIcon}|風神少女|1を得る。戦闘終了まで{PlayerName}の攻撃は|精密|を持つ。"
     FlavorText: 何十年もの間、互いに喧嘩しあってきた。
 
 WoodlandSentry:
@@ -145,7 +145,7 @@ InstantofContact:
 MapleLeafFestival:
     Name: 紅葉祭り
     Description: |-
-        {PlayerName}のターン開始時、|楓の葉|を手札に加える。
+        {PlayerName}のターン開始時、手札に|楓の葉|を加える。
     FlavorText: 夏の終わりのお祝い
 
 MomijiRiposte:
@@ -191,11 +191,11 @@ TrainingRecord:
     Name: 訓練記録
     Description: |-
         {Damage}ダメージを与える。
-        この戦闘において{SelfName}が最初に使われたカードならば、相手の行動に基づいて{PlayerName}のデッキのカードを1枚アップグレードする。
+        この戦闘において{SelfName}が最初に使われたカードならば、相手の行動に基づいて{PlayerName}のデッキのカードをランダムに1枚アップグレードする。
     DetailText: |-
-        |攻撃姿勢|なら、攻撃カードをアップグレードできる。
-        |防御姿勢|なら、防御カードをアップグレードできる。 
-        |特殊姿勢|なら、能力かスキルカードをアップグレードできる。 
+        |攻撃姿勢|なら、攻撃カードをアップグレードされる。
+        |防御姿勢|なら、防御カードをアップグレードされる。 
+        |特殊姿勢|なら、能力かスキルカードをアップグレードされる。
     FlavorText: 敵こそが最も重要な師だ。
 
 AdvantageousPosition:
@@ -210,7 +210,7 @@ BladeWarding:
     Description: |-
         |脱力|{Value1}を与える。
         |報復|{Value1}を得る。
-        |エアカッター|を1枚手札に加える。
+        手札に|エアカッター|を1枚加える。
     FlavorText: "私に近づくな！"
 
 BloodScent:
@@ -235,10 +235,10 @@ CollectingMomiji:
 CrispFallAir:
     Name: 木枯らし
     Description: |-
-        |エアカッター|を{Value1}枚手札に加える。
+        手札に|エアカッター|を{Value1}枚加える。
         {PlayerName}の次のターン開始時、{Mana}を得る。
     UpgradedDescription: |-
-        |エアカッター|を{Value1}枚手札に加える。
+        手札に|エアカッター|を{Value1}枚加える。
         次のター開始時、|エアカッター|を{Value1}枚手札に加える。
         {PlayerName}の次のターン開始時、{Mana}を得る。
     FlavorText: 冷やすには十分な切れ味
@@ -299,8 +299,11 @@ HuntingCall:
 ImageTraining:
     Name: イメージトレーニング
     Description: |- 
-        |エアカッター|を手札に加える。
-        ターン開始時、|エアカッター|を手札に加える。
+        手札に|エアカッター|を加える。
+        ターン開始時、手札に|エアカッター|を加える。
+    UpgradedDescription: |-
+        手札に|エアカッター|を{Value1}枚に加える。
+        ターン開始時、手札に|エアカッター|を加える。
     FlavorText: 心の中で敵を想像し、剣を振るう
 
 LookoutsIntuition:
@@ -441,8 +444,7 @@ Destabilize:
 DoubleDown:
     Name: 追い打ち
     Description: |-
-        {Damage}ダメージを与える。
-        もし対象が攻撃しようとしていないならば、{Value1}回追加で攻撃する。
+        {Damage}ダメージを与える。もし対象が|防御姿勢|ならば、{Value1}回追加で攻撃する。
     FlavorText: 逃げようとするものは強く伐つ
 
 EyeforanEye:
@@ -519,7 +521,7 @@ SeizeTheMoment:
     DetailText: |-
         敵が攻撃姿勢の時： 対象に|臨時火力ダウン|{Value1}を与える。        
         敵が防御姿勢の時： |弱体|{Value2}と|霊力ダウン|{Value2}を与える。        
-        特殊行動の時： 追加でもう1回攻撃する。
+        敵が特殊姿勢の時： 追加でもう1回攻撃する。
     FlavorText: いつも一瞬の判断で行動できるように準備しておけ
 
 TacticalInsight:
@@ -577,19 +579,16 @@ WardingStrike:
 WaterfallMeditation:
     Name: 滝の瞑想
     Description: |-
-        対象を選ぶ。
-        敵の行動によって効果が変わる。
+        対象を選ぶ。敵の行動によって効果が変わる。
         カードを{Value1}枚引く。
     DetailText: |-
-        敵が攻撃姿勢の時： {Value2}|ブロック|を得て、手札のランダムな{Value1}枚のカードをアップグレードする。
+        敵が攻撃姿勢の時： {CardBlock}|ブロック|を得て、手札のランダムな{Value2}枚のカードをアップグレードする。
         攻撃カードが優先される。
-        (|攻撃|、|デバフ|、|状態異常|、|爆発|、|スペルカード|)
         
         敵が防御姿勢の時： 敵に|弱体|{Value1}と|霊力ダウン|{Value1}を与える。
-        (|バフ|、|浄化|、|デバフを解除?|、|防御|、|グレイズ|、|逃走|、|修理|)
         
-        特殊行動の時： |火力|{Value1}を得る。
-        (|召喚|、|スタン|、|なにもしない|、|チャージ|、|回復|、|暗黒能楽|、|呪い|)
+        敵が特殊姿勢の時： |火力|{Value1}を得る。
+
     FlavorText: ただし、彼女の尻尾が乾くのにどれくらい時間がかかるかは聞かない方がいい。
 
 WindsweptBlade:

@@ -1,4 +1,25 @@
+## 1.1.13
+
+Changing a few cards:
+
+This is mostly a test for a potential 1.2 version of Momiji that may expand on the Red side of her kit. Only a minor change right now, but I'm curious how it'll go down.
+
+* Reckless Strike reworked patrially. Now deals 14 base damage, but deals additional damage equal to twice the player's Block. Now applies 2 Vulnerable and Frail to the player, and removes the player's Block. Upgraded version gains +2 base damage and deals additional damage equal to three times the player's Block instead.
+
+## 1.1.12
+
+Korean Localization update
+
+* updated the Korean localization to match the English.
+
+## 1.1.11
+
+Japanese Localization update
+
+* updated the japanese localization to match the english version.
+
 ## 1.1.10
+
 Small localization fixes
 
 * Updated the localization of Taunt and Eye for an Eye to make it clear that the targeted enemy deals attack damage.

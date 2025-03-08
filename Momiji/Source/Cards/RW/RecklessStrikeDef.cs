@@ -37,10 +37,11 @@ namespace Momiji.Source.Cards
             config.Type = CardType.Attack;
             config.TargetType = TargetType.SingleEnemy;
 
-            config.Damage = 24;
-            config.UpgradedDamage = 30;
+            config.Damage = 14;
+            config.UpgradedDamage = 16;
 
-            config.Value1 = 3;
+            config.Value1 = 2;
+            config.UpgradedValue1 = 3;
             config.Value2 = 2;
             config.UpgradedValue2 = 2;
 
@@ -57,14 +58,33 @@ namespace Momiji.Source.Cards
     [EntityLogic(typeof(RecklessStrikeDef))]
     public sealed class RecklessStrike : SampleCharacterCard
     {
-
+        public int BlockDamage
+        {
+            get
+            {
+                if (base.Battle != null)
+                {
+                    return base.Value1 * base.Battle.Player.Block;
+                }
+                return 0;
+            }
+        }
+        public override int AdditionalDamage
+        {
+            get
+            {
+                return this.BlockDamage;
+            }
+        }
         // Token: 0x060009C6 RID: 2502 RVA: 0x00014544 File Offset: 0x00012744
         protected override IEnumerable<BattleAction> Actions(UnitSelector selector, ManaGroup consumingMana, Interaction precondition)
         {
             EnemyUnit selectedEnemy = selector.SelectedEnemy;
             yield return base.AttackAction(selector, base.GunName);
-            yield return new ApplyStatusEffectAction<Vulnerable>(selectedEnemy, 0, base.Value1, 0, 0, 0.2f);
+            int block = base.Battle.Player.Block;
+            yield return new ApplyStatusEffectAction<Vulnerable>(Battle.Player, 0, base.Value2, 0, 0, 0.2f);
             yield return new ApplyStatusEffectAction<Fragil>(Battle.Player, 0, base.Value2, 0, 0, 0.2f);
+            yield return new LoseBlockShieldAction(base.Battle.Player, block, 0, false);
         }
     }
 }

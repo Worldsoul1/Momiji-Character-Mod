@@ -161,7 +161,13 @@ RecklessStrike:
     Name: Reckless Strike
     Description: |-
         Deal {Damage} damage.
-        Apply {Value1} |Vulnerable|.
+        Deal additional damage equal to {Value1} times {PlayerName}'s |Block|. ({BlockDamage})
+        Gain {Value1} |Vulnerable|.
+        Gain {Value2} |Frail|.
+    NonBattleDescription:
+        Deal {Damage} damage.
+        Deal additional damage equal to {Value1} times {PlayerName}'s |Block|.
+        Gain {Value1} |Vulnerable|.
         Gain {Value2} |Frail|.
     FlavorText: Seize victory at any cost.
 
