@@ -30,9 +30,9 @@ namespace Momiji.Source.StatusEffects
             return GetDefaultStatusEffectConfig();
         }
 
-        public static StatusEffectConfig GetDefaultStatusEffectConfig()
+        public static StatusEffectConfig GetDefaultStatusEffectConfig(EntityDefinition entity = null)
         {
-            return SampleCharacterDefaultConfig.GetDefaultStatusEffectConfig();
+            return SampleCharacterDefaultConfig.GetDefaultStatusEffectConfig(entity);
         }   
         
     }

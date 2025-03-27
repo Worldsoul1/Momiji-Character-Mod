@@ -42,12 +42,16 @@ namespace Momiji.Source
 
         public static PlayerUnitConfig playerUnitConfig = new PlayerUnitConfig(
             Id: BepinexPlugin.modUniqueID,
+            HasHomeName: true,
             ShowOrder: 8, 
             Order: 0,
             UnlockLevel: 0,
             ModleName: "",
             NarrativeColor: "#e58c27",
             IsSelectable: true,
+            BasicRingOrder: 6,
+            LeftColor: ManaColor.Red,
+            RightColor: ManaColor.White,
             MaxHp: 80,
             InitialMana: new ManaGroup() { White = 2, Blue = 0, Black = 0, Red = 2, Green = 0, Colorless = 0, Philosophy = 0 },
             InitialMoney: 60,

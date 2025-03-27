@@ -21,8 +21,8 @@ namespace Momiji.Source.Cards
         {
             CardConfig config = GetCardDefaultConfig();
             config.Colors = new List<ManaColor>() { ManaColor.Blue };
-            config.Cost = new ManaGroup() { Any = 3, Blue = 1 };
-            config.UpgradedCost = new ManaGroup() { Any = 2, Blue = 1 };
+            config.Cost = new ManaGroup() { Any = 2, Blue = 1 };
+            config.UpgradedCost = new ManaGroup() { Any = 1, Blue = 1 };
             config.Rarity = Rarity.Uncommon;
 
             config.Type = CardType.Ability;

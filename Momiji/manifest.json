@@ -1,7 +1,7 @@
 {
   "name": "MomijiMod",
-  "version_number": "1.1.12",
+  "version_number": "1.1.13",
   "website_url": "https://github.com/Worldsoul1/Momiji-Character-Mod",
   "description": "Adds Momiji Inubashiri as a playable character",
-  "dependencies": [ "BepInEx-BepInExPack-5.4.2100", "TeamNeo-Sideloader-0.5.0" ]
+  "dependencies": [ "BepInEx-BepInExPack-5.4.2100", "TeamNeo-Sideloader-0.9.78" ]
 }

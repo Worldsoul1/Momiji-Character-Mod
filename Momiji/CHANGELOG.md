@@ -1,10 +1,13 @@
 ## 1.1.13
 
-Changing a few cards:
+Changing a few cards/1.7 update
 
 This is mostly a test for a potential 1.2 version of Momiji that may expand on the Red side of her kit. Only a minor change right now, but I'm curious how it'll go down.
 
 * Reckless Strike reworked patrially. Now deals 14 base damage, but deals additional damage equal to twice the player's Block. Now applies 2 Vulnerable and Frail to the player, and removes the player's Block. Upgraded version gains +2 base damage and deals additional damage equal to three times the player's Block instead.
+* Frigid Sky 3U -> 2U
+* Frigid Sky+ 2U -> 1U
+* Now should work with 1.7. Incompatible with previous versions.
 
 ## 1.1.12
 

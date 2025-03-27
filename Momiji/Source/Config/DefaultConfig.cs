@@ -4,6 +4,7 @@ using LBoL.Base;
 using LBoL.ConfigData;
 using LBoLEntitySideloader.Entities;
 
+
 namespace Momiji.Source.ImageLoader
 {
     public sealed class SampleCharacterDefaultConfig
@@ -11,6 +12,11 @@ namespace Momiji.Source.ImageLoader
         private static readonly String OwnerName = BepinexPlugin.modUniqueID;
         public static string GetDefaultID(EntityDefinition entity)
         {
+            if (entity == null)
+            {
+                return "";
+            }
+
             string IDdef = entity.GetType().Name;
             //Remove the Def at the end of the entity (class name) to get the ID. 
             //string ID = IDdef.Replace(@"Def", "");
@@ -43,6 +49,8 @@ namespace Momiji.Source.ImageLoader
                IsXCost: false,
                Cost: new ManaGroup() { },
                UpgradedCost: null,
+               Kicker: null,
+               UpgradedKicker: null,
                MoneyCost: null,
                Damage: null,
                UpgradedDamage: null,
@@ -122,10 +130,11 @@ namespace Momiji.Source.ImageLoader
             );
         }
 
-        public static StatusEffectConfig GetDefaultStatusEffectConfig()
+        public static StatusEffectConfig GetDefaultStatusEffectConfig(EntityDefinition entity)
         {
             return new StatusEffectConfig(
                 Id: "",
+                ImageId: GetDefaultID(entity),
                 Index: 0,
                 Order: 10,
                 Type: StatusEffectType.Positive,
